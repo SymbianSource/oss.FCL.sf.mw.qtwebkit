@@ -10,5 +10,10 @@
 			<unit name="qtwebkit" unitID="qtwebkit" bldFile="&layer_real_source_path;" mrp="" proFile="WebKit.pro" />
 		</module>
     </layer>
+    <layer name="mw_layer">
+			<module name="qtwebkit_uda">
+				<unit name="qtwebkit_uda" unitID="qtwebkit_uda" bldFile="&layer_real_source_path;/content/group" mrp="" />
+			</module>
+        </layer>
   </systemModel>
 </SystemDefinition>
