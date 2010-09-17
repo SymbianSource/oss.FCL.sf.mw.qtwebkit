@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE SystemDefinition SYSTEM "sysdef_1_5_1.dtd" [
+  <!ENTITY layer_real_source_path "sf/mw/qtwebkit" >
+]>
+
+<SystemDefinition name="qtwebkit" schema="1.5.1">
+  <systemModel>
+  	<layer name="mw_layer">
+		<module name="qtwebkit">
+			<unit name="qtwebkit" unitID="qtwebkit" bldFile="&layer_real_source_path;" mrp="" proFile="WebKit.pro" />
+		</module>
+    </layer>
+  </systemModel>
+</SystemDefinition>

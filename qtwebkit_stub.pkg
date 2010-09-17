@@ -1,0 +1,24 @@
+; Language
+&EN
+
+
+; SIS header: name, uid, version
+#{"QtWebKit"},(0x200267C2),4,7,0
+
+
+; Manual PKG pre-rules from PRO files
+; Default HW/platform dependencies
+ 
+; Localised Vendor name
+%{"Nokia"}
+ 
+; Unique Vendor name
+:"Nokia"
+ 
+; Dependencies of Qt libraries
+
+"" - "z:\sys\bin\qmlwebkitplugin.dll"
+;"" - "z:\resource\qt\imports\QtWebKit\qmlwebkitplugin.qtplugin"
+;"" - "z:\resource\qt\imports\QtWebKit\qmldir"
+"" - "z:\sys\bin\QtWebKit.dll"
+"" - "z:\private\10202D56\import\packages\200267C2\backup_registration.xml"

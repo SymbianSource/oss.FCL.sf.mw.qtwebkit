@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemDefinition schema="3.0.0" xmlns:qt="http://www.nokia.com/qt">
+ <package id="qtwebkit" name="QtWebKit">
+	<!-- need to break up this package into collections and components -->
+    <collection id="qtwebkit_info" name="QtWebKit Info">
+     <component id="qtwebkit_build" name="QtWebKit Build" introduced="^3" filter="s60">
+      <unit bldFile="." qt:proFile="WebKit.pro"/>
+     </component>
+    </collection>
+   </package>
+</SystemDefinition>
+

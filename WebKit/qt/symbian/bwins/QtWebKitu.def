@@ -1,0 +1,721 @@
+EXPORTS
+	?isModified@QWebView@@QBE_NXZ @ 1 NONAME ; bool QWebView::isModified(void) const
+	?findFirstElement@QWebFrame@@QBE?AVQWebElement@@ABVQString@@@Z @ 2 NONAME ; class QWebElement QWebFrame::findFirstElement(class QString const &) const
+	?globalSettings@QWebSettings@@SAPAV1@XZ @ 3 NONAME ; class QWebSettings * QWebSettings::globalSettings(void)
+	?frame@QWebHitTestResult@@QBEPAVQWebFrame@@XZ @ 4 NONAME ; class QWebFrame * QWebHitTestResult::frame(void) const
+	?createWindow@QWebView@@MAEPAV1@W4WebWindowType@QWebPage@@@Z @ 5 NONAME ; class QWebView * QWebView::createWindow(enum QWebPage::WebWindowType)
+	?removeAllChildren@QWebElement@@QAEXXZ @ 6 NONAME ; void QWebElement::removeAllChildren(void)
+	?mouseReleaseEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneMouseEvent@@@Z @ 7 NONAME ; void QGraphicsWebView::mouseReleaseEvent(class QGraphicsSceneMouseEvent *)
+	??1QWebScriptWorld@@QAE@XZ @ 8 NONAME ; QWebScriptWorld::~QWebScriptWorld(void)
+	?isEnabled@QWebPluginInfo@@QBE_NXZ @ 9 NONAME ; bool QWebPluginInfo::isEnabled(void) const
+	??_EQWebSettings@@QAE@I@Z @ 10 NONAME ABSENT ; QWebSettings::~QWebSettings(unsigned int)
+	?constEnd@QWebElementCollection@@QBE?AVconst_iterator@1@XZ @ 11 NONAME ; class QWebElementCollection::const_iterator QWebElementCollection::constEnd(void) const
+	?getStaticMetaObject@QWebHistoryInterface@@SAABUQMetaObject@@XZ @ 12 NONAME ; struct QMetaObject const & QWebHistoryInterface::getStaticMetaObject(void)
+	??8QWebElement@@QBE_NABV0@@Z @ 13 NONAME ; bool QWebElement::operator==(class QWebElement const &) const
+	?mousePressEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneMouseEvent@@@Z @ 14 NONAME ; void QGraphicsWebView::mousePressEvent(class QGraphicsSceneMouseEvent *)
+	?linkTargetFrame@QWebHitTestResult@@QBEPAVQWebFrame@@XZ @ 15 NONAME ; class QWebFrame * QWebHitTestResult::linkTargetFrame(void) const
+	??0QWebPluginInfo@@AAE@PAVPluginPackage@WebCore@@@Z @ 16 NONAME ; QWebPluginInfo::QWebPluginInfo(class WebCore::PluginPackage *)
+	?trUtf8@QGraphicsWebView@@SA?AVQString@@PBD0H@Z @ 17 NONAME ; class QString QGraphicsWebView::trUtf8(char const *, char const *, int)
+	?setSelectTrailingWhitespaceEnabled@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@_N@Z @ 18 NONAME ; void DumpRenderTreeSupportQt::setSelectTrailingWhitespaceEnabled(class QWebPage *, bool)
+	??YQWebElementCollection@@QAEAAV0@ABV0@@Z @ 19 NONAME ; class QWebElementCollection & QWebElementCollection::operator+=(class QWebElementCollection const &)
+	?setInnerXml@QWebElement@@QAEXABVQString@@@Z @ 20 NONAME ; void QWebElement::setInnerXml(class QString const &)
+	?zoomFactor@QGraphicsWebView@@QBEMXZ @ 21 NONAME ; float QGraphicsWebView::zoomFactor(void) const
+	?restoreFrameStateRequested@QWebPage@@IAEXPAVQWebFrame@@@Z @ 22 NONAME ; void QWebPage::restoreFrameStateRequested(class QWebFrame *)
+	?settings@QWebPage@@QBEPAVQWebSettings@@XZ @ 23 NONAME ; class QWebSettings * QWebPage::settings(void) const
+	?setEnabled@QWebPluginInfo@@QAEX_N@Z @ 24 NONAME ; void QWebPluginInfo::setEnabled(bool)
+	??_EQWebFrame@@UAE@I@Z @ 25 NONAME ; QWebFrame::~QWebFrame(unsigned int)
+	?loadProgress@QGraphicsWebView@@IAEXH@Z @ 26 NONAME ; void QGraphicsWebView::loadProgress(int)
+	?setNetworkAccessManager@QWebPage@@QAEXPAVQNetworkAccessManager@@@Z @ 27 NONAME ; void QWebPage::setNetworkAccessManager(class QNetworkAccessManager *)
+	?focusOutEvent@QWebView@@MAEXPAVQFocusEvent@@@Z @ 28 NONAME ; void QWebView::focusOutEvent(class QFocusEvent *)
+	??4QWebHitTestResult@@QAEAAV0@ABV0@@Z @ 29 NONAME ; class QWebHitTestResult & QWebHitTestResult::operator=(class QWebHitTestResult const &)
+	??AQWebElementCollection@@QBE?AVQWebElement@@H@Z @ 30 NONAME ; class QWebElement QWebElementCollection::operator[](int) const
+	?appendInside@QWebElement@@QAEXABV1@@Z @ 31 NONAME ; void QWebElement::appendInside(class QWebElement const &)
+	?addSearchPath@QWebPluginDatabase@@QAEXABVQString@@@Z @ 32 NONAME ; void QWebPluginDatabase::addSearchPath(class QString const &)
+	?webInspectorShow@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@@Z @ 33 NONAME ; void DumpRenderTreeSupportQt::webInspectorShow(class QWebPage *)
+	?iconChanged@QWebFrame@@IAEXXZ @ 34 NONAME ; void QWebFrame::iconChanged(void)
+	?viewportChangeRequested@QWebPage@@IAEXABVViewportHints@1@@Z @ 35 NONAME ; void QWebPage::viewportChangeRequested(class QWebPage::ViewportHints const &)
+	?extension@QWebPage@@UAE_NW4Extension@1@PBVExtensionOption@1@PAVExtensionReturn@1@@Z @ 36 NONAME ; bool QWebPage::extension(enum QWebPage::Extension, class QWebPage::ExtensionOption const *, class QWebPage::ExtensionReturn *)
+	?setPreferredPluginForMimeType@QWebPluginDatabase@@QAEXABVQString@@ABVQWebPluginInfo@@@Z @ 37 NONAME ; void QWebPluginDatabase::setPreferredPluginForMimeType(class QString const &, class QWebPluginInfo const &)
+	?setDeviceSize@QGraphicsWebView@@QAEXABVQSize@@@Z @ 38 NONAME ; void QGraphicsWebView::setDeviceSize(class QSize const &)
+	??4QWebElementCollection@@QAEAAV0@ABV0@@Z @ 39 NONAME ; class QWebElementCollection & QWebElementCollection::operator=(class QWebElementCollection const &)
+	?attributeNames@QWebElement@@QBE?AVQStringList@@ABVQString@@@Z @ 40 NONAME ; class QStringList QWebElement::attributeNames(class QString const &) const
+	?firstChild@QWebElement@@QBE?AV1@XZ @ 41 NONAME ; class QWebElement QWebElement::firstChild(void) const
+	?setRenderHints@QWebView@@QAEXV?$QFlags@W4RenderHint@QPainter@@@@@Z @ 42 NONAME ; void QWebView::setRenderHints(class QFlags<enum QPainter::RenderHint>)
+	?firstRectForCharacterRange@DumpRenderTreeSupportQt@@SA?AV?$QList@VQVariant@@@@PAVQWebPage@@HH@Z @ 43 NONAME ; class QList<class QVariant> DumpRenderTreeSupportQt::firstRectForCharacterRange(class QWebPage *, int, int)
+	?count@QWebHistory@@QBEHXZ @ 44 NONAME ; int QWebHistory::count(void) const
+	?whiteListAccessFromOrigin@DumpRenderTreeSupportQt@@SAXABVQString@@00_N@Z @ 45 NONAME ; void DumpRenderTreeSupportQt::whiteListAccessFromOrigin(class QString const &, class QString const &, class QString const &, bool)
+	?setZoomFactor@QWebFrame@@QAEXM@Z @ 46 NONAME ; void QWebFrame::setZoomFactor(float)
+	?setObjectCacheCapacities@QWebSettings@@SAXHHH@Z @ 47 NONAME ; void QWebSettings::setObjectCacheCapacities(int, int, int)
+	?setDatabaseQuota@QWebSecurityOrigin@@QAEX_J@Z @ 48 NONAME ; void QWebSecurityOrigin::setDatabaseQuota(long long)
+	?render@QWebFrame@@QAEXPAVQPainter@@W4RenderLayer@1@ABVQRegion@@@Z @ 49 NONAME ; void QWebFrame::render(class QPainter *, enum QWebFrame::RenderLayer, class QRegion const &)
+	?dumpResourceLoadCallbacks@DumpRenderTreeSupportQt@@SAX_N@Z @ 50 NONAME ; void DumpRenderTreeSupportQt::dumpResourceLoadCallbacks(bool)
+	?setWillSendRequestClearHeaders@DumpRenderTreeSupportQt@@SAXABVQStringList@@@Z @ 51 NONAME ; void DumpRenderTreeSupportQt::setWillSendRequestClearHeaders(class QStringList const &)
+	?dumpResourceLoadCallbacksPath@DumpRenderTreeSupportQt@@SAXABVQString@@@Z @ 52 NONAME ; void DumpRenderTreeSupportQt::dumpResourceLoadCallbacksPath(class QString const &)
+	?loadStarted@QWebFrame@@IAEXXZ @ 53 NONAME ; void QWebFrame::loadStarted(void)
+	?linkClicked@QWebPage@@IAEXABVQUrl@@@Z @ 54 NONAME ; void QWebPage::linkClicked(class QUrl const &)
+	?trUtf8@QWebHistoryInterface@@SA?AVQString@@PBD0H@Z @ 55 NONAME ; class QString QWebHistoryInterface::trUtf8(char const *, char const *, int)
+	?setMockGeolocationPosition@DumpRenderTreeSupportQt@@SAXNNN@Z @ 56 NONAME ; void DumpRenderTreeSupportQt::setMockGeolocationPosition(double, double, double)
+	?hoverLeaveEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneHoverEvent@@@Z @ 57 NONAME ; void QGraphicsWebView::hoverLeaveEvent(class QGraphicsSceneHoverEvent *)
+	?garbageCollectorCollect@DumpRenderTreeSupportQt@@SAXXZ @ 58 NONAME ; void DumpRenderTreeSupportQt::garbageCollectorCollect(void)
+	?swallowContextMenuEvent@QWebPage@@QAE_NPAVQContextMenuEvent@@@Z @ 59 NONAME ; bool QWebPage::swallowContextMenuEvent(class QContextMenuEvent *)
+	?pageChanged@QWebFrame@@IAEXXZ @ 60 NONAME ; void QWebFrame::pageChanged(void)
+	?isValid@QWebHistoryItem@@QBE_NXZ @ 61 NONAME ; bool QWebHistoryItem::isValid(void) const
+	?getStaticMetaObject@QWebFrame@@SAABUQMetaObject@@XZ @ 62 NONAME ; struct QMetaObject const & QWebFrame::getStaticMetaObject(void)
+	?findAll@QWebElement@@QBE?AVQWebElementCollection@@ABVQString@@@Z @ 63 NONAME ; class QWebElementCollection QWebElement::findAll(class QString const &) const
+	?qt_drt_clearFrameName@@YAXPAVQWebFrame@@@Z @ 64 NONAME ; void qt_drt_clearFrameName(class QWebFrame *)
+	?setContentEditable@QWebPage@@QAEX_N@Z @ 65 NONAME ; void QWebPage::setContentEditable(bool)
+	?end@QWebElementCollection@@QBE?AVconst_iterator@1@XZ @ 66 NONAME ; class QWebElementCollection::const_iterator QWebElementCollection::end(void) const
+	?tr@QWebHistoryInterface@@SA?AVQString@@PBD0@Z @ 67 NONAME ; class QString QWebHistoryInterface::tr(char const *, char const *)
+	?page@QGraphicsWebView@@QBEPAVQWebPage@@XZ @ 68 NONAME ; class QWebPage * QGraphicsWebView::page(void) const
+	?undoStack@QWebPage@@QBEPAVQUndoStack@@XZ @ 69 NONAME ; class QUndoStack * QWebPage::undoStack(void) const
+	?iconChanged@QGraphicsWebView@@IAEXXZ @ 70 NONAME ; void QGraphicsWebView::iconChanged(void)
+	??0QWebHistoryItem@@AAE@PAVQWebHistoryItemPrivate@@@Z @ 71 NONAME ; QWebHistoryItem::QWebHistoryItem(class QWebHistoryItemPrivate *)
+	?replace@QWebElement@@QAEXABV1@@Z @ 72 NONAME ; void QWebElement::replace(class QWebElement const &)
+	?mousePressEvent@QWebView@@MAEXPAVQMouseEvent@@@Z @ 73 NONAME ; void QWebView::mousePressEvent(class QMouseEvent *)
+	?qt_metacall@QWebInspector@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 74 NONAME ; int QWebInspector::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?metaObject@QWebPluginFactory@@UBEPBUQMetaObject@@XZ @ 75 NONAME ; struct QMetaObject const * QWebPluginFactory::metaObject(void) const
+	?selectionChanged@QWebView@@IAEXXZ @ 76 NONAME ; void QWebView::selectionChanged(void)
+	?getChildHistoryItems@DumpRenderTreeSupportQt@@SA?AV?$QMap@VQString@@VQWebHistoryItem@@@@ABVQWebHistoryItem@@@Z @ 77 NONAME ; class QMap<class QString, class QWebHistoryItem> DumpRenderTreeSupportQt::getChildHistoryItems(class QWebHistoryItem const &)
+	??_EQWebHistoryItem@@QAE@I@Z @ 78 NONAME ABSENT ; QWebHistoryItem::~QWebHistoryItem(unsigned int)
+	?mouseMoveEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneMouseEvent@@@Z @ 79 NONAME ; void QGraphicsWebView::mouseMoveEvent(class QGraphicsSceneMouseEvent *)
+	?selectedRange@DumpRenderTreeSupportQt@@SA?AV?$QList@VQVariant@@@@PAVQWebPage@@@Z @ 80 NONAME ; class QList<class QVariant> DumpRenderTreeSupportQt::selectedRange(class QWebPage *)
+	??5@YAAAVQDataStream@@AAV0@AAVQWebHistory@@@Z @ 81 NONAME ; class QDataStream & operator>>(class QDataStream &, class QWebHistory &)
+	?setPlainText@QWebElement@@QAEXABVQString@@@Z @ 82 NONAME ; void QWebElement::setPlainText(class QString const &)
+	?setPalette@QWebPage@@QAEXABVQPalette@@@Z @ 83 NONAME ; void QWebPage::setPalette(class QPalette const &)
+	?removeAttributeNS@QWebElement@@QAEXABVQString@@0@Z @ 84 NONAME ; void QWebElement::removeAttributeNS(class QString const &, class QString const &)
+	?evaluateJavaScript@QWebElement@@QAE?AVQVariant@@ABVQString@@@Z @ 85 NONAME ; class QVariant QWebElement::evaluateJavaScript(class QString const &)
+	?pageNumberForElementById@DumpRenderTreeSupportQt@@SAHPAVQWebFrame@@ABVQString@@MM@Z @ 86 NONAME ; int DumpRenderTreeSupportQt::pageNumberForElementById(class QWebFrame *, class QString const &, float, float)
+	?statusBarMessage@QWebPage@@IAEXABVQString@@@Z @ 87 NONAME ; void QWebPage::statusBarMessage(class QString const &)
+	?qt_metacast@QWebInspector@@UAEPAXPBD@Z @ 88 NONAME ; void * QWebInspector::qt_metacast(char const *)
+	?selectedText@QWebView@@QBE?AVQString@@XZ @ 89 NONAME ; class QString QWebView::selectedText(void) const
+	?searchPaths@QWebPluginDatabase@@QBE?AVQStringList@@XZ @ 90 NONAME ; class QStringList QWebPluginDatabase::searchPaths(void) const
+	?render@QWebFrame@@QAEXPAVQPainter@@ABVQRegion@@@Z @ 91 NONAME ; void QWebFrame::render(class QPainter *, class QRegion const &)
+	?staticMetaObject@QWebPluginDatabase@@2UQMetaObject@@B @ 92 NONAME ; struct QMetaObject const QWebPluginDatabase::staticMetaObject
+	?metaObject@QGraphicsWebView@@UBEPBUQMetaObject@@XZ @ 93 NONAME ; struct QMetaObject const * QGraphicsWebView::metaObject(void) const
+	?size@QWebDatabase@@QBE_JXZ @ 94 NONAME ; long long QWebDatabase::size(void) const
+	?setAttribute@QWebElement@@QAEXABVQString@@0@Z @ 95 NONAME ; void QWebElement::setAttribute(class QString const &, class QString const &)
+	?qt_dump_editing_callbacks@@YAX_N@Z @ 96 NONAME ; void qt_dump_editing_callbacks(bool)
+	?lastVisited@QWebHistoryItem@@QBE?AVQDateTime@@XZ @ 97 NONAME ; class QDateTime QWebHistoryItem::lastVisited(void) const
+	?iconForUrl@QWebSettings@@SA?AVQIcon@@ABVQUrl@@@Z @ 98 NONAME ; class QIcon QWebSettings::iconForUrl(class QUrl const &)
+	?qt_drt_resetOriginAccessWhiteLists@@YAXXZ @ 99 NONAME ; void qt_drt_resetOriginAccessWhiteLists(void)
+	??0QWebElement@@AAE@PAVElement@WebCore@@@Z @ 100 NONAME ; QWebElement::QWebElement(class WebCore::Element *)
+	??4QWebDatabase@@QAEAAV0@ABV0@@Z @ 101 NONAME ; class QWebDatabase & QWebDatabase::operator=(class QWebDatabase const &)
+	?settings@QWebView@@QBEPAVQWebSettings@@XZ @ 102 NONAME ; class QWebSettings * QWebView::settings(void) const
+	?resumeActiveDOMObjects@DumpRenderTreeSupportQt@@SAXPAVQWebFrame@@@Z @ 103 NONAME ; void DumpRenderTreeSupportQt::resumeActiveDOMObjects(class QWebFrame *)
+	??4QWebSecurityOrigin@@QAEAAV0@ABV0@@Z @ 104 NONAME ; class QWebSecurityOrigin & QWebSecurityOrigin::operator=(class QWebSecurityOrigin const &)
+	?javaScriptAlert@QWebPage@@MAEXPAVQWebFrame@@ABVQString@@@Z @ 105 NONAME ; void QWebPage::javaScriptAlert(class QWebFrame *, class QString const &)
+	?pageAction@QWebView@@QBEPAVQAction@@W4WebAction@QWebPage@@@Z @ 106 NONAME ; class QAction * QWebView::pageAction(enum QWebPage::WebAction) const
+	??1QWebElementCollection@@QAE@XZ @ 107 NONAME ; QWebElementCollection::~QWebElementCollection(void)
+	?dragEnterEvent@QWebView@@MAEXPAVQDragEnterEvent@@@Z @ 108 NONAME ; void QWebView::dragEnterEvent(class QDragEnterEvent *)
+	??_EQWebView@@UAE@I@Z @ 109 NONAME ; QWebView::~QWebView(unsigned int)
+	?isModified@QWebPage@@QBE_NXZ @ 110 NONAME ; bool QWebPage::isModified(void) const
+	?plugins@QWebPluginDatabase@@QBE?AV?$QList@VQWebPluginInfo@@@@XZ @ 111 NONAME ; class QList<class QWebPluginInfo> QWebPluginDatabase::plugins(void) const
+	?history@QWebPage@@QBEPAVQWebHistory@@XZ @ 112 NONAME ; class QWebHistory * QWebPage::history(void) const
+	?element@QWebHitTestResult@@QBE?AVQWebElement@@XZ @ 113 NONAME ; class QWebElement QWebHitTestResult::element(void) const
+	?scrollToAnchor@QWebFrame@@QAEXABVQString@@@Z @ 114 NONAME ; void QWebFrame::scrollToAnchor(class QString const &)
+	?qt_drt_overwritePluginDirectories@@YAXXZ @ 115 NONAME ; void qt_drt_overwritePluginDirectories(void)
+	??0QWebHitTestResult@@QAE@ABV0@@Z @ 116 NONAME ; QWebHitTestResult::QWebHitTestResult(class QWebHitTestResult const &)
+	??_EQWebPage@@UAE@I@Z @ 117 NONAME ; QWebPage::~QWebPage(unsigned int)
+	?setSmartInsertDeleteEnabled@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@_N@Z @ 118 NONAME ; void DumpRenderTreeSupportQt::setSmartInsertDeleteEnabled(class QWebPage *, bool)
+	?currentFrame@QWebPage@@QBEPAVQWebFrame@@XZ @ 119 NONAME ; class QWebFrame * QWebPage::currentFrame(void) const
+	?microFocusChanged@QWebPage@@IAEXXZ @ 120 NONAME ; void QWebPage::microFocusChanged(void)
+	?isContentEditable@QWebPage@@QBE_NXZ @ 121 NONAME ; bool QWebPage::isContentEditable(void) const
+	?requestedUrl@QWebFrame@@QBE?AVQUrl@@XZ @ 122 NONAME ; class QUrl QWebFrame::requestedUrl(void) const
+	?loadStarted@QWebPage@@IAEXXZ @ 123 NONAME ; void QWebPage::loadStarted(void)
+	?databaseUsage@QWebSecurityOrigin@@QBE_JXZ @ 124 NONAME ; long long QWebSecurityOrigin::databaseUsage(void) const
+	?load@QGraphicsWebView@@QAEXABVQUrl@@@Z @ 125 NONAME ; void QGraphicsWebView::load(class QUrl const &)
+	??1QWebPluginFactory@@UAE@XZ @ 126 NONAME ; QWebPluginFactory::~QWebPluginFactory(void)
+	?prependInside@QWebElement@@QAEXABV1@@Z @ 127 NONAME ; void QWebElement::prependInside(class QWebElement const &)
+	?trUtf8@QWebPluginDatabase@@SA?AVQString@@PBD0H@Z @ 128 NONAME ; class QString QWebPluginDatabase::trUtf8(char const *, char const *, int)
+	?resizeEvent@QWebInspector@@MAEXPAVQResizeEvent@@@Z @ 129 NONAME ; void QWebInspector::resizeEvent(class QResizeEvent *)
+	?isNull@QWebHitTestResult@@QBE_NXZ @ 130 NONAME ; bool QWebHitTestResult::isNull(void) const
+	??0QWebPluginFactory@@QAE@PAVQObject@@@Z @ 131 NONAME ; QWebPluginFactory::QWebPluginFactory(class QObject *)
+	??9MimeType@QWebPluginFactory@@QBE_NABU01@@Z @ 132 NONAME ; bool QWebPluginFactory::MimeType::operator!=(struct QWebPluginFactory::MimeType const &) const
+	?currentItemIndex@QWebHistory@@QBEHXZ @ 133 NONAME ; int QWebHistory::currentItemIndex(void) const
+	?setJavaScriptProfilingEnabled@DumpRenderTreeSupportQt@@SAXPAVQWebFrame@@_N@Z @ 134 NONAME ; void DumpRenderTreeSupportQt::setJavaScriptProfilingEnabled(class QWebFrame *, bool)
+	?scrollBarMinimum@QWebFrame@@QBEHW4Orientation@Qt@@@Z @ 135 NONAME ; int QWebFrame::scrollBarMinimum(enum Qt::Orientation) const
+	?keyReleaseEvent@QWebView@@MAEXPAVQKeyEvent@@@Z @ 136 NONAME ; void QWebView::keyReleaseEvent(class QKeyEvent *)
+	?setTiledBackingStoreFrozen@QGraphicsWebView@@QAEX_N@Z @ 137 NONAME ; void QGraphicsWebView::setTiledBackingStoreFrozen(bool)
+	?showEvent@QWebInspector@@MAEXPAVQShowEvent@@@Z @ 138 NONAME ; void QWebInspector::showEvent(class QShowEvent *)
+	?findText@QWebPage@@QAE_NABVQString@@V?$QFlags@W4FindFlag@QWebPage@@@@@Z @ 139 NONAME ; bool QWebPage::findText(class QString const &, class QFlags<enum QWebPage::FindFlag>)
+	?setUrl@QGraphicsWebView@@QAEXABVQUrl@@@Z @ 140 NONAME ; void QGraphicsWebView::setUrl(class QUrl const &)
+	?linkText@QWebHitTestResult@@QBE?AVQString@@XZ @ 141 NONAME ; class QString QWebHitTestResult::linkText(void) const
+	?loadProgress@QWebView@@IAEXH@Z @ 142 NONAME ; void QWebView::loadProgress(int)
+	?toggleClass@QWebElement@@QAEXABVQString@@@Z @ 143 NONAME ; void QWebElement::toggleClass(class QString const &)
+	?load@QWebFrame@@QAEXABVQNetworkRequest@@W4Operation@QNetworkAccessManager@@ABVQByteArray@@@Z @ 144 NONAME ; void QWebFrame::load(class QNetworkRequest const &, enum QNetworkAccessManager::Operation, class QByteArray const &)
+	?linkElement@QWebHitTestResult@@QBE?AVQWebElement@@XZ @ 145 NONAME ; class QWebElement QWebHitTestResult::linkElement(void) const
+	?path@QWebPluginInfo@@QBE?AVQString@@XZ @ 146 NONAME ; class QString QWebPluginInfo::path(void) const
+	?history@QWebView@@QBEPAVQWebHistory@@XZ @ 147 NONAME ; class QWebHistory * QWebView::history(void) const
+	?toolBarVisibilityChangeRequested@QWebPage@@IAEX_N@Z @ 148 NONAME ; void QWebPage::toolBarVisibilityChangeRequested(bool)
+	?event@QWebView@@UAE_NPAVQEvent@@@Z @ 149 NONAME ; bool QWebView::event(class QEvent *)
+	?dragMoveEvent@QWebView@@MAEXPAVQDragMoveEvent@@@Z @ 150 NONAME ; void QWebView::dragMoveEvent(class QDragMoveEvent *)
+	?lastChild@QWebElement@@QBE?AV1@XZ @ 151 NONAME ; class QWebElement QWebElement::lastChild(void) const
+	??0QWebDatabase@@AAE@PAVQWebDatabasePrivate@@@Z @ 152 NONAME ; QWebDatabase::QWebDatabase(class QWebDatabasePrivate *)
+	?shouldClose@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@@Z @ 153 NONAME ; bool DumpRenderTreeSupportQt::shouldClose(class QWebFrame *)
+	?networkAccessManager@QWebPage@@QBEPAVQNetworkAccessManager@@XZ @ 154 NONAME ; class QNetworkAccessManager * QWebPage::networkAccessManager(void) const
+	?isContentEditable@QWebHitTestResult@@QBE_NXZ @ 155 NONAME ; bool QWebHitTestResult::isContentEditable(void) const
+	??0QWebPluginInfo@@QAE@XZ @ 156 NONAME ; QWebPluginInfo::QWebPluginInfo(void)
+	?clearMemoryCaches@QWebSettings@@SAXXZ @ 157 NONAME ; void QWebSettings::clearMemoryCaches(void)
+	?isTargetItem@DumpRenderTreeSupportQt@@SA_NABVQWebHistoryItem@@@Z @ 158 NONAME ; bool DumpRenderTreeSupportQt::isTargetItem(class QWebHistoryItem const &)
+	?setWillSendRequestReturnsNullOnRedirect@DumpRenderTreeSupportQt@@SAX_N@Z @ 159 NONAME ; void DumpRenderTreeSupportQt::setWillSendRequestReturnsNullOnRedirect(bool)
+	?encloseContentsWith@QWebElement@@QAEXABV1@@Z @ 160 NONAME ; void QWebElement::encloseContentsWith(class QWebElement const &)
+	?trUtf8@QWebFrame@@SA?AVQString@@PBD0@Z @ 161 NONAME ; class QString QWebFrame::trUtf8(char const *, char const *)
+	?inputMethodQuery@QGraphicsWebView@@UBE?AVQVariant@@W4InputMethodQuery@Qt@@@Z @ 162 NONAME ; class QVariant QGraphicsWebView::inputMethodQuery(enum Qt::InputMethodQuery) const
+	?forward@QWebHistory@@QAEXXZ @ 163 NONAME ; void QWebHistory::forward(void)
+	?setOuterXml@QWebElement@@QAEXABVQString@@@Z @ 164 NONAME ; void QWebElement::setOuterXml(class QString const &)
+	?tr@QGraphicsWebView@@SA?AVQString@@PBD0H@Z @ 165 NONAME ; class QString QGraphicsWebView::tr(char const *, char const *, int)
+	?first@QWebElementCollection@@QBE?AVQWebElement@@XZ @ 166 NONAME ; class QWebElement QWebElementCollection::first(void) const
+	?setOfflineStoragePath@QWebSettings@@SAXABVQString@@@Z @ 167 NONAME ; void QWebSettings::setOfflineStoragePath(class QString const &)
+	??_EQWebPluginDatabase@@UAE@I@Z @ 168 NONAME ; QWebPluginDatabase::~QWebPluginDatabase(unsigned int)
+	?findText@QGraphicsWebView@@QAE_NABVQString@@V?$QFlags@W4FindFlag@QWebPage@@@@@Z @ 169 NONAME ; bool QGraphicsWebView::findText(class QString const &, class QFlags<enum QWebPage::FindFlag>)
+	?setFontSize@QWebSettings@@QAEXW4FontSize@1@H@Z @ 170 NONAME ; void QWebSettings::setFontSize(enum QWebSettings::FontSize, int)
+	?setFontFamily@QWebSettings@@QAEXW4FontFamily@1@ABVQString@@@Z @ 171 NONAME ; void QWebSettings::setFontFamily(enum QWebSettings::FontFamily, class QString const &)
+	?fontSize@QWebSettings@@QBEHW4FontSize@1@@Z @ 172 NONAME ; int QWebSettings::fontSize(enum QWebSettings::FontSize) const
+	?tr@QWebView@@SA?AVQString@@PBD0H@Z @ 173 NONAME ; class QString QWebView::tr(char const *, char const *, int)
+	??0DumpRenderTreeSupportQt@@QAE@XZ @ 174 NONAME ; DumpRenderTreeSupportQt::DumpRenderTreeSupportQt(void)
+	?clearFrameName@DumpRenderTreeSupportQt@@SAXPAVQWebFrame@@@Z @ 175 NONAME ; void DumpRenderTreeSupportQt::clearFrameName(class QWebFrame *)
+	??0QWebElement@@AAE@PAVNode@WebCore@@@Z @ 176 NONAME ; QWebElement::QWebElement(class WebCore::Node *)
+	??0QWebScriptWorld@@QAE@XZ @ 177 NONAME ; QWebScriptWorld::QWebScriptWorld(void)
+	?setWebGraphic@QWebSettings@@SAXW4WebGraphic@1@ABVQPixmap@@@Z @ 178 NONAME ; void QWebSettings::setWebGraphic(enum QWebSettings::WebGraphic, class QPixmap const &)
+	?tr@QGraphicsWebView@@SA?AVQString@@PBD0@Z @ 179 NONAME ; class QString QGraphicsWebView::tr(char const *, char const *)
+	?selectionChanged@QWebPage@@IAEXXZ @ 180 NONAME ; void QWebPage::selectionChanged(void)
+	?setPage@QWebInspector@@QAEXPAVQWebPage@@@Z @ 181 NONAME ; void QWebInspector::setPage(class QWebPage *)
+	??1QWebInspector@@UAE@XZ @ 182 NONAME ; QWebInspector::~QWebInspector(void)
+	?name@QWebPluginInfo@@QBE?AVQString@@XZ @ 183 NONAME ; class QString QWebPluginInfo::name(void) const
+	?pageAction@QGraphicsWebView@@QBEPAVQAction@@W4WebAction@QWebPage@@@Z @ 184 NONAME ; class QAction * QGraphicsWebView::pageAction(enum QWebPage::WebAction) const
+	?mouseReleaseEvent@QWebView@@MAEXPAVQMouseEvent@@@Z @ 185 NONAME ; void QWebView::mouseReleaseEvent(class QMouseEvent *)
+	?dumpNotification@DumpRenderTreeSupportQt@@SAX_N@Z @ 186 NONAME ; void DumpRenderTreeSupportQt::dumpNotification(bool)
+	?namespaceUri@QWebElement@@QBE?AVQString@@XZ @ 187 NONAME ; class QString QWebElement::namespaceUri(void) const
+	?goToItem@QWebHistory@@QAEXABVQWebHistoryItem@@@Z @ 188 NONAME ; void QWebHistory::goToItem(class QWebHistoryItem const &)
+	?setDeferMainResourceDataLoad@DumpRenderTreeSupportQt@@SAX_N@Z @ 189 NONAME ; void DumpRenderTreeSupportQt::setDeferMainResourceDataLoad(bool)
+	?toPlainText@QWebFrame@@QBE?AVQString@@XZ @ 190 NONAME ; class QString QWebFrame::toPlainText(void) const
+	?isModified@QGraphicsWebView@@QBE_NXZ @ 191 NONAME ; bool QGraphicsWebView::isModified(void) const
+	?dragLeaveEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneDragDropEvent@@@Z @ 192 NONAME ; void QGraphicsWebView::dragLeaveEvent(class QGraphicsSceneDragDropEvent *)
+	?webInspectorClose@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@@Z @ 193 NONAME ; void DumpRenderTreeSupportQt::webInspectorClose(class QWebPage *)
+	?tr@QWebInspector@@SA?AVQString@@PBD0@Z @ 194 NONAME ; class QString QWebInspector::tr(char const *, char const *)
+	?menuBarVisibilityChangeRequested@QWebPage@@IAEX_N@Z @ 195 NONAME ; void QWebPage::menuBarVisibilityChangeRequested(bool)
+	??1QWebPage@@UAE@XZ @ 196 NONAME ; QWebPage::~QWebPage(void)
+	?javaScriptPrompt@QWebPage@@MAE_NPAVQWebFrame@@ABVQString@@1PAV3@@Z @ 197 NONAME ; bool QWebPage::javaScriptPrompt(class QWebFrame *, class QString const &, class QString const &, class QString *)
+	?addLocalScheme@QWebSecurityOrigin@@SAXABVQString@@@Z @ 198 NONAME ; void QWebSecurityOrigin::addLocalScheme(class QString const &)
+	?userData@QWebHistoryItem@@QBE?AVQVariant@@XZ @ 199 NONAME ; class QVariant QWebHistoryItem::userData(void) const
+	?offlineWebApplicationCacheQuota@QWebSettings@@SA_JXZ @ 200 NONAME ; long long QWebSettings::offlineWebApplicationCacheQuota(void)
+	?backItem@QWebHistory@@QBE?AVQWebHistoryItem@@XZ @ 201 NONAME ; class QWebHistoryItem QWebHistory::backItem(void) const
+	?extension@QWebPluginFactory@@UAE_NW4Extension@1@PBVExtensionOption@1@PAVExtensionReturn@1@@Z @ 202 NONAME ; bool QWebPluginFactory::extension(enum QWebPluginFactory::Extension, class QWebPluginFactory::ExtensionOption const *, class QWebPluginFactory::ExtensionReturn *)
+	??1QWebView@@UAE@XZ @ 203 NONAME ; QWebView::~QWebView(void)
+	?setRenderHint@QWebView@@QAEXW4RenderHint@QPainter@@_N@Z @ 204 NONAME ; void QWebView::setRenderHint(enum QPainter::RenderHint, bool)
+	?supportsMimeType@QWebPluginInfo@@QBE_NABVQString@@@Z @ 205 NONAME ; bool QWebPluginInfo::supportsMimeType(class QString const &) const
+	?downloadRequested@QWebPage@@IAEXABVQNetworkRequest@@@Z @ 206 NONAME ; void QWebPage::downloadRequested(class QNetworkRequest const &)
+	?baseUrl@QWebFrame@@QBE?AVQUrl@@XZ @ 207 NONAME ; class QUrl QWebFrame::baseUrl(void) const
+	?attribute@QWebElement@@QBE?AVQString@@ABV2@0@Z @ 208 NONAME ; class QString QWebElement::attribute(class QString const &, class QString const &) const
+	?titleChanged@QGraphicsWebView@@IAEXABVQString@@@Z @ 209 NONAME ; void QGraphicsWebView::titleChanged(class QString const &)
+	?removeLocalScheme@QWebSecurityOrigin@@SAXABVQString@@@Z @ 210 NONAME ; void QWebSecurityOrigin::removeLocalScheme(class QString const &)
+	??HQWebElementCollection@@QBE?AV0@ABV0@@Z @ 211 NONAME ; class QWebElementCollection QWebElementCollection::operator+(class QWebElementCollection const &) const
+	??_EQGraphicsWebView@@UAE@I@Z @ 212 NONAME ; QGraphicsWebView::~QGraphicsWebView(unsigned int)
+	?trUtf8@QWebFrame@@SA?AVQString@@PBD0H@Z @ 213 NONAME ; class QString QWebFrame::trUtf8(char const *, char const *, int)
+	?statusBarMessage@QWebView@@IAEXABVQString@@@Z @ 214 NONAME ; void QWebView::statusBarMessage(class QString const &)
+	?focusInEvent@QWebView@@MAEXPAVQFocusEvent@@@Z @ 215 NONAME ; void QWebView::focusInEvent(class QFocusEvent *)
+	?trUtf8@QWebInspector@@SA?AVQString@@PBD0@Z @ 216 NONAME ; class QString QWebInspector::trUtf8(char const *, char const *)
+	?scrollBarMaximum@QWebFrame@@QBEHW4Orientation@Qt@@@Z @ 217 NONAME ; int QWebFrame::scrollBarMaximum(enum Qt::Orientation) const
+	?sizeHint@QWebInspector@@UBE?AVQSize@@XZ @ 218 NONAME ; class QSize QWebInspector::sizeHint(void) const
+	?offlineStorageDefaultQuota@QWebSettings@@SA_JXZ @ 219 NONAME ; long long QWebSettings::offlineStorageDefaultQuota(void)
+	?saveFrameStateRequested@QWebPage@@IAEXPAVQWebFrame@@PAVQWebHistoryItem@@@Z @ 220 NONAME ; void QWebPage::saveFrameStateRequested(class QWebFrame *, class QWebHistoryItem *)
+	?trUtf8@QWebPage@@SA?AVQString@@PBD0@Z @ 221 NONAME ; class QString QWebPage::trUtf8(char const *, char const *)
+	?qt_metacall@QWebPluginFactory@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 222 NONAME ; int QWebPluginFactory::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?webGraphic@QWebSettings@@SA?AVQPixmap@@W4WebGraphic@1@@Z @ 223 NONAME ; class QPixmap QWebSettings::webGraphic(enum QWebSettings::WebGraphic)
+	?urlChanged@QWebView@@IAEXABVQUrl@@@Z @ 224 NONAME ; void QWebView::urlChanged(class QUrl const &)
+	?iconChanged@QWebView@@IAEXXZ @ 225 NONAME ; void QWebView::iconChanged(void)
+	?offlineWebApplicationCachePath@QWebSettings@@SA?AVQString@@XZ @ 226 NONAME ; class QString QWebSettings::offlineWebApplicationCachePath(void)
+	?count@QWebElementCollection@@QBEHXZ @ 227 NONAME ; int QWebElementCollection::count(void) const
+	?trUtf8@QWebView@@SA?AVQString@@PBD0H@Z @ 228 NONAME ; class QString QWebView::trUtf8(char const *, char const *, int)
+	?localSchemes@QWebSecurityOrigin@@SA?AVQStringList@@XZ @ 229 NONAME ; class QStringList QWebSecurityOrigin::localSchemes(void)
+	?icon@QWebHistoryItem@@QBE?AVQIcon@@XZ @ 230 NONAME ; class QIcon QWebHistoryItem::icon(void) const
+	?enclosingBlockElement@QWebHitTestResult@@QBE?AVQWebElement@@XZ @ 231 NONAME ; class QWebElement QWebHitTestResult::enclosingBlockElement(void) const
+	?counterValueForElementById@DumpRenderTreeSupportQt@@SA?AVQString@@PAVQWebFrame@@ABV2@@Z @ 232 NONAME ; class QString DumpRenderTreeSupportQt::counterValueForElementById(class QWebFrame *, class QString const &)
+	??_EQWebElement@@QAE@I@Z @ 233 NONAME ABSENT ; QWebElement::~QWebElement(unsigned int)
+	?itemAt@QWebHistory@@QBE?AVQWebHistoryItem@@H@Z @ 234 NONAME ; class QWebHistoryItem QWebHistory::itemAt(int) const
+	?scrollPosition@QWebFrame@@QBE?AVQPoint@@XZ @ 235 NONAME ; class QPoint QWebFrame::scrollPosition(void) const
+	?mimeTypes@QWebPluginInfo@@QBE?AV?$QList@UMimeType@QWebPluginFactory@@@@XZ @ 236 NONAME ; class QList<struct QWebPluginFactory::MimeType> QWebPluginInfo::mimeTypes(void) const
+	?addUserStyleSheet@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@ABVQString@@@Z @ 237 NONAME ; void DumpRenderTreeSupportQt::addUserStyleSheet(class QWebPage *, class QString const &)
+	?loadStarted@QWebView@@IAEXXZ @ 238 NONAME ; void QWebView::loadStarted(void)
+	?allowNotificationForOrigin@DumpRenderTreeSupportQt@@SAXABVQString@@@Z @ 239 NONAME ABSENT ; void DumpRenderTreeSupportQt::allowNotificationForOrigin(class QString const &)
+	?trUtf8@QWebInspector@@SA?AVQString@@PBD0H@Z @ 240 NONAME ; class QString QWebInspector::trUtf8(char const *, char const *, int)
+	?loadProgress@QWebPage@@IAEXH@Z @ 241 NONAME ; void QWebPage::loadProgress(int)
+	?begin@QWebElementCollection@@QBE?AVconst_iterator@1@XZ @ 242 NONAME ; class QWebElementCollection::const_iterator QWebElementCollection::begin(void) const
+	?setPage@QWebView@@QAEXPAVQWebPage@@@Z @ 243 NONAME ; void QWebView::setPage(class QWebPage *)
+	?scrollRequested@QWebPage@@IAEXHHABVQRect@@@Z @ 244 NONAME ; void QWebPage::scrollRequested(int, int, class QRect const &)
+	?tr@QWebHistoryInterface@@SA?AVQString@@PBD0H@Z @ 245 NONAME ; class QString QWebHistoryInterface::tr(char const *, char const *, int)
+	?styleProperty@QWebElement@@QBE?AVQString@@ABV2@W4StyleResolveStrategy@1@@Z @ 246 NONAME ; class QString QWebElement::styleProperty(class QString const &, enum QWebElement::StyleResolveStrategy) const
+	?updatePositionDependentActions@QWebPage@@QAEXABVQPoint@@@Z @ 247 NONAME ; void QWebPage::updatePositionDependentActions(class QPoint const &)
+	?titleChanged@QWebView@@IAEXABVQString@@@Z @ 248 NONAME ; void QWebView::titleChanged(class QString const &)
+	?setScrollBarValue@QWebFrame@@QAEXW4Orientation@Qt@@H@Z @ 249 NONAME ; void QWebFrame::setScrollBarValue(enum Qt::Orientation, int)
+	?staticMetaObject@QWebFrame@@2UQMetaObject@@B @ 250 NONAME ; struct QMetaObject const QWebFrame::staticMetaObject
+	?tr@QWebInspector@@SA?AVQString@@PBD0H@Z @ 251 NONAME ; class QString QWebInspector::tr(char const *, char const *, int)
+	?staticMetaObject@QWebHistoryInterface@@2UQMetaObject@@B @ 252 NONAME ; struct QMetaObject const QWebHistoryInterface::staticMetaObject
+	?scrollBarValue@QWebFrame@@QBEHW4Orientation@Qt@@@Z @ 253 NONAME ; int QWebFrame::scrollBarValue(enum Qt::Orientation) const
+	?takeFromDocument@QWebElement@@QAEAAV1@XZ @ 254 NONAME ; class QWebElement & QWebElement::takeFromDocument(void)
+	??0QWebSettings@@AAE@PAVSettings@WebCore@@@Z @ 255 NONAME ; QWebSettings::QWebSettings(class WebCore::Settings *)
+	?metaObject@QWebView@@UBEPBUQMetaObject@@XZ @ 256 NONAME ; struct QMetaObject const * QWebView::metaObject(void) const
+	?metaObject@QWebHistoryInterface@@UBEPBUQMetaObject@@XZ @ 257 NONAME ; struct QMetaObject const * QWebHistoryInterface::metaObject(void) const
+	?setContent@QGraphicsWebView@@QAEXABVQByteArray@@ABVQString@@ABVQUrl@@@Z @ 258 NONAME ; void QGraphicsWebView::setContent(class QByteArray const &, class QString const &, class QUrl const &)
+	?nextSibling@QWebElement@@QBE?AV1@XZ @ 259 NONAME ; class QWebElement QWebElement::nextSibling(void) const
+	?appendOutside@QWebElement@@QAEXABVQString@@@Z @ 260 NONAME ; void QWebElement::appendOutside(class QString const &)
+	?linkUrl@QWebHitTestResult@@QBE?AVQUrl@@XZ @ 261 NONAME ; class QUrl QWebHitTestResult::linkUrl(void) const
+	?setAttributeNS@QWebElement@@QAEXABVQString@@00@Z @ 262 NONAME ; void QWebElement::setAttributeNS(class QString const &, class QString const &, class QString const &)
+	?tr@QWebPage@@SA?AVQString@@PBD0@Z @ 263 NONAME ; class QString QWebPage::tr(char const *, char const *)
+	?tr@QWebFrame@@SA?AVQString@@PBD0H@Z @ 264 NONAME ; class QString QWebFrame::tr(char const *, char const *, int)
+	??0QWebHistoryInterface@@QAE@PAVQObject@@@Z @ 265 NONAME ; QWebHistoryInterface::QWebHistoryInterface(class QObject *)
+	?statusBarMessage@QGraphicsWebView@@IAEXABVQString@@@Z @ 266 NONAME ; void QGraphicsWebView::statusBarMessage(class QString const &)
+	?hasAttributeNS@QWebElement@@QBE_NABVQString@@0@Z @ 267 NONAME ; bool QWebElement::hasAttributeNS(class QString const &, class QString const &) const
+	?setCustomPolicyDelegate@DumpRenderTreeSupportQt@@SAX_N0@Z @ 268 NONAME ; void DumpRenderTreeSupportQt::setCustomPolicyDelegate(bool, bool)
+	?staticMetaObject@QWebInspector@@2UQMetaObject@@B @ 269 NONAME ; struct QMetaObject const QWebInspector::staticMetaObject
+	?resizesToContents@QGraphicsWebView@@QBE_NXZ @ 270 NONAME ; bool QGraphicsWebView::resizesToContents(void) const
+	?statusBarVisibilityChangeRequested@QWebPage@@IAEX_N@Z @ 271 NONAME ; void QWebPage::statusBarVisibilityChangeRequested(bool)
+	?contextMenuEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneContextMenuEvent@@@Z @ 272 NONAME ; void QGraphicsWebView::contextMenuEvent(class QGraphicsSceneContextMenuEvent *)
+	?staticMetaObject@QWebPluginFactory@@2UQMetaObject@@B @ 273 NONAME ; struct QMetaObject const QWebPluginFactory::staticMetaObject
+	?geometryChangeRequested@QWebPage@@IAEXABVQRect@@@Z @ 274 NONAME ; void QWebPage::geometryChangeRequested(class QRect const &)
+	?setGeometry@QGraphicsWebView@@UAEXABVQRectF@@@Z @ 275 NONAME ; void QGraphicsWebView::setGeometry(class QRectF const &)
+	?textSizeMultiplier@QWebView@@QBEMXZ @ 276 NONAME ; float QWebView::textSizeMultiplier(void) const
+	?qWebKitMajorVersion@@YAHXZ @ 277 NONAME ; int qWebKitMajorVersion(void)
+	?port@QWebSecurityOrigin@@QBEHXZ @ 278 NONAME ; int QWebSecurityOrigin::port(void) const
+	?description@QWebPluginInfo@@QBE?AVQString@@XZ @ 279 NONAME ; class QString QWebPluginInfo::description(void) const
+	?removeFromDocument@QWebElement@@QAEXXZ @ 280 NONAME ; void QWebElement::removeFromDocument(void)
+	?last@QWebElementCollection@@QBE?AVQWebElement@@XZ @ 281 NONAME ; class QWebElement QWebElementCollection::last(void) const
+	?hasDocumentElement@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@@Z @ 282 NONAME ; bool DumpRenderTreeSupportQt::hasDocumentElement(class QWebFrame *)
+	?keyReleaseEvent@QGraphicsWebView@@MAEXPAVQKeyEvent@@@Z @ 283 NONAME ; void QGraphicsWebView::keyReleaseEvent(class QKeyEvent *)
+	?securityOrigin@QWebFrame@@QBE?AVQWebSecurityOrigin@@XZ @ 284 NONAME ; class QWebSecurityOrigin QWebFrame::securityOrigin(void) const
+	?userStyleSheetUrl@QWebSettings@@QBE?AVQUrl@@XZ @ 285 NONAME ; class QUrl QWebSettings::userStyleSheetUrl(void) const
+	?numberOfPages@DumpRenderTreeSupportQt@@SAHPAVQWebFrame@@MM@Z @ 286 NONAME ; int DumpRenderTreeSupportQt::numberOfPages(class QWebFrame *, float, float)
+	?numberOfActiveAnimations@DumpRenderTreeSupportQt@@SAHPAVQWebFrame@@@Z @ 287 NONAME ; int DumpRenderTreeSupportQt::numberOfActiveAnimations(class QWebFrame *)
+	?inputMethodEvent@QGraphicsWebView@@MAEXPAVQInputMethodEvent@@@Z @ 288 NONAME ; void QGraphicsWebView::inputMethodEvent(class QInputMethodEvent *)
+	?canGoBack@QWebHistory@@QBE_NXZ @ 289 NONAME ; bool QWebHistory::canGoBack(void) const
+	??4QWebHistoryItem@@QAEAAV0@ABV0@@Z @ 290 NONAME ; class QWebHistoryItem & QWebHistoryItem::operator=(class QWebHistoryItem const &)
+	??0QWebSecurityOrigin@@QAE@ABV0@@Z @ 291 NONAME ; QWebSecurityOrigin::QWebSecurityOrigin(class QWebSecurityOrigin const &)
+	?event@QWebPage@@UAE_NPAVQEvent@@@Z @ 292 NONAME ; bool QWebPage::event(class QEvent *)
+	?setRequestPermissionFunction@DumpRenderTreeSupportQt@@SAXP6AXPAVQObject@@ABVQString@@@Z@Z @ 293 NONAME ABSENT ; void DumpRenderTreeSupportQt::setRequestPermissionFunction(void (*)(class QObject *, class QString const &))
+	?setDefaultInterface@QWebHistoryInterface@@SAXPAV1@@Z @ 294 NONAME ; void QWebHistoryInterface::setDefaultInterface(class QWebHistoryInterface *)
+	?staticMetaObject@QGraphicsWebView@@2UQMetaObject@@B @ 295 NONAME ; struct QMetaObject const QGraphicsWebView::staticMetaObject
+	?keyPressEvent@QWebView@@MAEXPAVQKeyEvent@@@Z @ 296 NONAME ; void QWebView::keyPressEvent(class QKeyEvent *)
+	?qt_metacast@QWebFrame@@UAEPAXPBD@Z @ 297 NONAME ; void * QWebFrame::qt_metacast(char const *)
+	?setWillSendRequestReturnsNull@DumpRenderTreeSupportQt@@SAX_N@Z @ 298 NONAME ; void DumpRenderTreeSupportQt::setWillSendRequestReturnsNull(bool)
+	??1QWebHistoryItem@@QAE@XZ @ 299 NONAME ; QWebHistoryItem::~QWebHistoryItem(void)
+	?findAllElements@QWebFrame@@QBE?AVQWebElementCollection@@ABVQString@@@Z @ 300 NONAME ; class QWebElementCollection QWebFrame::findAllElements(class QString const &) const
+	??_EQWebDatabase@@QAE@I@Z @ 301 NONAME ABSENT ; QWebDatabase::~QWebDatabase(unsigned int)
+	?workerThreadCount@DumpRenderTreeSupportQt@@SAHXZ @ 302 NONAME ; int DumpRenderTreeSupportQt::workerThreadCount(void)
+	?setFrameFlatteningEnabled@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@_N@Z @ 303 NONAME ; void DumpRenderTreeSupportQt::setFrameFlatteningEnabled(class QWebPage *, bool)
+	?wheelEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneWheelEvent@@@Z @ 304 NONAME ; void QGraphicsWebView::wheelEvent(class QGraphicsSceneWheelEvent *)
+	?isNull@QWebPluginInfo@@QBE_NXZ @ 305 NONAME ; bool QWebPluginInfo::isNull(void) const
+	?contextMenuEvent@QWebView@@MAEXPAVQContextMenuEvent@@@Z @ 306 NONAME ; void QWebView::contextMenuEvent(class QContextMenuEvent *)
+	??6@YAAAVQDataStream@@AAV0@ABVQWebHistory@@@Z @ 307 NONAME ; class QDataStream & operator<<(class QDataStream &, class QWebHistory const &)
+	?url@QWebView@@QBE?AVQUrl@@XZ @ 308 NONAME ; class QUrl QWebView::url(void) const
+	?createPlugin@QWebPage@@MAEPAVQObject@@ABVQString@@ABVQUrl@@ABVQStringList@@2@Z @ 309 NONAME ; class QObject * QWebPage::createPlugin(class QString const &, class QUrl const &, class QStringList const &, class QStringList const &)
+	?dumpResourceResponseMIMETypes@DumpRenderTreeSupportQt@@SAX_N@Z @ 310 NONAME ; void DumpRenderTreeSupportQt::dumpResourceResponseMIMETypes(bool)
+	?dropEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneDragDropEvent@@@Z @ 311 NONAME ; void QGraphicsWebView::dropEvent(class QGraphicsSceneDragDropEvent *)
+	?iconDatabasePath@QWebSettings@@SA?AVQString@@XZ @ 312 NONAME ; class QString QWebSettings::iconDatabasePath(void)
+	??0QWebInspector@@QAE@PAVQWidget@@@Z @ 313 NONAME ; QWebInspector::QWebInspector(class QWidget *)
+	?qt_metacall@QWebPluginDatabase@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 314 NONAME ; int QWebPluginDatabase::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?enablePersistentStorage@QWebSettings@@SAXABVQString@@@Z @ 315 NONAME ; void QWebSettings::enablePersistentStorage(class QString const &)
+	?render@QWebElement@@QAEXPAVQPainter@@@Z @ 316 NONAME ; void QWebElement::render(class QPainter *)
+	?qt_metacast@QWebPage@@UAEPAXPBD@Z @ 317 NONAME ; void * QWebPage::qt_metacast(char const *)
+	?pageProperty@DumpRenderTreeSupportQt@@SA?AVQString@@PAVQWebFrame@@ABV2@H@Z @ 318 NONAME ; class QString DumpRenderTreeSupportQt::pageProperty(class QWebFrame *, class QString const &, int)
+	?inputMethodQuery@QWebPage@@QBE?AVQVariant@@W4InputMethodQuery@Qt@@@Z @ 319 NONAME ; class QVariant QWebPage::inputMethodQuery(enum Qt::InputMethodQuery) const
+	?triggerPageAction@QGraphicsWebView@@QAEXW4WebAction@QWebPage@@_N@Z @ 320 NONAME ; void QGraphicsWebView::triggerPageAction(enum QWebPage::WebAction, bool)
+	?setContent@QWebFrame@@QAEXABVQByteArray@@ABVQString@@ABVQUrl@@@Z @ 321 NONAME ; void QWebFrame::setContent(class QByteArray const &, class QString const &, class QUrl const &)
+	?toHtml@QWebFrame@@QBE?AVQString@@XZ @ 322 NONAME ; class QString QWebFrame::toHtml(void) const
+	?encloseWith@QWebElement@@QAEXABVQString@@@Z @ 323 NONAME ; void QWebElement::encloseWith(class QString const &)
+	?qt_dump_resource_load_callbacks@@YAX_N@Z @ 324 NONAME ; void qt_dump_resource_load_callbacks(bool)
+	?urlChanged@QGraphicsWebView@@IAEXABVQUrl@@@Z @ 325 NONAME ; void QGraphicsWebView::urlChanged(class QUrl const &)
+	?setPreferredContentsSize@QWebPage@@QBEXABVQSize@@@Z @ 326 NONAME ; void QWebPage::setPreferredContentsSize(class QSize const &) const
+	??0QWebFrame@@AAE@PAV0@PAVQWebFrameData@@@Z @ 327 NONAME ; QWebFrame::QWebFrame(class QWebFrame *, class QWebFrameData *)
+	??1QWebHistoryInterface@@UAE@XZ @ 328 NONAME ; QWebHistoryInterface::~QWebHistoryInterface(void)
+	?javaScriptConsoleMessage@QWebPage@@MAEXABVQString@@H0@Z @ 329 NONAME ; void QWebPage::javaScriptConsoleMessage(class QString const &, int, class QString const &)
+	?linkHovered@QWebPage@@IAEXABVQString@@00@Z @ 330 NONAME ; void QWebPage::linkHovered(class QString const &, class QString const &, class QString const &)
+	??0QWebPluginInfo@@QAE@ABV0@@Z @ 331 NONAME ; QWebPluginInfo::QWebPluginInfo(class QWebPluginInfo const &)
+	?setViewportSize@QWebPage@@QBEXABVQSize@@@Z @ 332 NONAME ; void QWebPage::setViewportSize(class QSize const &) const
+	?setLinkDelegationPolicy@QWebPage@@QAEXW4LinkDelegationPolicy@1@@Z @ 333 NONAME ; void QWebPage::setLinkDelegationPolicy(enum QWebPage::LinkDelegationPolicy)
+	?name@QWebDatabase@@QBE?AVQString@@XZ @ 334 NONAME ; class QString QWebDatabase::name(void) const
+	??0QWebHistoryItem@@QAE@ABV0@@Z @ 335 NONAME ; QWebHistoryItem::QWebHistoryItem(class QWebHistoryItem const &)
+	?prefix@QWebElement@@QBE?AVQString@@XZ @ 336 NONAME ; class QString QWebElement::prefix(void) const
+	?canGoForward@QWebHistory@@QBE_NXZ @ 337 NONAME ; bool QWebHistory::canGoForward(void) const
+	?garbageCollectorCollectOnAlternateThread@DumpRenderTreeSupportQt@@SAX_N@Z @ 338 NONAME ; void DumpRenderTreeSupportQt::garbageCollectorCollectOnAlternateThread(bool)
+	?hasClass@QWebElement@@QBE_NABVQString@@@Z @ 339 NONAME ; bool QWebElement::hasClass(class QString const &) const
+	?title@QWebFrame@@QBE?AVQString@@XZ @ 340 NONAME ; class QString QWebFrame::title(void) const
+	?scrollBarPolicy@QWebFrame@@QBE?AW4ScrollBarPolicy@Qt@@W4Orientation@3@@Z @ 341 NONAME ; enum Qt::ScrollBarPolicy QWebFrame::scrollBarPolicy(enum Qt::Orientation) const
+	?setStyleProperty@QWebElement@@QAEXABVQString@@0@Z @ 342 NONAME ; void QWebElement::setStyleProperty(class QString const &, class QString const &)
+	?qt_metacast@QWebView@@UAEPAXPBD@Z @ 343 NONAME ; void * QWebView::qt_metacast(char const *)
+	?document@QWebElement@@QBE?AV1@XZ @ 344 NONAME ; class QWebElement QWebElement::document(void) const
+	?load@QWebView@@QAEXABVQUrl@@@Z @ 345 NONAME ; void QWebView::load(class QUrl const &)
+	?trUtf8@QWebHistoryInterface@@SA?AVQString@@PBD0@Z @ 346 NONAME ; class QString QWebHistoryInterface::trUtf8(char const *, char const *)
+	??0QWebHitTestResult@@QAE@XZ @ 347 NONAME ; QWebHitTestResult::QWebHitTestResult(void)
+	?mouseDoubleClickEvent@QWebView@@MAEXPAVQMouseEvent@@@Z @ 348 NONAME ; void QWebView::mouseDoubleClickEvent(class QMouseEvent *)
+	?webInspectorExecuteScript@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@JABVQString@@@Z @ 349 NONAME ; void DumpRenderTreeSupportQt::webInspectorExecuteScript(class QWebPage *, long, class QString const &)
+	?mouseMoveEvent@QWebView@@MAEXPAVQMouseEvent@@@Z @ 350 NONAME ; void QWebView::mouseMoveEvent(class QMouseEvent *)
+	?hasFocus@QWebFrame@@QBE_NXZ @ 351 NONAME ; bool QWebFrame::hasFocus(void) const
+	?dragLeaveEvent@QWebView@@MAEXPAVQDragLeaveEvent@@@Z @ 352 NONAME ; void QWebView::dragLeaveEvent(class QDragLeaveEvent *)
+	?changeEvent@QWebView@@MAEXPAVQEvent@@@Z @ 353 NONAME ; void QWebView::changeEvent(class QEvent *)
+	?icon@QWebView@@QBE?AVQIcon@@XZ @ 354 NONAME ; class QIcon QWebView::icon(void) const
+	?loadFinished@QWebPage@@IAEX_N@Z @ 355 NONAME ; void QWebPage::loadFinished(bool)
+	?trUtf8@QWebPage@@SA?AVQString@@PBD0H@Z @ 356 NONAME ; class QString QWebPage::trUtf8(char const *, char const *, int)
+	?setUrl@QWebFrame@@QAEXABVQUrl@@@Z @ 357 NONAME ; void QWebFrame::setUrl(class QUrl const &)
+	?setHtml@QGraphicsWebView@@QAEXABVQString@@ABVQUrl@@@Z @ 358 NONAME ; void QGraphicsWebView::setHtml(class QString const &, class QUrl const &)
+	?prependInside@QWebElement@@QAEXABVQString@@@Z @ 359 NONAME ; void QWebElement::prependInside(class QString const &)
+	?qtwebkit_webframe_scrollRecursively@@YAXPAVQWebFrame@@HHABVQPoint@@@Z @ 360 NONAME ; void qtwebkit_webframe_scrollRecursively(class QWebFrame *, int, int, class QPoint const &)
+	?trUtf8@QGraphicsWebView@@SA?AVQString@@PBD0@Z @ 361 NONAME ; class QString QGraphicsWebView::trUtf8(char const *, char const *)
+	?toOuterXml@QWebElement@@QBE?AVQString@@XZ @ 362 NONAME ; class QString QWebElement::toOuterXml(void) const
+	?keyPressEvent@QGraphicsWebView@@MAEXPAVQKeyEvent@@@Z @ 363 NONAME ; void QGraphicsWebView::keyPressEvent(class QKeyEvent *)
+	?databaseQuotaExceeded@QWebPage@@IAEXPAVQWebFrame@@VQString@@@Z @ 364 NONAME ; void QWebPage::databaseQuotaExceeded(class QWebFrame *, class QString)
+	?load@QWebView@@QAEXABVQNetworkRequest@@W4Operation@QNetworkAccessManager@@ABVQByteArray@@@Z @ 365 NONAME ; void QWebView::load(class QNetworkRequest const &, enum QNetworkAccessManager::Operation, class QByteArray const &)
+	?hoverMoveEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneHoverEvent@@@Z @ 366 NONAME ; void QGraphicsWebView::hoverMoveEvent(class QGraphicsSceneHoverEvent *)
+	?toPlainText@QWebElement@@QBE?AVQString@@XZ @ 367 NONAME ; class QString QWebElement::toPlainText(void) const
+	??1QWebDatabase@@QAE@XZ @ 368 NONAME ; QWebDatabase::~QWebDatabase(void)
+	?textSizeMultiplier@QWebFrame@@QBEMXZ @ 369 NONAME ; float QWebFrame::textSizeMultiplier(void) const
+	?pauseTransitionOfProperty@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@ABVQString@@N1@Z @ 370 NONAME ; bool DumpRenderTreeSupportQt::pauseTransitionOfProperty(class QWebFrame *, class QString const &, double, class QString const &)
+	?setEditingBehavior@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@ABVQString@@@Z @ 371 NONAME ; void DumpRenderTreeSupportQt::setEditingBehavior(class QWebPage *, class QString const &)
+	?title@QGraphicsWebView@@QBE?AVQString@@XZ @ 372 NONAME ; class QString QGraphicsWebView::title(void) const
+	??0QWebElementCollection@@QAE@XZ @ 373 NONAME ; QWebElementCollection::QWebElementCollection(void)
+	?icon@QWebFrame@@QBE?AVQIcon@@XZ @ 374 NONAME ; class QIcon QWebFrame::icon(void) const
+	?userAgentForUrl@QWebPage@@MBE?AVQString@@ABVQUrl@@@Z @ 375 NONAME ; class QString QWebPage::userAgentForUrl(class QUrl const &) const
+	?inputMethodEvent@QWebView@@MAEXPAVQInputMethodEvent@@@Z @ 376 NONAME ; void QWebView::inputMethodEvent(class QInputMethodEvent *)
+	?append@QWebElementCollection@@QAEXABV1@@Z @ 377 NONAME ; void QWebElementCollection::append(class QWebElementCollection const &)
+	?contentsSizeChanged@QWebFrame@@IAEXABVQSize@@@Z @ 378 NONAME ; void QWebFrame::contentsSizeChanged(class QSize const &)
+	?contentsChanged@QWebPage@@IAEXXZ @ 379 NONAME ; void QWebPage::contentsChanged(void)
+	??_EQWebHistoryInterface@@UAE@I@Z @ 380 NONAME ; QWebHistoryInterface::~QWebHistoryInterface(unsigned int)
+	?wheelEvent@QWebView@@MAEXPAVQWheelEvent@@@Z @ 381 NONAME ; void QWebView::wheelEvent(class QWheelEvent *)
+	?setForwardUnsupportedContent@QWebPage@@QAEX_N@Z @ 382 NONAME ; void QWebPage::setForwardUnsupportedContent(bool)
+	?sizeHint@QGraphicsWebView@@UBE?AVQSizeF@@W4SizeHint@Qt@@ABV2@@Z @ 383 NONAME ; class QSizeF QGraphicsWebView::sizeHint(enum Qt::SizeHint, class QSizeF const &) const
+	?setOfflineWebApplicationCachePath@QWebSettings@@SAXABVQString@@@Z @ 384 NONAME ; void QWebSettings::setOfflineWebApplicationCachePath(class QString const &)
+	?qt_drt_javaScriptObjectsCount@@YAHXZ @ 385 NONAME ; int qt_drt_javaScriptObjectsCount(void)
+	?shouldInterruptJavaScript@QWebPage@@QAE_NXZ @ 386 NONAME ; bool QWebPage::shouldInterruptJavaScript(void)
+	?encloseContentsWith@QWebElement@@QAEXABVQString@@@Z @ 387 NONAME ; void QWebElement::encloseContentsWith(class QString const &)
+	?createStandardContextMenu@QWebPage@@QAEPAVQMenu@@XZ @ 388 NONAME ; class QMenu * QWebPage::createStandardContextMenu(void)
+	?supportsExtension@QWebPage@@UBE_NW4Extension@1@@Z @ 389 NONAME ; bool QWebPage::supportsExtension(enum QWebPage::Extension) const
+	?stop@QGraphicsWebView@@QAEXXZ @ 390 NONAME ; void QGraphicsWebView::stop(void)
+	?forwardItem@QWebHistory@@QBE?AVQWebHistoryItem@@XZ @ 391 NONAME ; class QWebHistoryItem QWebHistory::forwardItem(void) const
+	?tr@QWebFrame@@SA?AVQString@@PBD0@Z @ 392 NONAME ; class QString QWebFrame::tr(char const *, char const *)
+	?setIconDatabasePath@QWebSettings@@SAXABVQString@@@Z @ 393 NONAME ; void QWebSettings::setIconDatabasePath(class QString const &)
+	?tr@QWebPluginFactory@@SA?AVQString@@PBD0@Z @ 394 NONAME ; class QString QWebPluginFactory::tr(char const *, char const *)
+	?palette@QWebPage@@QBE?AVQPalette@@XZ @ 395 NONAME ; class QPalette QWebPage::palette(void) const
+	?back@QWebHistory@@QAEXXZ @ 396 NONAME ; void QWebHistory::back(void)
+	?focusNextPrevChild@QWebPage@@QAE_N_N@Z @ 397 NONAME ; bool QWebPage::focusNextPrevChild(bool)
+	?setCaretBrowsingEnabled@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@_N@Z @ 398 NONAME ; void DumpRenderTreeSupportQt::setCaretBrowsingEnabled(class QWebPage *, bool)
+	?paintEvent@QWebView@@MAEXPAVQPaintEvent@@@Z @ 399 NONAME ; void QWebView::paintEvent(class QPaintEvent *)
+	?setMaximumPagesInCache@QWebSettings@@SAXH@Z @ 400 NONAME ; void QWebSettings::setMaximumPagesInCache(int)
+	?metaData@QWebFrame@@QBE?AV?$QMultiMap@VQString@@V1@@@XZ @ 401 NONAME ; class QMultiMap<class QString, class QString> QWebFrame::metaData(void) const
+	?pixmap@QWebHitTestResult@@QBE?AVQPixmap@@XZ @ 402 NONAME ; class QPixmap QWebHitTestResult::pixmap(void) const
+	?historyItemTarget@DumpRenderTreeSupportQt@@SA?AVQString@@ABVQWebHistoryItem@@@Z @ 403 NONAME ; class QString DumpRenderTreeSupportQt::historyItemTarget(class QWebHistoryItem const &)
+	?qt_metacast@QWebPluginDatabase@@UAEPAXPBD@Z @ 404 NONAME ; void * QWebPluginDatabase::qt_metacast(char const *)
+	??1QGraphicsWebView@@UAE@XZ @ 405 NONAME ; QGraphicsWebView::~QGraphicsWebView(void)
+	?qt_drt_garbageCollector_collectOnAlternateThread@@YAX_N@Z @ 406 NONAME ; void qt_drt_garbageCollector_collectOnAlternateThread(bool)
+	?removeDatabase@QWebDatabase@@SAXABV1@@Z @ 407 NONAME ; void QWebDatabase::removeDatabase(class QWebDatabase const &)
+	?parentFrame@QWebFrame@@QBEPAV1@XZ @ 408 NONAME ; class QWebFrame * QWebFrame::parentFrame(void) const
+	?prependOutside@QWebElement@@QAEXABVQString@@@Z @ 409 NONAME ; void QWebElement::prependOutside(class QString const &)
+	?constBegin@QWebElementCollection@@QBE?AVconst_iterator@1@XZ @ 410 NONAME ; class QWebElementCollection::const_iterator QWebElementCollection::constBegin(void) const
+	?removeAllDatabases@QWebDatabase@@SAXXZ @ 411 NONAME ; void QWebDatabase::removeAllDatabases(void)
+	?pluginFactory@QWebPage@@QBEPAVQWebPluginFactory@@XZ @ 412 NONAME ; class QWebPluginFactory * QWebPage::pluginFactory(void) const
+	?setPage@QGraphicsWebView@@QAEXPAVQWebPage@@@Z @ 413 NONAME ; void QGraphicsWebView::setPage(class QWebPage *)
+	?qt_drt_pauseAnimation@@YA_NPAVQWebFrame@@ABVQString@@N1@Z @ 414 NONAME ; bool qt_drt_pauseAnimation(class QWebFrame *, class QString const &, double, class QString const &)
+	?windowCloseRequested@QWebPage@@IAEXXZ @ 415 NONAME ; void QWebPage::windowCloseRequested(void)
+	?addToJavaScriptWindowObject@QWebFrame@@QAEXABVQString@@PAVQObject@@W4ValueOwnership@QScriptEngine@@@Z @ 416 NONAME ; void QWebFrame::addToJavaScriptWindowObject(class QString const &, class QObject *, enum QScriptEngine::ValueOwnership)
+	?history@QGraphicsWebView@@QBEPAVQWebHistory@@XZ @ 417 NONAME ; class QWebHistory * QGraphicsWebView::history(void) const
+	?allOrigins@QWebSecurityOrigin@@SA?AV?$QList@VQWebSecurityOrigin@@@@XZ @ 418 NONAME ; class QList<class QWebSecurityOrigin> QWebSecurityOrigin::allOrigins(void)
+	?title@QWebView@@QBE?AVQString@@XZ @ 419 NONAME ; class QString QWebView::title(void) const
+	?setSearchPaths@QWebPluginDatabase@@QAEXABVQStringList@@@Z @ 420 NONAME ; void QWebPluginDatabase::setSearchPaths(class QStringList const &)
+	?resetOriginAccessWhiteLists@DumpRenderTreeSupportQt@@SAXXZ @ 421 NONAME ; void DumpRenderTreeSupportQt::resetOriginAccessWhiteLists(void)
+	?databaseQuota@QWebSecurityOrigin@@QBE_JXZ @ 422 NONAME ; long long QWebSecurityOrigin::databaseQuota(void) const
+	?javaScriptConfirm@QWebPage@@MAE_NPAVQWebFrame@@ABVQString@@@Z @ 423 NONAME ; bool QWebPage::javaScriptConfirm(class QWebFrame *, class QString const &)
+	?url@QGraphicsWebView@@QBE?AVQUrl@@XZ @ 424 NONAME ; class QUrl QGraphicsWebView::url(void) const
+	?getStaticMetaObject@QGraphicsWebView@@SAABUQMetaObject@@XZ @ 425 NONAME ; struct QMetaObject const & QGraphicsWebView::getStaticMetaObject(void)
+	?previousSibling@QWebElement@@QBE?AV1@XZ @ 426 NONAME ; class QWebElement QWebElement::previousSibling(void) const
+	??_EQWebSecurityOrigin@@QAE@I@Z @ 427 NONAME ABSENT ; QWebSecurityOrigin::~QWebSecurityOrigin(unsigned int)
+	?fileName@QWebDatabase@@QBE?AVQString@@XZ @ 428 NONAME ; class QString QWebDatabase::fileName(void) const
+	?sceneEvent@QGraphicsWebView@@MAE_NPAVQEvent@@@Z @ 429 NONAME ; bool QGraphicsWebView::sceneEvent(class QEvent *)
+	?repaintRequested@QWebPage@@IAEXABVQRect@@@Z @ 430 NONAME ; void QWebPage::repaintRequested(class QRect const &)
+	??0QWebSecurityOrigin@@AAE@PAVQWebSecurityOriginPrivate@@@Z @ 431 NONAME ; QWebSecurityOrigin::QWebSecurityOrigin(class QWebSecurityOriginPrivate *)
+	?dumpFrameLoader@DumpRenderTreeSupportQt@@SAX_N@Z @ 432 NONAME ; void DumpRenderTreeSupportQt::dumpFrameLoader(bool)
+	??4QWebPluginInfo@@QAEAAV0@ABV0@@Z @ 433 NONAME ; class QWebPluginInfo & QWebPluginInfo::operator=(class QWebPluginInfo const &)
+	?linkTitle@QWebHitTestResult@@QBE?AVQUrl@@XZ @ 434 NONAME ; class QUrl QWebHitTestResult::linkTitle(void) const
+	?markerTextForListItem@DumpRenderTreeSupportQt@@SA?AVQString@@ABVQWebElement@@@Z @ 435 NONAME ; class QString DumpRenderTreeSupportQt::markerTextForListItem(class QWebElement const &)
+	?elementDoesAutoCompleteForElementWithId@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@ABVQString@@@Z @ 436 NONAME ; bool DumpRenderTreeSupportQt::elementDoesAutoCompleteForElementWithId(class QWebFrame *, class QString const &)
+	?findFirst@QWebElement@@QBE?AV1@ABVQString@@@Z @ 437 NONAME ; class QWebElement QWebElement::findFirst(class QString const &) const
+	?toList@QWebElementCollection@@QBE?AV?$QList@VQWebElement@@@@XZ @ 438 NONAME ; class QList<class QWebElement> QWebElementCollection::toList(void) const
+	?isNull@QWebElement@@QBE_NXZ @ 439 NONAME ; bool QWebElement::isNull(void) const
+	?qt_metacall@QWebHistoryInterface@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 440 NONAME ; int QWebHistoryInterface::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?reload@QWebView@@QAEXXZ @ 441 NONAME ; void QWebView::reload(void)
+	?getStaticMetaObject@QWebInspector@@SAABUQMetaObject@@XZ @ 442 NONAME ; struct QMetaObject const & QWebInspector::getStaticMetaObject(void)
+	?enclosingElement@QWebElement@@CA?AV1@PAVNode@WebCore@@@Z @ 443 NONAME ; class QWebElement QWebElement::enclosingElement(class WebCore::Node *)
+	?setPluginFactory@QWebPage@@QAEXPAVQWebPluginFactory@@@Z @ 444 NONAME ; void QWebPage::setPluginFactory(class QWebPluginFactory *)
+	?findText@QWebView@@QAE_NABVQString@@V?$QFlags@W4FindFlag@QWebPage@@@@@Z @ 445 NONAME ; bool QWebView::findText(class QString const &, class QFlags<enum QWebPage::FindFlag>)
+	?replace@QWebElement@@QAEXABVQString@@@Z @ 446 NONAME ; void QWebElement::replace(class QString const &)
+	?setMockGeolocationError@DumpRenderTreeSupportQt@@SAXHABVQString@@@Z @ 447 NONAME ; void DumpRenderTreeSupportQt::setMockGeolocationError(int, class QString const &)
+	?focusOutEvent@QGraphicsWebView@@MAEXPAVQFocusEvent@@@Z @ 448 NONAME ; void QGraphicsWebView::focusOutEvent(class QFocusEvent *)
+	?getStaticMetaObject@QWebPluginFactory@@SAABUQMetaObject@@XZ @ 449 NONAME ; struct QMetaObject const & QWebPluginFactory::getStaticMetaObject(void)
+	?setTimelineProfilingEnabled@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@_N@Z @ 450 NONAME ; void DumpRenderTreeSupportQt::setTimelineProfilingEnabled(class QWebPage *, bool)
+	?items@QWebHistory@@QBE?AV?$QList@VQWebHistoryItem@@@@XZ @ 451 NONAME ; class QList<class QWebHistoryItem> QWebHistory::items(void) const
+	?back@QGraphicsWebView@@QAEXXZ @ 452 NONAME ; void QGraphicsWebView::back(void)
+	??_EMimeType@QWebPluginFactory@@QAE@I@Z @ 453 NONAME ; QWebPluginFactory::MimeType::~MimeType(unsigned int)
+	??1MimeType@QWebPluginFactory@@QAE@XZ @ 454 NONAME ; QWebPluginFactory::MimeType::~MimeType(void)
+	?loadStarted@QGraphicsWebView@@IAEXXZ @ 455 NONAME ; void QGraphicsWebView::loadStarted(void)
+	?fontFamily@QWebSettings@@QBE?AVQString@@W4FontFamily@1@@Z @ 456 NONAME ; class QString QWebSettings::fontFamily(enum QWebSettings::FontFamily) const
+	?event@QWebInspector@@UAE_NPAVQEvent@@@Z @ 457 NONAME ; bool QWebInspector::event(class QEvent *)
+	?host@QWebSecurityOrigin@@QBE?AVQString@@XZ @ 458 NONAME ; class QString QWebSecurityOrigin::host(void) const
+	?scheme@QWebSecurityOrigin@@QBE?AVQString@@XZ @ 459 NONAME ; class QString QWebSecurityOrigin::scheme(void) const
+	?qt_drt_setJavaScriptProfilingEnabled@@YAXPAVQWebFrame@@_N@Z @ 460 NONAME ; void qt_drt_setJavaScriptProfilingEnabled(class QWebFrame *, bool)
+	?qt_dump_set_accepts_editing@@YAX_N@Z @ 461 NONAME ; void qt_dump_set_accepts_editing(bool)
+	??9QWebPluginInfo@@QBE_NABV0@@Z @ 462 NONAME ; bool QWebPluginInfo::operator!=(class QWebPluginInfo const &) const
+	?mouseDoubleClickEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneMouseEvent@@@Z @ 463 NONAME ; void QGraphicsWebView::mouseDoubleClickEvent(class QGraphicsSceneMouseEvent *)
+	?qt_drt_run@@YAX_N@Z @ 464 NONAME ; void qt_drt_run(bool)
+	?page@QWebFrame@@QBEPAVQWebPage@@XZ @ 465 NONAME ; class QWebPage * QWebFrame::page(void) const
+	?metaObject@QWebPage@@UBEPBUQMetaObject@@XZ @ 466 NONAME ; struct QMetaObject const * QWebPage::metaObject(void) const
+	?setResizesToContents@QGraphicsWebView@@QAEX_N@Z @ 467 NONAME ; void QGraphicsWebView::setResizesToContents(bool)
+	?supportsExtension@QWebPluginFactory@@UBE_NW4Extension@1@@Z @ 468 NONAME ; bool QWebPluginFactory::supportsExtension(enum QWebPluginFactory::Extension) const
+	?clearScriptWorlds@DumpRenderTreeSupportQt@@SAXXZ @ 469 NONAME ; void DumpRenderTreeSupportQt::clearScriptWorlds(void)
+	??1QWebElement@@QAE@XZ @ 470 NONAME ; QWebElement::~QWebElement(void)
+	?qt_drt_numberOfActiveAnimations@@YAHPAVQWebFrame@@@Z @ 471 NONAME ; int qt_drt_numberOfActiveAnimations(class QWebFrame *)
+	?paint@QGraphicsWebView@@UAEXPAVQPainter@@PBVQStyleOptionGraphicsItem@@PAVQWidget@@@Z @ 472 NONAME ; void QGraphicsWebView::paint(class QPainter *, class QStyleOptionGraphicsItem const *, class QWidget *)
+	??1QWebHitTestResult@@QAE@XZ @ 473 NONAME ; QWebHitTestResult::~QWebHitTestResult(void)
+	?trUtf8@QWebPluginFactory@@SA?AVQString@@PBD0@Z @ 474 NONAME ; class QString QWebPluginFactory::trUtf8(char const *, char const *)
+	?documentElement@QWebFrame@@QBE?AVQWebElement@@XZ @ 475 NONAME ; class QWebElement QWebFrame::documentElement(void) const
+	?load@QGraphicsWebView@@QAEXABVQNetworkRequest@@W4Operation@QNetworkAccessManager@@ABVQByteArray@@@Z @ 476 NONAME ; void QGraphicsWebView::load(class QNetworkRequest const &, enum QNetworkAccessManager::Operation, class QByteArray const &)
+	?setZoomFactor@QGraphicsWebView@@QAEXM@Z @ 477 NONAME ; void QGraphicsWebView::setZoomFactor(float)
+	?getStaticMetaObject@QWebPage@@SAABUQMetaObject@@XZ @ 478 NONAME ; struct QMetaObject const & QWebPage::getStaticMetaObject(void)
+	??0QWebElement@@QAE@ABV0@@Z @ 479 NONAME ; QWebElement::QWebElement(class QWebElement const &)
+	??0MimeType@QWebPluginFactory@@QAE@XZ @ 480 NONAME ABSENT ; QWebPluginFactory::MimeType::MimeType(void)
+	?pos@QWebFrame@@QBE?AVQPoint@@XZ @ 481 NONAME ; class QPoint QWebFrame::pos(void) const
+	?defaultTextEncoding@QWebSettings@@QBE?AVQString@@XZ @ 482 NONAME ; class QString QWebSettings::defaultTextEncoding(void) const
+	?qt_metacall@QWebView@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 483 NONAME ; int QWebView::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?maximumPagesInCache@QWebSettings@@SAHXZ @ 484 NONAME ; int QWebSettings::maximumPagesInCache(void)
+	?at@QWebElementCollection@@QBE?AVQWebElement@@H@Z @ 485 NONAME ; class QWebElement QWebElementCollection::at(int) const
+	?qt_metacall@QWebPage@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 486 NONAME ; int QWebPage::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?qt_metacall@QGraphicsWebView@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 487 NONAME ; int QGraphicsWebView::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?reload@QGraphicsWebView@@QAEXXZ @ 488 NONAME ; void QGraphicsWebView::reload(void)
+	?zoomFactor@QWebFrame@@QBEMXZ @ 489 NONAME ; float QWebFrame::zoomFactor(void) const
+	?dragMoveEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneDragDropEvent@@@Z @ 490 NONAME ; void QGraphicsWebView::dragMoveEvent(class QGraphicsSceneDragDropEvent *)
+	?forward@QGraphicsWebView@@QAEXXZ @ 491 NONAME ; void QGraphicsWebView::forward(void)
+	?loadFinished@QWebView@@IAEX_N@Z @ 492 NONAME ; void QWebView::loadFinished(bool)
+	?clearIconDatabase@QWebSettings@@SAXXZ @ 493 NONAME ; void QWebSettings::clearIconDatabase(void)
+	?setHtml@QWebView@@QAEXABVQString@@ABVQUrl@@@Z @ 494 NONAME ; void QWebView::setHtml(class QString const &, class QUrl const &)
+	?triggerAction@QWebPage@@UAEXW4WebAction@1@_N@Z @ 495 NONAME ; void QWebPage::triggerAction(enum QWebPage::WebAction, bool)
+	?addToJavaScriptWindowObject@QWebFrame@@QAEXABVQString@@PAVQObject@@@Z @ 496 NONAME ; void QWebFrame::addToJavaScriptWindowObject(class QString const &, class QObject *)
+	?focusInEvent@QGraphicsWebView@@MAEXPAVQFocusEvent@@@Z @ 497 NONAME ; void QGraphicsWebView::focusInEvent(class QFocusEvent *)
+	?pauseSVGAnimation@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@ABVQString@@N1@Z @ 498 NONAME ; bool DumpRenderTreeSupportQt::pauseSVGAnimation(class QWebFrame *, class QString const &, double, class QString const &)
+	?zoomFactor@QWebView@@QBEMXZ @ 499 NONAME ; float QWebView::zoomFactor(void) const
+	?parent@QWebElement@@QBE?AV1@XZ @ 500 NONAME ; class QWebElement QWebElement::parent(void) const
+	?renderTreeDump@QWebFrame@@QBE?AVQString@@XZ @ 501 NONAME ; class QString QWebFrame::renderTreeDump(void) const
+	??0QWebFrame@@AAE@PAVQWebPage@@PAVQWebFrameData@@@Z @ 502 NONAME ; QWebFrame::QWebFrame(class QWebPage *, class QWebFrameData *)
+	?event@QGraphicsWebView@@UAE_NPAVQEvent@@@Z @ 503 NONAME ; bool QGraphicsWebView::event(class QEvent *)
+	?pos@QWebHitTestResult@@QBE?AVQPoint@@XZ @ 504 NONAME ; class QPoint QWebHitTestResult::pos(void) const
+	?linkDelegationPolicy@QWebPage@@QBE?AW4LinkDelegationPolicy@1@XZ @ 505 NONAME ; enum QWebPage::LinkDelegationPolicy QWebPage::linkDelegationPolicy(void) const
+	?dropEvent@QWebView@@MAEXPAVQDropEvent@@@Z @ 506 NONAME ; void QWebView::dropEvent(class QDropEvent *)
+	?maximumItemCount@QWebHistory@@QBEHXZ @ 507 NONAME ; int QWebHistory::maximumItemCount(void) const
+	?linkClicked@QGraphicsWebView@@IAEXABVQUrl@@@Z @ 508 NONAME ; void QGraphicsWebView::linkClicked(class QUrl const &)
+	?classes@QWebElement@@QBE?AVQStringList@@XZ @ 509 NONAME ; class QStringList QWebElement::classes(void) const
+	?hideEvent@QWebInspector@@MAEXPAVQHideEvent@@@Z @ 510 NONAME ; void QWebInspector::hideEvent(class QHideEvent *)
+	?setZoomFactor@QWebView@@QAEXM@Z @ 511 NONAME ; void QWebView::setZoomFactor(float)
+	?urlChanged@QWebFrame@@IAEXABVQUrl@@@Z @ 512 NONAME ; void QWebFrame::urlChanged(class QUrl const &)
+	??_EQWebPluginInfo@@QAE@I@Z @ 513 NONAME ABSENT ; QWebPluginInfo::~QWebPluginInfo(unsigned int)
+	?dragEnterEvent@QGraphicsWebView@@MAEXPAVQGraphicsSceneDragDropEvent@@@Z @ 514 NONAME ; void QGraphicsWebView::dragEnterEvent(class QGraphicsSceneDragDropEvent *)
+	?frameName@QWebFrame@@QBE?AVQString@@XZ @ 515 NONAME ; class QString QWebFrame::frameName(void) const
+	?setScrollBarPolicy@QWebFrame@@QAEXW4Orientation@Qt@@W4ScrollBarPolicy@3@@Z @ 516 NONAME ; void QWebFrame::setScrollBarPolicy(enum Qt::Orientation, enum Qt::ScrollBarPolicy)
+	?url@QWebFrame@@QBE?AVQUrl@@XZ @ 517 NONAME ; class QUrl QWebFrame::url(void) const
+	?attributeNS@QWebElement@@QBE?AVQString@@ABV2@00@Z @ 518 NONAME ; class QString QWebElement::attributeNS(class QString const &, class QString const &, class QString const &) const
+	?action@QWebPage@@QBEPAVQAction@@W4WebAction@1@@Z @ 519 NONAME ; class QAction * QWebPage::action(enum QWebPage::WebAction) const
+	?forward@QWebView@@QAEXXZ @ 520 NONAME ; void QWebView::forward(void)
+	?pageSizeAndMarginsInPixels@DumpRenderTreeSupportQt@@SA?AVQString@@PAVQWebFrame@@HHHHHHH@Z @ 521 NONAME ; class QString DumpRenderTreeSupportQt::pageSizeAndMarginsInPixels(class QWebFrame *, int, int, int, int, int, int, int)
+	?webPageGroupName@DumpRenderTreeSupportQt@@SA?AVQString@@PAVQWebPage@@@Z @ 522 NONAME ; class QString DumpRenderTreeSupportQt::webPageGroupName(class QWebPage *)
+	?trUtf8@QWebPluginFactory@@SA?AVQString@@PBD0H@Z @ 523 NONAME ; class QString QWebPluginFactory::trUtf8(char const *, char const *, int)
+	?setLocalStoragePath@QWebSettings@@QAEXABVQString@@@Z @ 524 NONAME ; void QWebSettings::setLocalStoragePath(class QString const &)
+	?qt_drt_whiteListAccessFromOrigin@@YAXABVQString@@00_N@Z @ 525 NONAME ; void qt_drt_whiteListAccessFromOrigin(class QString const &, class QString const &, class QString const &, bool)
+	??0QWebDatabase@@QAE@ABV0@@Z @ 526 NONAME ; QWebDatabase::QWebDatabase(class QWebDatabase const &)
+	?suspendActiveDOMObjects@DumpRenderTreeSupportQt@@SAXPAVQWebFrame@@@Z @ 527 NONAME ; void DumpRenderTreeSupportQt::suspendActiveDOMObjects(class QWebFrame *)
+	??1QWebHistory@@AAE@XZ @ 528 NONAME ; QWebHistory::~QWebHistory(void)
+	?end@QWebElementCollection@@QAE?AViterator@1@XZ @ 529 NONAME ; class QWebElementCollection::iterator QWebElementCollection::end(void)
+	??_EQWebInspector@@UAE@I@Z @ 530 NONAME ; QWebInspector::~QWebInspector(unsigned int)
+	?expectedSize@QWebDatabase@@QBE_JXZ @ 531 NONAME ; long long QWebDatabase::expectedSize(void) const
+	??0QWebScriptWorld@@QAE@ABV0@@Z @ 532 NONAME ; QWebScriptWorld::QWebScriptWorld(class QWebScriptWorld const &)
+	??1QWebPluginInfo@@QAE@XZ @ 533 NONAME ; QWebPluginInfo::~QWebPluginInfo(void)
+	?tr@QWebPage@@SA?AVQString@@PBD0H@Z @ 534 NONAME ; class QString QWebPage::tr(char const *, char const *, int)
+	??0QWebHitTestResult@@AAE@PAVQWebHitTestResultPrivate@@@Z @ 535 NONAME ; QWebHitTestResult::QWebHitTestResult(class QWebHitTestResultPrivate *)
+	??0QWebSettings@@AAE@XZ @ 536 NONAME ; QWebSettings::QWebSettings(void)
+	??1QWebFrame@@EAE@XZ @ 537 NONAME ; QWebFrame::~QWebFrame(void)
+	?childFrames@QWebFrame@@QBE?AV?$QList@PAVQWebFrame@@@@XZ @ 538 NONAME ; class QList<class QWebFrame *> QWebFrame::childFrames(void) const
+	?getStaticMetaObject@QWebPluginDatabase@@SAABUQMetaObject@@XZ @ 539 NONAME ; struct QMetaObject const & QWebPluginDatabase::getStaticMetaObject(void)
+	?view@QWebPage@@QBEPAVQWidget@@XZ @ 540 NONAME ; class QWidget * QWebPage::view(void) const
+	?setDumpRenderTreeModeEnabled@DumpRenderTreeSupportQt@@SAX_N@Z @ 541 NONAME ; void DumpRenderTreeSupportQt::setDumpRenderTreeModeEnabled(bool)
+	??0QWebElement@@QAE@XZ @ 542 NONAME ; QWebElement::QWebElement(void)
+	?addClass@QWebElement@@QAEXABVQString@@@Z @ 543 NONAME ; void QWebElement::addClass(class QString const &)
+	?qt_webpage_groupName@@YA?AVQString@@PAVQWebPage@@@Z @ 544 NONAME ; class QString qt_webpage_groupName(class QWebPage *)
+	?tagName@QWebElement@@QBE?AVQString@@XZ @ 545 NONAME ; class QString QWebElement::tagName(void) const
+	?stop@QWebView@@QAEXXZ @ 546 NONAME ; void QWebView::stop(void)
+	?hitTestContent@QWebFrame@@QBE?AVQWebHitTestResult@@ABVQPoint@@@Z @ 547 NONAME ; class QWebHitTestResult QWebFrame::hitTestContent(class QPoint const &) const
+	?metaObject@QWebFrame@@UBEPBUQMetaObject@@XZ @ 548 NONAME ; struct QMetaObject const * QWebFrame::metaObject(void) const
+	?evaluateScriptInIsolatedWorld@DumpRenderTreeSupportQt@@SAXPAVQWebFrame@@HABVQString@@@Z @ 549 NONAME ; void DumpRenderTreeSupportQt::evaluateScriptInIsolatedWorld(class QWebFrame *, int, class QString const &)
+	?focusNextPrevChild@QWebView@@MAE_N_N@Z @ 550 NONAME ; bool QWebView::focusNextPrevChild(bool)
+	??0QWebPluginDatabase@@AAE@PAVQObject@@@Z @ 551 NONAME ; QWebPluginDatabase::QWebPluginDatabase(class QObject *)
+	?refreshPlugins@QWebPluginFactory@@UAEXXZ @ 552 NONAME ; void QWebPluginFactory::refreshPlugins(void)
+	?acceptNavigationRequest@QWebPage@@MAE_NPAVQWebFrame@@ABVQNetworkRequest@@W4NavigationType@1@@Z @ 553 NONAME ; bool QWebPage::acceptNavigationRequest(class QWebFrame *, class QNetworkRequest const &, enum QWebPage::NavigationType)
+	??0MimeType@QWebPluginFactory@@QAE@ABU01@@Z @ 554 NONAME ; QWebPluginFactory::MimeType::MimeType(struct QWebPluginFactory::MimeType const &)
+	?isTiledBackingStoreFrozen@QGraphicsWebView@@QBE_NXZ @ 555 NONAME ; bool QGraphicsWebView::isTiledBackingStoreFrozen(void) const
+	?qtwebkit_webframe_scrollOverflow@@YA_NPAVQWebFrame@@HHABVQPoint@@@Z @ 556 NONAME ; bool qtwebkit_webframe_scrollOverflow(class QWebFrame *, int, int, class QPoint const &)
+	?resetAttribute@QWebSettings@@QAEXW4WebAttribute@1@@Z @ 557 NONAME ; void QWebSettings::resetAttribute(enum QWebSettings::WebAttribute)
+	?setTextSizeMultiplier@QWebView@@QAEXM@Z @ 558 NONAME ; void QWebView::setTextSizeMultiplier(float)
+	?icon@QGraphicsWebView@@QBE?AVQIcon@@XZ @ 559 NONAME ; class QIcon QGraphicsWebView::icon(void) const
+	?appendInside@QWebElement@@QAEXABVQString@@@Z @ 560 NONAME ; void QWebElement::appendInside(class QString const &)
+	?alternateText@QWebHitTestResult@@QBE?AVQString@@XZ @ 561 NONAME ; class QString QWebHitTestResult::alternateText(void) const
+	?title@QWebHistoryItem@@QBE?AVQString@@XZ @ 562 NONAME ; class QString QWebHistoryItem::title(void) const
+	?webPageSetGroupName@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@ABVQString@@@Z @ 563 NONAME ; void DumpRenderTreeSupportQt::webPageSetGroupName(class QWebPage *, class QString const &)
+	?inputMethodQuery@QWebView@@UBE?AVQVariant@@W4InputMethodQuery@Qt@@@Z @ 564 NONAME ; class QVariant QWebView::inputMethodQuery(enum Qt::InputMethodQuery) const
+	?allowGeolocationRequest@QWebPage@@QAE_NPAVQWebFrame@@@Z @ 565 NONAME ; bool QWebPage::allowGeolocationRequest(class QWebFrame *)
+	??8QWebPluginInfo@@QBE_NABV0@@Z @ 566 NONAME ; bool QWebPluginInfo::operator==(class QWebPluginInfo const &) const
+	?pluginForMimeType@QWebPluginDatabase@@QAE?AVQWebPluginInfo@@ABVQString@@@Z @ 567 NONAME ; class QWebPluginInfo QWebPluginDatabase::pluginForMimeType(class QString const &)
+	?qt_metacast@QGraphicsWebView@@UAEPAXPBD@Z @ 568 NONAME ; void * QGraphicsWebView::qt_metacast(char const *)
+	?unsupportedContent@QWebPage@@IAEXPAVQNetworkReply@@@Z @ 569 NONAME ; void QWebPage::unsupportedContent(class QNetworkReply *)
+	?qWebKitMinorVersion@@YAHXZ @ 570 NONAME ; int qWebKitMinorVersion(void)
+	?trUtf8@QWebPluginDatabase@@SA?AVQString@@PBD0@Z @ 571 NONAME ; class QString QWebPluginDatabase::trUtf8(char const *, char const *)
+	??1DumpRenderTreeSupportQt@@QAE@XZ @ 572 NONAME ; DumpRenderTreeSupportQt::~DumpRenderTreeSupportQt(void)
+	?bytesReceived@QWebPage@@QBE_KXZ @ 573 NONAME ; unsigned long long QWebPage::bytesReceived(void) const
+	?metaObject@QWebInspector@@UBEPBUQMetaObject@@XZ @ 574 NONAME ; struct QMetaObject const * QWebInspector::metaObject(void) const
+	?setContent@QWebView@@QAEXABVQByteArray@@ABVQString@@ABVQUrl@@@Z @ 575 NONAME ; void QWebView::setContent(class QByteArray const &, class QString const &, class QUrl const &)
+	?setDomainRelaxationForbiddenForURLScheme@DumpRenderTreeSupportQt@@SAX_NABVQString@@@Z @ 576 NONAME ; void DumpRenderTreeSupportQt::setDomainRelaxationForbiddenForURLScheme(bool, class QString const &)
+	?tr@QWebPluginFactory@@SA?AVQString@@PBD0H@Z @ 577 NONAME ; class QString QWebPluginFactory::tr(char const *, char const *, int)
+	?displayName@QWebDatabase@@QBE?AVQString@@XZ @ 578 NONAME ; class QString QWebDatabase::displayName(void) const
+	?resizeEvent@QWebView@@MAEXPAVQResizeEvent@@@Z @ 579 NONAME ; void QWebView::resizeEvent(class QResizeEvent *)
+	?defaultInterface@QWebHistoryInterface@@SAPAV1@XZ @ 580 NONAME ; class QWebHistoryInterface * QWebHistoryInterface::defaultInterface(void)
+	?localStoragePath@QWebSettings@@QBE?AVQString@@XZ @ 581 NONAME ; class QString QWebSettings::localStoragePath(void) const
+	?geometry@QWebElement@@QBE?AVQRect@@XZ @ 582 NONAME ; class QRect QWebElement::geometry(void) const
+	?setDefaultTextEncoding@QWebSettings@@QAEXABVQString@@@Z @ 583 NONAME ; void QWebSettings::setDefaultTextEncoding(class QString const &)
+	??_EQWebPluginFactory@@UAE@I@Z @ 584 NONAME ; QWebPluginFactory::~QWebPluginFactory(unsigned int)
+	?setScrollPosition@QWebFrame@@QAEXABVQPoint@@@Z @ 585 NONAME ; void QWebFrame::setScrollPosition(class QPoint const &)
+	?linkClicked@QWebView@@IAEXABVQUrl@@@Z @ 586 NONAME ; void QWebView::linkClicked(class QUrl const &)
+	?setTextSizeMultiplier@QWebFrame@@QAEXM@Z @ 587 NONAME ; void QWebFrame::setTextSizeMultiplier(float)
+	?encloseWith@QWebElement@@QAEXABV1@@Z @ 588 NONAME ; void QWebElement::encloseWith(class QWebElement const &)
+	?setUserData@QWebHistoryItem@@QAEXABVQVariant@@@Z @ 589 NONAME ; void QWebHistoryItem::setUserData(class QVariant const &)
+	?deviceSize@QGraphicsWebView@@QBE?AVQSize@@XZ @ 590 NONAME ; class QSize QGraphicsWebView::deviceSize(void) const
+	?setMediaType@DumpRenderTreeSupportQt@@SAXPAVQWebFrame@@ABVQString@@@Z @ 591 NONAME ; void DumpRenderTreeSupportQt::setMediaType(class QWebFrame *, class QString const &)
+	?handle@QWebPage@@QBEPAVQWebPagePrivate@@XZ @ 592 NONAME ; class QWebPagePrivate * QWebPage::handle(void) const
+	?page@QWebInspector@@QBEPAVQWebPage@@XZ @ 593 NONAME ; class QWebPage * QWebInspector::page(void) const
+	??1QWebSettings@@AAE@XZ @ 594 NONAME ; QWebSettings::~QWebSettings(void)
+	?print@QWebView@@QBEXPAVQPrinter@@@Z @ 595 NONAME ; void QWebView::print(class QPrinter *) const
+	?computedStyleIncludingVisitedInfo@DumpRenderTreeSupportQt@@SA?AV?$QMap@VQString@@VQVariant@@@@ABVQWebElement@@@Z @ 596 NONAME ; class QMap<class QString, class QVariant> DumpRenderTreeSupportQt::computedStyleIncludingVisitedInfo(class QWebElement const &)
+	?overwritePluginDirectories@DumpRenderTreeSupportQt@@SAXXZ @ 597 NONAME ; void DumpRenderTreeSupportQt::overwritePluginDirectories(void)
+	?setAttribute@QWebSettings@@QAEXW4WebAttribute@1@_N@Z @ 598 NONAME ; void QWebSettings::setAttribute(enum QWebSettings::WebAttribute, bool)
+	?staticMetaObject@QWebPage@@2UQMetaObject@@B @ 599 NONAME ; struct QMetaObject const QWebPage::staticMetaObject
+	?removeClass@QWebElement@@QAEXABVQString@@@Z @ 600 NONAME ; void QWebElement::removeClass(class QString const &)
+	?testAttribute@QWebSettings@@QBE_NW4WebAttribute@1@@Z @ 601 NONAME ; bool QWebSettings::testAttribute(enum QWebSettings::WebAttribute) const
+	??0QWebPage@@QAE@PAVQObject@@@Z @ 602 NONAME ; QWebPage::QWebPage(class QObject *)
+	?prependOutside@QWebElement@@QAEXABV1@@Z @ 603 NONAME ; void QWebElement::prependOutside(class QWebElement const &)
+	?setMaximumItemCount@QWebHistory@@QAEXH@Z @ 604 NONAME ; void QWebHistory::setMaximumItemCount(int)
+	??1QWebSecurityOrigin@@QAE@XZ @ 605 NONAME ; QWebSecurityOrigin::~QWebSecurityOrigin(void)
+	?dumpSetAcceptsEditing@DumpRenderTreeSupportQt@@SAX_N@Z @ 606 NONAME ; void DumpRenderTreeSupportQt::dumpSetAcceptsEditing(bool)
+	?load@QWebFrame@@QAEXABVQUrl@@@Z @ 607 NONAME ; void QWebFrame::load(class QUrl const &)
+	?page@QWebView@@QBEPAVQWebPage@@XZ @ 608 NONAME ; class QWebPage * QWebView::page(void) const
+	?triggerPageAction@QWebView@@QAEXW4WebAction@QWebPage@@_N@Z @ 609 NONAME ; void QWebView::triggerPageAction(enum QWebPage::WebAction, bool)
+	?setUrl@QWebView@@QAEXABVQUrl@@@Z @ 610 NONAME ; void QWebView::setUrl(class QUrl const &)
+	?setFocus@QWebElement@@QAEXXZ @ 611 NONAME ; void QWebElement::setFocus(void)
+	?begin@QWebElementCollection@@QAE?AViterator@1@XZ @ 612 NONAME ; class QWebElementCollection::iterator QWebElementCollection::begin(void)
+	?hasAttributes@QWebElement@@QBE_NXZ @ 613 NONAME ; bool QWebElement::hasAttributes(void) const
+	?handle@QWebSettings@@QBEPAVQWebSettingsPrivate@@XZ @ 614 NONAME ; class QWebSettingsPrivate * QWebSettings::handle(void) const
+	?frameAt@QWebPage@@QBEPAVQWebFrame@@ABVQPoint@@@Z @ 615 NONAME ; class QWebFrame * QWebPage::frameAt(class QPoint const &) const
+	?clear@QWebHistory@@QAEXXZ @ 616 NONAME ; void QWebHistory::clear(void)
+	?viewportSize@QWebPage@@QBE?AVQSize@@XZ @ 617 NONAME ; class QSize QWebPage::viewportSize(void) const
+	?getStaticMetaObject@QWebView@@SAABUQMetaObject@@XZ @ 618 NONAME ; struct QMetaObject const & QWebView::getStaticMetaObject(void)
+	?setView@QWebPage@@QAEXPAVQWidget@@@Z @ 619 NONAME ; void QWebPage::setView(class QWidget *)
+	?resetFontFamily@QWebSettings@@QAEXW4FontFamily@1@@Z @ 620 NONAME ; void QWebSettings::resetFontFamily(enum QWebSettings::FontFamily)
+	?qt_resumeActiveDOMObjects@@YAXPAVQWebFrame@@@Z @ 621 NONAME ; void qt_resumeActiveDOMObjects(class QWebFrame *)
+	?title@QWebHitTestResult@@QBE?AVQString@@XZ @ 622 NONAME ; class QString QWebHitTestResult::title(void) const
+	?pauseAnimation@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@ABVQString@@N1@Z @ 623 NONAME ; bool DumpRenderTreeSupportQt::pauseAnimation(class QWebFrame *, class QString const &, double, class QString const &)
+	?event@QWebFrame@@UAE_NPAVQEvent@@@Z @ 624 NONAME ; bool QWebFrame::event(class QEvent *)
+	?hasFocus@QWebElement@@QBE_NXZ @ 625 NONAME ; bool QWebElement::hasFocus(void) const
+	??8MimeType@QWebPluginFactory@@QBE_NABU01@@Z @ 626 NONAME ; bool QWebPluginFactory::MimeType::operator==(struct QWebPluginFactory::MimeType const &) const
+	?tr@QWebPluginDatabase@@SA?AVQString@@PBD0H@Z @ 627 NONAME ; class QString QWebPluginDatabase::tr(char const *, char const *, int)
+	?frameCreated@QWebPage@@IAEXPAVQWebFrame@@@Z @ 628 NONAME ; void QWebPage::frameCreated(class QWebFrame *)
+	??4QWebElement@@QAEAAV0@ABV0@@Z @ 629 NONAME ; class QWebElement & QWebElement::operator=(class QWebElement const &)
+	?isPageBoxVisible@DumpRenderTreeSupportQt@@SA_NPAVQWebFrame@@H@Z @ 630 NONAME ; bool DumpRenderTreeSupportQt::isPageBoxVisible(class QWebFrame *, int)
+	?qt_metacast@QWebHistoryInterface@@UAEPAXPBD@Z @ 631 NONAME ; void * QWebHistoryInterface::qt_metacast(char const *)
+	?setOfflineStorageDefaultQuota@QWebSettings@@SAX_J@Z @ 632 NONAME ; void QWebSettings::setOfflineStorageDefaultQuota(long long)
+	?printRequested@QWebPage@@IAEXPAVQWebFrame@@@Z @ 633 NONAME ; void QWebPage::printRequested(class QWebFrame *)
+	??0QWebView@@QAE@PAVQWidget@@@Z @ 634 NONAME ; QWebView::QWebView(class QWidget *)
+	?staticMetaObject@QWebView@@2UQMetaObject@@B @ 635 NONAME ; struct QMetaObject const QWebView::staticMetaObject
+	?setFocus@QWebFrame@@QAEXXZ @ 636 NONAME ; void QWebFrame::setFocus(void)
+	?originalUrl@QWebHistoryItem@@QBE?AVQUrl@@XZ @ 637 NONAME ; class QUrl QWebHistoryItem::originalUrl(void) const
+	?settings@QGraphicsWebView@@QBEPAVQWebSettings@@XZ @ 638 NONAME ; class QWebSettings * QGraphicsWebView::settings(void) const
+	??9QWebElement@@QBE_NABV0@@Z @ 639 NONAME ; bool QWebElement::operator!=(class QWebElement const &) const
+	?isCommandEnabled@DumpRenderTreeSupportQt@@SA_NPAVQWebPage@@ABVQString@@@Z @ 640 NONAME ; bool DumpRenderTreeSupportQt::isCommandEnabled(class QWebPage *, class QString const &)
+	?localName@QWebElement@@QBE?AVQString@@XZ @ 641 NONAME ; class QString QWebElement::localName(void) const
+	?setOfflineWebApplicationCacheQuota@QWebSettings@@SAX_J@Z @ 642 NONAME ; void QWebSettings::setOfflineWebApplicationCacheQuota(long long)
+	?focusNextPrevChild@QGraphicsWebView@@MAE_N_N@Z @ 643 NONAME ; bool QGraphicsWebView::focusNextPrevChild(bool)
+	?dumpEditingCallbacks@DumpRenderTreeSupportQt@@SAX_N@Z @ 644 NONAME ; void DumpRenderTreeSupportQt::dumpEditingCallbacks(bool)
+	?updateGeometry@QGraphicsWebView@@UAEXXZ @ 645 NONAME ; void QGraphicsWebView::updateGeometry(void)
+	?loadFinished@QGraphicsWebView@@IAEX_N@Z @ 646 NONAME ; void QGraphicsWebView::loadFinished(bool)
+	?forwardItems@QWebHistory@@QBE?AV?$QList@VQWebHistoryItem@@@@H@Z @ 647 NONAME ; class QList<class QWebHistoryItem> QWebHistory::forwardItems(int) const
+	?hasAttribute@QWebElement@@QBE_NABVQString@@@Z @ 648 NONAME ; bool QWebElement::hasAttribute(class QString const &) const
+	?clone@QWebElement@@QBE?AV1@XZ @ 649 NONAME ; class QWebElement QWebElement::clone(void) const
+	?backItems@QWebHistory@@QBE?AV?$QList@VQWebHistoryItem@@@@H@Z @ 650 NONAME ; class QList<class QWebHistoryItem> QWebHistory::backItems(int) const
+	?qt_metacast@QWebPluginFactory@@UAEPAXPBD@Z @ 651 NONAME ; void * QWebPluginFactory::qt_metacast(char const *)
+	?geometry@QWebFrame@@QBE?AVQRect@@XZ @ 652 NONAME ; class QRect QWebFrame::geometry(void) const
+	?forwardUnsupportedContent@QWebPage@@QBE_NXZ @ 653 NONAME ; bool QWebPage::forwardUnsupportedContent(void) const
+	?renderHints@QWebView@@QBE?AV?$QFlags@W4RenderHint@QPainter@@@@XZ @ 654 NONAME ; class QFlags<enum QPainter::RenderHint> QWebView::renderHints(void) const
+	?titleChanged@QWebFrame@@IAEXABVQString@@@Z @ 655 NONAME ; void QWebFrame::titleChanged(class QString const &)
+	?totalBytes@QWebPage@@QBE_KXZ @ 656 NONAME ; unsigned long long QWebPage::totalBytes(void) const
+	?executeCoreCommandByName@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@ABVQString@@1@Z @ 657 NONAME ; void DumpRenderTreeSupportQt::executeCoreCommandByName(class QWebPage *, class QString const &, class QString const &)
+	?contentsSize@QWebFrame@@QBE?AVQSize@@XZ @ 658 NONAME ; class QSize QWebFrame::contentsSize(void) const
+	?qt_drt_pauseTransitionOfProperty@@YA_NPAVQWebFrame@@ABVQString@@N1@Z @ 659 NONAME ; bool qt_drt_pauseTransitionOfProperty(class QWebFrame *, class QString const &, double, class QString const &)
+	?metaObject@QWebPluginDatabase@@UBEPBUQMetaObject@@XZ @ 660 NONAME ; struct QMetaObject const * QWebPluginDatabase::metaObject(void) const
+	?origin@QWebDatabase@@QBE?AVQWebSecurityOrigin@@XZ @ 661 NONAME ; class QWebSecurityOrigin QWebDatabase::origin(void) const
+	?evaluateJavaScript@QWebFrame@@QAE?AVQVariant@@ABVQString@@@Z @ 662 NONAME ; class QVariant QWebFrame::evaluateJavaScript(class QString const &)
+	?removeWhiteListAccessFromOrigin@DumpRenderTreeSupportQt@@SAXABVQString@@00_N@Z @ 663 NONAME ; void DumpRenderTreeSupportQt::removeWhiteListAccessFromOrigin(class QString const &, class QString const &, class QString const &, bool)
+	?databases@QWebSecurityOrigin@@QBE?AV?$QList@VQWebDatabase@@@@XZ @ 664 NONAME ; class QList<class QWebDatabase> QWebSecurityOrigin::databases(void) const
+	?trUtf8@QWebView@@SA?AVQString@@PBD0@Z @ 665 NONAME ; class QString QWebView::trUtf8(char const *, char const *)
+	?setUserStyleSheetUrl@QWebSettings@@QAEXABVQUrl@@@Z @ 666 NONAME ; void QWebSettings::setUserStyleSheetUrl(class QUrl const &)
+	?back@QWebView@@QAEXXZ @ 667 NONAME ; void QWebView::back(void)
+	?javaScriptWindowObjectCleared@QWebFrame@@IAEXXZ @ 668 NONAME ; void QWebFrame::javaScriptWindowObjectCleared(void)
+	?closeEvent@QWebInspector@@MAEXPAVQCloseEvent@@@Z @ 669 NONAME ; void QWebInspector::closeEvent(class QCloseEvent *)
+	?loadFinished@QWebFrame@@IAEX_N@Z @ 670 NONAME ; void QWebFrame::loadFinished(bool)
+	?mainFrame@QWebPage@@QBEPAVQWebFrame@@XZ @ 671 NONAME ; class QWebFrame * QWebPage::mainFrame(void) const
+	?itemChange@QGraphicsWebView@@UAE?AVQVariant@@W4GraphicsItemChange@QGraphicsItem@@ABV2@@Z @ 672 NONAME ; class QVariant QGraphicsWebView::itemChange(enum QGraphicsItem::GraphicsItemChange, class QVariant const &)
+	?qt_dump_frame_loader@@YAX_N@Z @ 673 NONAME ; void qt_dump_frame_loader(bool)
+	?webFrame@QWebElement@@QBEPAVQWebFrame@@XZ @ 674 NONAME ; class QWebFrame * QWebElement::webFrame(void) const
+	??0QWebElementCollection@@QAE@ABVQWebElement@@ABVQString@@@Z @ 675 NONAME ; QWebElementCollection::QWebElementCollection(class QWebElement const &, class QString const &)
+	?qt_suspendActiveDOMObjects@@YAXPAVQWebFrame@@@Z @ 676 NONAME ; void qt_suspendActiveDOMObjects(class QWebFrame *)
+	?tr@QWebView@@SA?AVQString@@PBD0@Z @ 677 NONAME ; class QString QWebView::tr(char const *, char const *)
+	?offlineStoragePath@QWebSettings@@SA?AVQString@@XZ @ 678 NONAME ; class QString QWebSettings::offlineStoragePath(void)
+	??0QWebElementCollection@@QAE@ABV0@@Z @ 679 NONAME ; QWebElementCollection::QWebElementCollection(class QWebElementCollection const &)
+	?selectedText@QWebPage@@QBE?AVQString@@XZ @ 680 NONAME ; class QString QWebPage::selectedText(void) const
+	?initialLayoutCompleted@QWebFrame@@IAEXXZ @ 681 NONAME ; void QWebFrame::initialLayoutCompleted(void)
+	?tr@QWebPluginDatabase@@SA?AVQString@@PBD0@Z @ 682 NONAME ; class QString QWebPluginDatabase::tr(char const *, char const *)
+	?toInnerXml@QWebElement@@QBE?AVQString@@XZ @ 683 NONAME ; class QString QWebElement::toInnerXml(void) const
+	?currentItem@QWebHistory@@QBE?AVQWebHistoryItem@@XZ @ 684 NONAME ; class QWebHistoryItem QWebHistory::currentItem(void) const
+	??4QWebScriptWorld@@QAEAAV0@ABV0@@Z @ 685 NONAME ; class QWebScriptWorld & QWebScriptWorld::operator=(class QWebScriptWorld const &)
+	?render@QWebFrame@@QAEXPAVQPainter@@@Z @ 686 NONAME ; void QWebFrame::render(class QPainter *)
+	?scroll@QWebFrame@@QAEXHH@Z @ 687 NONAME ; void QWebFrame::scroll(int, int)
+	?appendOutside@QWebElement@@QAEXABV1@@Z @ 688 NONAME ; void QWebElement::appendOutside(class QWebElement const &)
+	?boundingRect@QWebHitTestResult@@QBE?AVQRect@@XZ @ 689 NONAME ; class QRect QWebHitTestResult::boundingRect(void) const
+	?createWindow@QWebPage@@MAEPAV1@W4WebWindowType@1@@Z @ 690 NONAME ; class QWebPage * QWebPage::createWindow(enum QWebPage::WebWindowType)
+	??0QGraphicsWebView@@QAE@PAVQGraphicsItem@@@Z @ 691 NONAME ; QGraphicsWebView::QGraphicsWebView(class QGraphicsItem *)
+	?provisionalLoad@QWebFrame@@IAEXXZ @ 692 NONAME ; void QWebFrame::provisionalLoad(void)
+	?qt_drt_garbageCollector_collect@@YAXXZ @ 693 NONAME ; void qt_drt_garbageCollector_collect(void)
+	?qt_networkAccessAllowed@@YAX_N@Z @ 694 NONAME ; void qt_networkAccessAllowed(bool)
+	?refresh@QWebPluginDatabase@@QAEXXZ @ 695 NONAME ; void QWebPluginDatabase::refresh(void)
+	?javaScriptObjectsCount@DumpRenderTreeSupportQt@@SAHXZ @ 696 NONAME ; int DumpRenderTreeSupportQt::javaScriptObjectsCount(void)
+	??0QWebHistory@@AAE@XZ @ 697 NONAME ; QWebHistory::QWebHistory(void)
+	?preferredContentsSize@QWebPage@@QBE?AVQSize@@XZ @ 698 NONAME ; class QSize QWebPage::preferredContentsSize(void) const
+	??1QWebPluginDatabase@@EAE@XZ @ 699 NONAME ; QWebPluginDatabase::~QWebPluginDatabase(void)
+	?removeAttribute@QWebElement@@QAEXABVQString@@@Z @ 700 NONAME ; void QWebElement::removeAttribute(class QString const &)
+	?isContentSelected@QWebHitTestResult@@QBE_NXZ @ 701 NONAME ; bool QWebHitTestResult::isContentSelected(void) const
+	?imageUrl@QWebHitTestResult@@QBE?AVQUrl@@XZ @ 702 NONAME ; class QUrl QWebHitTestResult::imageUrl(void) const
+	?qt_webpage_setGroupName@@YAXPAVQWebPage@@ABVQString@@@Z @ 703 NONAME ; void qt_webpage_setGroupName(class QWebPage *, class QString const &)
+	?defaultSearchPaths@QWebPluginDatabase@@SA?AVQStringList@@XZ @ 704 NONAME ; class QStringList QWebPluginDatabase::defaultSearchPaths(void)
+	?world@QWebScriptWorld@@QBEPAVDOMWrapperWorld@WebCore@@XZ @ 705 NONAME ; class WebCore::DOMWrapperWorld * QWebScriptWorld::world(void) const
+	?qWebKitVersion@@YA?AVQString@@XZ @ 706 NONAME ; class QString qWebKitVersion(void)
+	?setHtml@QWebFrame@@QAEXABVQString@@ABVQUrl@@@Z @ 707 NONAME ; void QWebFrame::setHtml(class QString const &, class QUrl const &)
+	?resetFontSize@QWebSettings@@QAEXW4FontSize@1@@Z @ 708 NONAME ; void QWebSettings::resetFontSize(enum QWebSettings::FontSize)
+	?qt_metacall@QWebFrame@@UAEHW4Call@QMetaObject@@HPAPAX@Z @ 709 NONAME ; int QWebFrame::qt_metacall(enum QMetaObject::Call, int, void * *)
+	?scrollBarGeometry@QWebFrame@@QBE?AVQRect@@W4Orientation@Qt@@@Z @ 710 NONAME ; class QRect QWebFrame::scrollBarGeometry(enum Qt::Orientation) const
+	?chooseFile@QWebPage@@MAE?AVQString@@PAVQWebFrame@@ABV2@@Z @ 711 NONAME ; class QString QWebPage::chooseFile(class QWebFrame *, class QString const &)
+	?setNotificationsReceiver@DumpRenderTreeSupportQt@@SAXPAVQObject@@@Z @ 712 NONAME ABSENT ; void DumpRenderTreeSupportQt::setNotificationsReceiver(class QObject *)
+	?url@QWebHistoryItem@@QBE?AVQUrl@@XZ @ 713 NONAME ; class QUrl QWebHistoryItem::url(void) const
+	?sizeHint@QWebView@@UBE?AVQSize@@XZ @ 714 NONAME ; class QSize QWebView::sizeHint(void) const
+	?setCheckPermissionFunction@DumpRenderTreeSupportQt@@SAXP6AXPAVQObject@@ABVQUrl@@AAW4NotificationPermission@@@Z@Z @ 715 NONAME ABSENT ; void DumpRenderTreeSupportQt::setCheckPermissionFunction(void (*)(class QObject *, class QUrl const &, enum NotificationPermission &))
+	?cancelRequestsForPermission@QWebPage@@IAEXPAVQWebFrame@@W4PermissionDomain@1@@Z @ 716 NONAME ; void QWebPage::cancelRequestsForPermission(class QWebFrame *, enum QWebPage::PermissionDomain)
+	?checkPermissionFromUser@QWebPage@@IAEXPAVQWebFrame@@W4PermissionDomain@1@AAW4PermissionPolicy@1@@Z @ 717 NONAME ; void QWebPage::checkPermissionFromUser(class QWebFrame *, enum QWebPage::PermissionDomain, enum QWebPage::PermissionPolicy &)
+	?requestPermissionFromUser@QWebPage@@IAEXPAVQWebFrame@@W4PermissionDomain@1@@Z @ 718 NONAME ; void QWebPage::requestPermissionFromUser(class QWebFrame *, enum QWebPage::PermissionDomain)
+	?setUserPermission@QWebPage@@QAEXPAVQWebFrame@@W4PermissionDomain@1@W4PermissionPolicy@1@@Z @ 719 NONAME ; void QWebPage::setUserPermission(class QWebFrame *, enum QWebPage::PermissionDomain, enum QWebPage::PermissionPolicy)
+
