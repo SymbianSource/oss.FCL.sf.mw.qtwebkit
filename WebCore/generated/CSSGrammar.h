@@ -131,7 +131,7 @@ typedef union YYSTYPE
 {
 
 /* Line 1676 of yacc.c  */
-#line 62 "u:\\yaels-qtwebkit\\WebCore\\css\\CSSGrammar.y"
+#line 62 "css/CSSGrammar.y"
 
     bool boolean;
     char character;

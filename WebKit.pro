@@ -8,14 +8,14 @@ SUBDIRS += \
         WebCore
 
 # If the source exists, built it
-# :HACK: exists($$PWD/WebKitTools/QtTestBrowser): SUBDIRS += WebKitTools/QtTestBrowser
-# :HACK: contains(QT_CONFIG, declarative) {
-# :HACK:     exists($$PWD/WebKit/qt/declarative): SUBDIRS += WebKit/qt/declarative
-# :HACK: }
+exists($$PWD/WebKitTools/QtTestBrowser): SUBDIRS += WebKitTools/QtTestBrowser
+contains(QT_CONFIG, declarative) {
+    exists($$PWD/WebKit/qt/declarative): SUBDIRS += WebKit/qt/declarative
+}
 exists($$PWD/JavaScriptCore/jsc.pro): SUBDIRS += JavaScriptCore/jsc.pro
-# :HACK: exists($$PWD/WebKit/qt/tests): SUBDIRS += WebKit/qt/tests
-# :HACK: exists($$PWD/WebKitTools/DumpRenderTree/qt/DumpRenderTree.pro): SUBDIRS += WebKitTools/DumpRenderTree/qt/DumpRenderTree.pro
-# :HACK: exists($$PWD/WebKitTools/DumpRenderTree/qt/ImageDiff.pro): SUBDIRS += WebKitTools/DumpRenderTree/qt/ImageDiff.pro
+exists($$PWD/WebKit/qt/tests): SUBDIRS += WebKit/qt/tests
+exists($$PWD/WebKitTools/DumpRenderTree/qt/DumpRenderTree.pro): SUBDIRS += WebKitTools/DumpRenderTree/qt/DumpRenderTree.pro
+exists($$PWD/WebKitTools/DumpRenderTree/qt/ImageDiff.pro): SUBDIRS += WebKitTools/DumpRenderTree/qt/ImageDiff.pro
 
 !win32:!symbian {
     exists($$PWD/WebKitTools/DumpRenderTree/qt/TestNetscapePlugin/TestNetscapePlugin.pro): SUBDIRS += WebKitTools/DumpRenderTree/qt/TestNetscapePlugin/TestNetscapePlugin.pro

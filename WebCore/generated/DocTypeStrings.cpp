@@ -1,5 +1,5 @@
-/* ANSI-C code produced by gperf version 3.0.1 */
-/* Command-line: gperf --key-positions='*' -s 2 U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf  */
+/* ANSI-C code produced by gperf version 3.0.3 */
+/* Command-line: gperf --key-positions='*' -s 2 /home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf  */
 
 #if !((' ' == 32) && ('!' == 33) && ('"' == 34) && ('#' == 35) \
       && ('%' == 37) && ('&' == 38) && ('\'' == 39) && ('(' == 40) \
@@ -28,7 +28,7 @@
 #error "gperf generated tables don't work with this execution character set. Please report a bug to <bug-gnu-gperf@gnu.org>."
 #endif
 
-#line 2 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 2 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
 struct PubIDInfo {
     enum eMode { 
         eQuirks,         
@@ -345,7 +345,7 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 99 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 99 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"html", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -455,7 +455,7 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 90 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 90 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd w3 html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -474,153 +474,153 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 57 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 57 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 37 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 37 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 3//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 82 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 82 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 3.2//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 54 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 54 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 44 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 44 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 3//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 42 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 42 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 2//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 52 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 52 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 3//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 38 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 38 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 50 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 50 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 2//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 36 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 36 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 3.2//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 46 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 46 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 78 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 78 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w30//dtd w3 html 2.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 33 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 33 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 3.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 59 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 59 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html//en//3.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 34 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 34 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 3.0//en//", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 40 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 40 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 1//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 31 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 31 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 58 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 58 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 56 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 56 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict//en//3.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 45 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 45 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 3//en//3.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 48 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 48 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 1//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 30 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 30 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.0 strict//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 55 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 55 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 53 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 53 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 3//en//3.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 27 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 27 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.0 level 2//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 43 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 43 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 2//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 81 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 81 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 3.2 final//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 32 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 32 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.1e//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 84 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 84 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 4.0 frameset//en", PubIDInfo::eQuirks, PubIDInfo::eQuirks},
-#line 39 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 39 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 0//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 29 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 29 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.0 strict level 2//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 51 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 51 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 2//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 93 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 93 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3o//dtd w3 html 3.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 97 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 97 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//webtechs//dtd mozilla html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 94 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 94 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3o//dtd w3 html 3.0//en//", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 47 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 47 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 0//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 79 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 79 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 3 1995-03-24//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 89 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 89 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html experimental 970421//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 95 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 95 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3o//dtd w3 html strict 3.0//en//", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 26 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 26 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.0 level 1//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 41 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 41 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html level 1//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 35 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 35 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 3.2 final//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 91 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 91 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd xhtml 1.0 frameset//en", PubIDInfo::eAlmostStandards, PubIDInfo::eAlmostStandards},
-#line 28 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 28 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html 2.0 strict level 1//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 49 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 49 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//ietf//dtd html strict level 1//en//2.0", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 86 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 86 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 4.01 frameset//en", PubIDInfo::eQuirks, PubIDInfo::eAlmostStandards},
-#line 80 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 80 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 3.2 draft//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 83 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 83 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 3.2s draft//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 60 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 60 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//metrius//dtd metrius presentational//en", PubIDInfo::eQuirks, PubIDInfo::eQuirks},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 96 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 96 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//webtechs//dtd mozilla html 2.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 88 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 88 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html experimental 19960712//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -633,11 +633,11 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 98 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 98 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-/w3c/dtd html 4.0 transitional/en", PubIDInfo::eQuirks, PubIDInfo::eQuirks},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 85 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 85 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 4.0 transitional//en", PubIDInfo::eQuirks, PubIDInfo::eQuirks},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -654,27 +654,27 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 74 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 74 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//spyglass//dtd html 2.0 extended//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 92 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 92 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd xhtml 1.0 transitional//en", PubIDInfo::eAlmostStandards, PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 67 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 67 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//netscape comm. corp.//dtd html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 87 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 87 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//w3c//dtd html 4.01 transitional//en", PubIDInfo::eQuirks, PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 68 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 68 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//netscape comm. corp.//dtd strict html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -685,9 +685,9 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 25 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 25 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//as//dtd html 3.0 aswedit + extensions//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 75 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 75 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//sq//dtd html 2.0 hotmetal + extensions//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -720,7 +720,7 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 76 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 76 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//sun microsystems corp.//dtd hotjava html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -728,7 +728,7 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 77 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 77 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//sun microsystems corp.//dtd hotjava strict html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -739,40 +739,40 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 69 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 69 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//o'reilly and associates//dtd html 2.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 65 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 65 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//microsoft//dtd internet explorer 3.0 html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 62 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 62 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//microsoft//dtd internet explorer 2.0 html//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 23 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 23 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"+//silmaril//dtd html pro v0r11 19970101//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
-#line 64 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 64 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//microsoft//dtd internet explorer 3.0 html strict//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 61 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 61 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//microsoft//dtd internet explorer 2.0 html strict//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 66 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 66 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//microsoft//dtd internet explorer 3.0 tables//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 63 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 63 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//microsoft//dtd internet explorer 2.0 tables//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -862,12 +862,12 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 24 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 24 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//advasoft ltd//dtd html 3.0 aswedit + extensions//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 70 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 70 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//o'reilly and associates//dtd html extended 1.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -926,7 +926,7 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 71 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 71 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//o'reilly and associates//dtd html extended relaxed 1.0//en", PubIDInfo::eQuirks3, PubIDInfo::eQuirks3},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -1057,7 +1057,7 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 73 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 73 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//softquad//dtd hotmetal pro 4.0::19971010::extensions to html 4.0//en", PubIDInfo::eQuirks, PubIDInfo::eQuirks},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
@@ -1132,12 +1132,15 @@ static const struct PubIDInfo wordlist[] =
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
     {"",PubIDInfo::eAlmostStandards,PubIDInfo::eAlmostStandards},
-#line 72 "U:/yaels-qtwebkit/WebCore/html/DocTypeStrings.gperf"
+#line 72 "/home/hg/repos/qtwebkit-rel/WebCore/html/DocTypeStrings.gperf"
     {"-//softquad software//dtd hotmetal pro 6.0::19990601::extensions to html 4.0//en", PubIDInfo::eQuirks, PubIDInfo::eQuirks}
   };
 
 #ifdef __GNUC__
 __inline
+#ifdef __GNUC_STDC_INLINE__
+__attribute__ ((__gnu_inline__))
+#endif
 #endif
 const struct PubIDInfo *
 findDoctypeEntry (register const char *str, register unsigned int len)

@@ -563,7 +563,7 @@ EXPORTS
 	?title@QWebHistoryItem@@QBE?AVQString@@XZ @ 562 NONAME ; class QString QWebHistoryItem::title(void) const
 	?webPageSetGroupName@DumpRenderTreeSupportQt@@SAXPAVQWebPage@@ABVQString@@@Z @ 563 NONAME ; void DumpRenderTreeSupportQt::webPageSetGroupName(class QWebPage *, class QString const &)
 	?inputMethodQuery@QWebView@@UBE?AVQVariant@@W4InputMethodQuery@Qt@@@Z @ 564 NONAME ; class QVariant QWebView::inputMethodQuery(enum Qt::InputMethodQuery) const
-	?allowGeolocationRequest@QWebPage@@QAE_NPAVQWebFrame@@@Z @ 565 NONAME ; bool QWebPage::allowGeolocationRequest(class QWebFrame *)
+	?allowGeolocationRequest@QWebPage@@QAE_NPAVQWebFrame@@@Z @ 565 NONAME ABSENT ; bool QWebPage::allowGeolocationRequest(class QWebFrame *)
 	??8QWebPluginInfo@@QBE_NABV0@@Z @ 566 NONAME ; bool QWebPluginInfo::operator==(class QWebPluginInfo const &) const
 	?pluginForMimeType@QWebPluginDatabase@@QAE?AVQWebPluginInfo@@ABVQString@@@Z @ 567 NONAME ; class QWebPluginInfo QWebPluginDatabase::pluginForMimeType(class QString const &)
 	?qt_metacast@QGraphicsWebView@@UAEPAXPBD@Z @ 568 NONAME ; void * QGraphicsWebView::qt_metacast(char const *)

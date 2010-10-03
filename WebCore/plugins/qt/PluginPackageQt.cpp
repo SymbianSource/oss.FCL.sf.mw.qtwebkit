@@ -62,9 +62,19 @@ bool PluginPackage::fetchInfo()
     m_description = buf;
     determineModuleVersionFromDescription();
 
-    String s = gm();
+    String mimeDescription = gm();
+    setMIMEDescription(mimeDescription);
+    m_infoIsFromCache = false;
+
+    return true;
+}
+
+void PluginPackage::setMIMEDescription(const String& mimeDescription)
+{
+    m_fullMIMEDescription = mimeDescription;
+
     Vector<String> types;
-    s.split(UChar(';'), false, types);
+    mimeDescription.split(UChar(';'), false, types);
     for (unsigned i = 0; i < types.size(); ++i) {
         Vector<String> mime;
         types[i].split(UChar(':'), true, mime);
@@ -78,8 +88,6 @@ bool PluginPackage::fetchInfo()
                 m_mimeToDescriptions.add(mime[0], mime[2]);
         }
     }
-
-    return true;
 }
 
 static NPError staticPluginQuirkRequiresGtkToolKit_NPN_GetValue(NPP instance, NPNVariable variable, void* value)
@@ -170,4 +178,5 @@ uint16_t PluginPackage::NPVersion() const
 {
     return NP_VERSION_MINOR;
 }
+
 }

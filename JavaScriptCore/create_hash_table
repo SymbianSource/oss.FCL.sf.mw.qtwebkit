@@ -24,7 +24,7 @@
 
 use strict;
 
-my $file = $ENV{"WEBKITDIR"} . $ARGV[0];
+my $file = $ARGV[0];
 shift;
 my $includelookup = 0;
 

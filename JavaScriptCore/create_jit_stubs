@@ -37,7 +37,7 @@ my $getOptionsResult = GetOptions(
     'offset=i' => \$offset
 );
 
-$file = $ENV{"WEBKITDIR"} . $ARGV[0];
+$file = $ARGV[0];
 
 die "$usage\n" unless ($prefix and $file);
 

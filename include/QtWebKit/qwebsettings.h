@@ -1,1 +1,1 @@
-#include "../../WebKit/qt/Api/qwebsettings.h" 
+#include "../../WebKit/qt/Api/qwebsettings.h"

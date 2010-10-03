@@ -1,3 +1,58 @@
+2010-08-31  Benjamin Poulain  <benjamin.poulain@nokia.com>
+
+        Reviewed by Kenneth Rohde Christiansen.
+
+        JSC TimeoutChecker::didTimeOut overflows on ARM
+        https://bugs.webkit.org/show_bug.cgi?id=38538
+
+        Make getCPUTime() return values relative to the first call.
+        The previous implementation relied on simply on currentTime(), which
+        return a time since epoch and not a time since the thread started. This
+        made the return value of getCPUTime() overflow on 32 bits.
+
+        * runtime/TimeoutChecker.cpp:
+        (JSC::getCPUTime):
+
+2010-08-27  Kimmo Kinnunen  <kimmo.t.kinnunen@nokia.com>
+
+        Reviewed by Kenneth Rohde Christiansen.
+
+        [Qt] NPAPI Plugin metadata should be cached, and loading a plugin should not require loading every plugin
+        https://bugs.webkit.org/show_bug.cgi?id=43179
+
+        Add ENABLE_NETSCAPE_PLUGIN_METADATA_CACHE flag to enable persistent
+        NPAPI Plugin Cache. The flag is enabled by default.
+
+        * wtf/Platform.h: Add ENABLE_NETSCAPE_PLUGIN_METADATA_CACHE
+
+2010-08-12  Gabor Loki  <loki@webkit.org>
+
+        Reviewed by Simon Hausmann.
+
+        The scratch register should be saved in YARR with ARM JIT
+        https://bugs.webkit.org/show_bug.cgi?id=43910
+
+        Reported by Jocelyn Turcotte.
+
+        * yarr/RegexJIT.cpp:
+        (JSC::Yarr::RegexGenerator::generateEnter):
+        (JSC::Yarr::RegexGenerator::generateReturn):
+
+2010-07-30  Luiz Agostini  <luiz.agostini@openbossa.org>
+
+        Reviewed by Simon Fraser.
+
+        Enabling view modes to all platforms
+        https://bugs.webkit.org/show_bug.cgi?id=37505
+
+        Removing ENABLE_WIDGETS_10_SUPPORT flag.
+
+        As view mode media feature is not part of widget 1.0 specification
+        any more the ENABLE_WIDGETS_10_SUPPORT flag may be removed. The only use
+        of this flag was related to view mode media feature implementation in Qt. 
+
+        * wtf/Platform.h:
+
 2009-10-30  Tor Arne Vestbø  <tor.arne.vestbo@nokia.com>
 
         Reviewed by Kenneth Rohde Christiansen.

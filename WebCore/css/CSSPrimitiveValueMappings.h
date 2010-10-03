@@ -2678,13 +2678,13 @@ template<> inline CSSPrimitiveValue::CSSPrimitiveValue(EHapticTapStrength e)
         m_value.ident = CSSValueNone;
         break;
     case HWEAK:
-// :HACK:        m_value.ident = CSSValueWeak;
+        m_value.ident = CSSValueWeak;
         break;
     case HMEDIUM:
         m_value.ident = CSSValueMedium;
         break;
     case HSTRONG:
-// :HACK:        m_value.ident = CSSValueStrong;
+        m_value.ident = CSSValueStrong;
         break;
     }
 }
@@ -2694,11 +2694,11 @@ template<> inline CSSPrimitiveValue::operator EHapticTapStrength() const
     switch (m_value.ident) {
     case CSSValueNone:
         return HNONE;
-// :HACK:    case CSSValueWeak:
+    case CSSValueWeak:
         return HWEAK;
     case CSSValueMedium:
         return HMEDIUM;
-// :HACK:    case CSSValueStrong:
+    case CSSValueStrong:
         return HSTRONG;
     default:
         ASSERT_NOT_REACHED();
@@ -2714,22 +2714,22 @@ template<> inline CSSPrimitiveValue::CSSPrimitiveValue(EHapticTapType e)
         m_value.ident = CSSValueButton;
         break;
     case HLATCHEDBUTTONDOWN:
-// :HACK:        m_value.ident = CSSValueLatchedButtonDown;
+        m_value.ident = CSSValueLatchedButtonDown;
         break;
     case HLATCHEDBUTTONUP:
-// :HACK:        m_value.ident = CSSValueLatchedButtonUp;
+        m_value.ident = CSSValueLatchedButtonUp;
         break;
     case HLATCHEDBUTTONSTUCK:
-// :HACK:        m_value.ident = CSSValueLatchedButtonStuck;
+        m_value.ident = CSSValueLatchedButtonStuck;
         break;
     case HLINK:
-// :HACK:        m_value.ident = CSSValueLink;
+        m_value.ident = CSSValueLink;
         break;
     case HCHECKEDCHECKBOX:
-// :HACK:        m_value.ident = CSSValueCheckedCheckbox;
+        m_value.ident = CSSValueCheckedCheckbox;
         break;
     case HUNCHECKEDCHECKBOX:
-// :HACK:        m_value.ident = CSSValueUncheckedCheckbox;
+        m_value.ident = CSSValueUncheckedCheckbox;
         break;
     }
 }
@@ -2739,17 +2739,17 @@ template<> inline CSSPrimitiveValue::operator EHapticTapType() const
     switch (m_value.ident) {
     case CSSValueButton:
         return HBUTTON;
-// :HACK:    case CSSValueLatchedButtonDown:
+    case CSSValueLatchedButtonDown:
         return HLATCHEDBUTTONDOWN;
-// :HACK:    case CSSValueLatchedButtonUp:
+    case CSSValueLatchedButtonUp:
         return HLATCHEDBUTTONUP;
-// :HACK:    case CSSValueLatchedButtonStuck:
+    case CSSValueLatchedButtonStuck:
         return HLATCHEDBUTTONSTUCK;
-// :HACK:    case CSSValueLink:
+    case CSSValueLink:
         return HLINK;
-// :HACK:    case CSSValueCheckedCheckbox:
+    case CSSValueCheckedCheckbox:
         return HCHECKEDCHECKBOX;
-// :HACK:    case CSSValueUncheckedCheckbox:
+    case CSSValueUncheckedCheckbox:
         return HUNCHECKEDCHECKBOX;
     default:
         ASSERT_NOT_REACHED();

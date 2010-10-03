@@ -111,12 +111,20 @@ void PluginView::updatePluginWidget()
         return;
 
     if (!m_isWindowed && m_windowRect.size() != oldWindowRect.size()) {
-        if (m_drawable)
-            XFreePixmap(QX11Info::display(), m_drawable);
+#if defined(MOZ_PLATFORM_MAEMO) && (MOZ_PLATFORM_MAEMO == 5)
+        // On Maemo5, Flash always renders to 16-bit buffer
+        if (m_renderToImage)
+            m_image = QImage(m_windowRect.width(), m_windowRect.height(), QImage::Format_RGB16);
+        else
+#endif
+        {
+            if (m_drawable)
+                XFreePixmap(QX11Info::display(), m_drawable);
 
-        m_drawable = XCreatePixmap(QX11Info::display(), QX11Info::appRootWindow(), m_windowRect.width(), m_windowRect.height(), 
-                                   ((NPSetWindowCallbackStruct*)m_npWindow.ws_info)->depth);
-        QApplication::syncX(); // make sure that the server knows about the Drawable
+            m_drawable = XCreatePixmap(QX11Info::display(), QX11Info::appRootWindow(), m_windowRect.width(), m_windowRect.height(), 
+                                       ((NPSetWindowCallbackStruct*)m_npWindow.ws_info)->depth);
+            QApplication::syncX(); // make sure that the server knows about the Drawable
+        }
     }
 
     // do not call setNPWindowIfNeeded immediately, will be called on paint()
@@ -160,6 +168,71 @@ void PluginView::hide()
     Widget::hide();
 }
 
+#if defined(MOZ_PLATFORM_MAEMO) && (MOZ_PLATFORM_MAEMO == 5)
+void PluginView::paintUsingImageSurfaceExtension(QPainter* painter, const IntRect& exposedRect)
+{
+    NPImageExpose imageExpose;
+    QPoint offset;
+    QWebPageClient* client = m_parentFrame->view()->hostWindow()->platformPageClient();
+    const bool surfaceHasUntransformedContents = client && qobject_cast<QWidget*>(client->pluginParent());
+
+    QPaintDevice* surface =  QPainter::redirected(painter->device(), &offset);
+
+    // If the surface is a QImage, we can render directly into it
+    if (surfaceHasUntransformedContents && surface && surface->devType() == QInternal::Image) {
+        QImage* image = static_cast<QImage*>(surface);
+        offset = -offset; // negating the offset gives us the offset of the view within the surface
+        imageExpose.data = reinterpret_cast<char*>(image->bits());
+        imageExpose.dataSize.width = image->width();
+        imageExpose.dataSize.height = image->height();
+        imageExpose.stride = image->bytesPerLine();
+        imageExpose.depth = image->depth(); // this is guaranteed to be 16 on Maemo5
+        imageExpose.translateX = offset.x() + m_windowRect.x();
+        imageExpose.translateY = offset.y() + m_windowRect.y();
+        imageExpose.scaleX = 1;
+        imageExpose.scaleY = 1;
+    } else {
+        if (m_isTransparent) {
+            // On Maemo5, Flash expects the buffer to contain the contents that are below it.
+            // We don't support transparency for non-raster graphicssystem, so clean the image 
+            // before giving to Flash.
+            QPainter imagePainter(&m_image);
+            imagePainter.fillRect(exposedRect, Qt::white);
+        }
+
+        imageExpose.data = reinterpret_cast<char*>(m_image.bits());
+        imageExpose.dataSize.width = m_image.width();
+        imageExpose.dataSize.height = m_image.height();
+        imageExpose.stride = m_image.bytesPerLine();
+        imageExpose.depth = m_image.depth();
+        imageExpose.translateX = 0;
+        imageExpose.translateY = 0;
+        imageExpose.scaleX = 1;
+        imageExpose.scaleY = 1;
+    }
+    imageExpose.x = exposedRect.x();
+    imageExpose.y = exposedRect.y();
+    imageExpose.width = exposedRect.width();
+    imageExpose.height = exposedRect.height();
+
+    XEvent xevent;
+    memset(&xevent, 0, sizeof(XEvent));
+    XGraphicsExposeEvent& exposeEvent = xevent.xgraphicsexpose;
+    exposeEvent.type = GraphicsExpose;
+    exposeEvent.display = 0;
+    exposeEvent.drawable = reinterpret_cast<XID>(&imageExpose);
+    exposeEvent.x = exposedRect.x();
+    exposeEvent.y = exposedRect.y();
+    exposeEvent.width = exposedRect.width();
+    exposeEvent.height = exposedRect.height();
+
+    dispatchNPEvent(xevent);
+
+    if (!surfaceHasUntransformedContents || !surface || surface->devType() != QInternal::Image)
+        painter->drawImage(QPoint(frameRect().x() + exposedRect.x(), frameRect().y() + exposedRect.y()), m_image, exposedRect);
+}
+#endif
+
 void PluginView::paint(GraphicsContext* context, const IntRect& rect)
 {
     if (!m_isStarted) {
@@ -172,19 +245,32 @@ void PluginView::paint(GraphicsContext* context, const IntRect& rect)
 
     setNPWindowIfNeeded();
 
-    if (m_isWindowed || !m_drawable)
+    if (m_isWindowed)
         return;
 
-    const bool syncX = m_pluginDisplay && m_pluginDisplay != QX11Info::display();
+    if (!m_drawable
+#if defined(MOZ_PLATFORM_MAEMO) && (MOZ_PLATFORM_MAEMO == 5)
+        && m_image.isNull()
+#endif
+       )
+        return;
 
     QPainter* painter = context->platformContext();
     IntRect exposedRect(rect);
     exposedRect.intersect(frameRect());
     exposedRect.move(-frameRect().x(), -frameRect().y());
 
+#if defined(MOZ_PLATFORM_MAEMO) && (MOZ_PLATFORM_MAEMO == 5)
+    if (!m_image.isNull()) {
+        paintUsingImageSurfaceExtension(painter, exposedRect);
+        return;
+    }
+#endif
+
     QPixmap qtDrawable = QPixmap::fromX11Pixmap(m_drawable, QPixmap::ExplicitlyShared);
     const int drawableDepth = ((NPSetWindowCallbackStruct*)m_npWindow.ws_info)->depth;
     ASSERT(drawableDepth == qtDrawable.depth());
+    const bool syncX = m_pluginDisplay && m_pluginDisplay != QX11Info::display();
 
     // When printing, Qt uses a QPicture to capture the output in preview mode. The
     // QPicture holds a reference to the X Pixmap. As a result, the print preview would
@@ -492,19 +578,24 @@ void PluginView::setNPWindowIfNeeded()
 
         m_npWindow.x = m_windowRect.x();
         m_npWindow.y = m_windowRect.y();
-
-        m_npWindow.clipRect.left = max(0, m_clipRect.x());
-        m_npWindow.clipRect.top = max(0, m_clipRect.y());
-        m_npWindow.clipRect.right = m_clipRect.x() + m_clipRect.width();
-        m_npWindow.clipRect.bottom = m_clipRect.y() + m_clipRect.height();
     } else {
         m_npWindow.x = 0;
         m_npWindow.y = 0;
+    }
 
+    // If the width or height are null, set the clipRect to null, indicating that
+    // the plugin is not visible/scrolled out.
+    if (!m_clipRect.width() || !m_clipRect.height()) {
         m_npWindow.clipRect.left = 0;
-        m_npWindow.clipRect.top = 0;
         m_npWindow.clipRect.right = 0;
+        m_npWindow.clipRect.top = 0;
         m_npWindow.clipRect.bottom = 0;
+    } else {
+        // Clipping rectangle of the plug-in; the origin is the top left corner of the drawable or window. 
+        m_npWindow.clipRect.left = m_npWindow.x + m_clipRect.x();
+        m_npWindow.clipRect.top = m_npWindow.y + m_clipRect.y();
+        m_npWindow.clipRect.right = m_npWindow.x + m_clipRect.x() + m_clipRect.width();
+        m_npWindow.clipRect.bottom = m_npWindow.y + m_clipRect.y() + m_clipRect.height();
     }
 
     if (m_plugin->quirks().contains(PluginQuirkDontCallSetWindowMoreThanOnce)) {
@@ -587,6 +678,13 @@ bool PluginView::platformGetValueStatic(NPNVariable variable, void* value, NPErr
         *result = NPERR_NO_ERROR;
         return true;
 
+#if defined(MOZ_PLATFORM_MAEMO) && (MOZ_PLATFORM_MAEMO == 5)
+    case NPNVSupportsWindowlessLocal:
+        *static_cast<NPBool*>(value) = true;
+        *result = NPERR_NO_ERROR;
+        return true;
+#endif
+
     default:
         return false;
     }
@@ -662,7 +760,7 @@ static Display *getPluginDisplay()
     // support gdk based plugins (like flash) that use a different X connection.
     // The code below has the same effect as this one:
     // Display *gdkDisplay = gdk_x11_display_get_xdisplay(gdk_display_get_default());
-    QLibrary library("libgdk-x11-2.0");
+    QLibrary library("libgdk-x11-2.0.so.0");
     if (!library.load())
         return 0;
 

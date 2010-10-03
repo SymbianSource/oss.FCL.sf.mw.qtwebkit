@@ -38,11 +38,6 @@ symbian: {
 
     DEPLOYMENT += webkitlibs webkitbackup
 
-    # Need to guarantee that these come before system includes of /epoc32/include
-    MMP_RULES += "USERINCLUDE bridge"
-    MMP_RULES += "USERINCLUDE platform/animation"
-    MMP_RULES += "USERINCLUDE platform/text"
-    MMP_RULES += "USERINCLUDE rendering"
     symbian-abld|symbian-sbsv2 {
         # RO text (code) section in qtwebkit.dll exceeds allocated space for gcce udeb target.
         # Move RW-section base address to start from 0xE00000 instead of the toolchain default 0x400000.
@@ -136,17 +131,11 @@ symbian {
 RESOURCES += \
     $$PWD/../WebCore/WebCore.qrc
 
-!symbian:!maemo5 {
-    RESOURCES += $$PWD/../WebCore/inspector/front-end/WebKit.qrc
-}
+include_webinspector: RESOURCES += $$PWD/../WebCore/inspector/front-end/WebKit.qrc
 
-maemo5|symbian|embedded {
-    DEFINES += ENABLE_FAST_MOBILE_SCROLLING=1
-}
+enable_fast_mobile_scrolling: DEFINES += ENABLE_FAST_MOBILE_SCROLLING=1
 
-maemo5|symbian {
-    DEFINES += WTF_USE_QT_MOBILE_THEME=1
-}
+use_qt_mobile_theme: DEFINES += WTF_USE_QT_MOBILE_THEME=1
 
 contains(DEFINES, WTF_USE_QT_MOBILE_THEME=1) {
     DEFINES += ENABLE_NO_LISTBOX_RENDERING=1
@@ -176,7 +165,7 @@ defineTest(addExtraCompiler) {
 }
 include(WebCore.pri)
 
-INCLUDEPATH = \
+WEBCORE_INCLUDEPATH = \
     $$PWD \
     $$PWD/accessibility \
     $$PWD/bindings \
@@ -224,10 +213,9 @@ INCLUDEPATH = \
     $$PWD/wml \
     $$PWD/workers \
     $$PWD/xml \
-    $$WC_GENERATED_SOURCES_DIR \
-    $$INCLUDEPATH
+    $$WC_GENERATED_SOURCES_DIR
 
-INCLUDEPATH = \
+WEBCORE_INCLUDEPATH = \
     $$PWD/bridge/qt \
     $$PWD/page/qt \
     $$PWD/platform/graphics/qt \
@@ -235,7 +223,13 @@ INCLUDEPATH = \
     $$PWD/platform/qt \
     $$PWD/../WebKit/qt/Api \
     $$PWD/../WebKit/qt/WebCoreSupport \
-    $$INCLUDEPATH
+    $$WEBCORE_INCLUDEPATH
+
+symbian {
+    PREPEND_INCLUDEPATH = $$WEBCORE_INCLUDEPATH $$PREPEND_INCLUDEPATH
+} else {
+    INCLUDEPATH = $$WEBCORE_INCLUDEPATH $$INCLUDEPATH
+}
 
 QT += network
 
@@ -2138,6 +2132,7 @@ HEADERS += \
     $$PWD/../WebKit/qt/Api/qwebplugindatabase_p.h \
     $$PWD/../WebKit/qt/WebCoreSupport/QtFallbackWebPopup.h \
     $$PWD/../WebKit/qt/WebCoreSupport/FrameLoaderClientQt.h \
+    $$PWD/../WebKit/qt/WebCoreSupport/GeolocationPermissionClientQt.h \
     $$PWD/../WebKit/qt/WebCoreSupport/NotificationPresenterClientQt.h \
     $$PWD/../WebKit/qt/WebCoreSupport/PageClientQt.h \
     $$PWD/../WebKit/qt/WebCoreSupport/QtPlatformPlugin.h \
@@ -2228,6 +2223,7 @@ SOURCES += \
     ../WebKit/qt/WebCoreSupport/EditorClientQt.cpp \
     ../WebKit/qt/WebCoreSupport/EditCommandQt.cpp \
     ../WebKit/qt/WebCoreSupport/FrameLoaderClientQt.cpp \
+    ../WebKit/qt/WebCoreSupport/GeolocationPermissionClientQt.cpp \
     ../WebKit/qt/WebCoreSupport/InspectorClientQt.cpp \
     ../WebKit/qt/WebCoreSupport/NotificationPresenterClientQt.cpp \
     ../WebKit/qt/WebCoreSupport/PageClientQt.cpp \
@@ -2320,6 +2316,9 @@ contains(DEFINES, ENABLE_NETSCAPE_PLUGIN_API=1) {
                     CONFIG += x11
                     LIBS += -lXrender
                 }
+                maemo5 {
+                    DEFINES += MOZ_PLATFORM_MAEMO=5
+                }
                 SOURCES += \
                     plugins/qt/PluginContainerQt.cpp \
                     plugins/qt/PluginPackageQt.cpp \
@@ -2327,6 +2326,7 @@ contains(DEFINES, ENABLE_NETSCAPE_PLUGIN_API=1) {
                 HEADERS += \
                     plugins/qt/PluginContainerQt.h
                 DEFINES += XP_UNIX
+                DEFINES += ENABLE_NETSCAPE_PLUGIN_METADATA_CACHE=1
             }
         }
     
@@ -2722,6 +2722,7 @@ contains(DEFINES, ENABLE_QT_BEARER=1) {
 }
 
 contains(DEFINES, ENABLE_GEOLOCATION=1) {
+    DEFINES += WTF_USE_PREEMPT_GEOLOCATION_PERMISSION
     HEADERS += \
         platform/qt/GeolocationServiceQt.h
     SOURCES += \

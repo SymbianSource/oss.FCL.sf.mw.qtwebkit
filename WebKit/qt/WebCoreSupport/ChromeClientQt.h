@@ -166,15 +166,7 @@ namespace WebCore {
         virtual void scrollRectIntoView(const IntRect&, const ScrollView*) const {}
 
         virtual void requestGeolocationPermissionForFrame(Frame*, Geolocation*);
-        virtual void cancelGeolocationPermissionRequestForFrame(Frame*, Geolocation*) { }
-
-#if ENABLE(WIDGETS_10_SUPPORT)
-        virtual bool isWindowed();
-        virtual bool isFloating();
-        virtual bool isFullscreen();
-        virtual bool isMaximized();
-        virtual bool isMinimized();
-#endif
+        virtual void cancelGeolocationPermissionRequestForFrame(Frame*, Geolocation*);
 
         QtAbstractWebPopup* createSelectPopup();
 

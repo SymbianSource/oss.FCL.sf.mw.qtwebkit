@@ -1,3 +1,432 @@
+2010-09-03  Girish Ramakrishnan  <girish@forwardbias.in>
+
+        Reviewed-by Simon Hausmann.
+
+        Passing a 32-bit depth X pixmap to NPAPI windowless plugins is too inefficient. 
+        Instead, pass a X Pixmap that has same depth as the screen depth since graphics 
+        operations are optimized for this depth.
+
+        https://bugs.webkit.org/show_bug.cgi?id=45167
+
+        * plugins/PluginPackage.cpp:
+        (WebCore::PluginPackage::determineQuirks):
+
+2010-09-01  Mahesh Kulkarni  <mahesh.kulkarni@nokia.com>
+
+        Reviewed by Laszlo Gombos.
+
+        [Qt] QWebPage::allowGeolocationRequest should be async API
+        https://bugs.webkit.org/show_bug.cgi?id=41364
+
+        Adding GeolocationPermissionClientQt.cpp/h to build script
+
+        * WebCore.pro:
+
+2010-08-27  Kimmo Kinnunen  <kimmo.t.kinnunen@nokia.com>
+
+        Reviewed by Kenneth Rohde Christiansen.
+
+        [Qt] Cache plugin info to a persistent database
+
+        https://bugs.webkit.org/show_bug.cgi?id=43179
+
+        Implement a cache of NPAPI plugin metadata. Write the metadata to aa
+        file that gets rewritten if any plugin is added / removed.  Compilation
+        of the feature is controlled by #if ENABLE(NETSCAPE_PLUGIN_METADATA_CACHE)
+
+        Currently only enabled for Qt UNIX flavors.
+
+        * WebCore.pro:  Enable NETSCAPE_PLUGIN_METADATA_CACHE for UNIX builds
+        * platform/qt/FileSystemQt.cpp:
+        (WebCore::openFile): Added.
+        (WebCore::readFromFile): Added.
+        * plugins/PluginDatabase.cpp:
+        (WebCore::persistentPluginMetadataCachePath): Static accessor for the path
+        (WebCore::PluginDatabase::PluginDatabase): Add instance variable.
+        (WebCore::PluginDatabase::refresh):
+        (WebCore::PluginDatabase::pluginForMIMEType): Ensure returned plugin is loaded.
+        (WebCore::PluginDatabase::MIMETypeForExtension): Ensure returned plugin is loaded.
+        (WebCore::PluginDatabase::clear):
+        (WebCore::fillBufferWithContentsOfFile): Static helper function.
+        (WebCore::readUTF8String): Static helper function.
+        (WebCore::readTime): Static helper function.
+        (WebCore::PluginDatabase::loadPersistentMetadataCache):
+        (WebCore::writeUTF8String): Static helper function.
+        (WebCore::writeTime): Static helper function.
+        (WebCore::PluginDatabase::updatePersistentMetadataCache): Added.
+        (WebCore::PluginDatabase::isPersistentMetadataCacheEnabled): Added.
+        (WebCore::PluginDatabase::setPersistentMetadataCacheEnabled):Added.
+        (WebCore::PluginDatabase::persistentMetadataCachePath): Added.
+        (WebCore::PluginDatabase::setPersistentMetadataCachePath): Added.
+        * plugins/PluginDatabase.h:
+        * plugins/PluginPackage.cpp:
+        (WebCore::PluginPackage::PluginPackage): Add instance variable.
+        (WebCore::PluginPackage::createPackageFromCache): Added.
+        (WebCore::PluginPackage::ensurePluginLoaded): Added.
+        * plugins/PluginPackage.h:
+        (WebCore::PluginPackage::fullMIMEDescription): Added.
+        * plugins/qt/PluginPackageQt.cpp:
+        (WebCore::PluginPackage::fetchInfo): Split mime parsing.
+        (WebCore::PluginPackage::setMIMEDescription): Added. Mime parsing.
+
+2010-08-26  Girish Ramakrishnan  <girish@forwardbias.in>
+
+        Reviewed by Simon Hausmann.
+
+        [Qt] Set the clipRect correctly in windowed and windowless mode.
+        In Windowed mode, the values are in page coordinates. In Windowless
+        mode the values are in drawable coordinates. Setting these values is
+        purely academic since they are not used by Flash. However, there is a
+        possibility that plugins might infer a 'null' clipRect to mean 'invisible'.
+
+        https://bugs.webkit.org/show_bug.cgi?id=44594
+
+        * plugins/qt/PluginViewQt.cpp:
+        (WebCore::PluginView::setNPWindowIfNeeded):
+
+2010-08-20  Girish Ramakrishnan  <girish@forwardbias.in>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] When using the raster graphics system on Maemo5, allow
+        Flash to render directly into the raster window surface.
+        wmode=transparent is now supported as a result of this change.
+        
+        https://bugs.webkit.org/show_bug.cgi?id=44043
+        
+        * plugins/qt/PluginViewQt.cpp:
+        (WebCore::PluginView::paintUsingImageSurfaceExtension):
+
+2010-08-18  Girish Ramakrishnan  <girish@forwardbias.in>
+
+        Reviewed by Kenneth Rohde Christiansen.
+
+        [Qt] Implement Maemo5 local rendering NPAPI extension. See 
+        https://wiki.mozilla.org/Plugins:NokiaMaemoImageSurface for details.
+
+        With the local rendering extension, Flash will paint into a 16-bit surface.
+        For wmode=transparent, Flash expects the surface to contain the contents
+        beneath it. As it is tricky to implement the content propagation across all
+        graphics systems, transparent Flash is not supported. We just fill the surface 
+        with white and wmode=transparent behaves the same as wmode=opaque with a white 
+        background.
+
+        https://bugs.webkit.org/show_bug.cgi?id=44043
+
+        * WebCore.pro:
+        * plugins/PluginView.cpp:
+        (WebCore::PluginView::setValue):
+        (WebCore::PluginView::PluginView):
+        * plugins/PluginView.h:
+        * plugins/qt/PluginViewQt.cpp:
+        (WebCore::PluginView::updatePluginWidget):
+        (WebCore::PluginView::paintUsingImageSurfaceExtension):
+        (WebCore::PluginView::paint):
+        (WebCore::PluginView::platformGetValueStatic):
+
+2010-08-17  Girish Ramakrishnan  <girish@forwardbias.in>
+
+        Reviewed by Antonio Gomes.
+
+        [Qt] On Maemo5, there is no libgdk-x11-2.0.so symlink. Look for 
+        libgdk-x11-2.0.so.0 instead on X11 and Maemo5.
+
+        https://bugs.webkit.org/show_bug.cgi?id=44043
+
+        * plugins/qt/PluginViewQt.cpp:
+        (WebCore::getPluginDisplay):
+
+2010-08-17  Girish Ramakrishnan  <girish@forwardbias.in>
+
+        Reviewed by Kenneth Rohde Christiansen.
+        Set PluginQuirkRequiresDefaultScreenDepth for all Flash versions and not
+        just Flash 10.
+
+        https://bugs.webkit.org/show_bug.cgi?id=44043
+
+        * plugins/PluginPackage.cpp:
+        (WebCore::PluginPackage::determineQuirks):
+
+2010-08-18  Mahesh Kulkarni  <mahesh.kulkarni@nokia.com>
+
+        Reviewed by Steve Block.
+
+        [Qt] Request for permission before starting Geolocation service
+        https://bugs.webkit.org/show_bug.cgi?id=42027
+
+        Handles starting location acquisition when request is granted for ports using 
+        "!CLIENT_BASED_GEOLOCATION and PREEMPT_GEOLOCATION_PERMISSION" policy
+        Only Qt port as of today uses the above combination. Enable 
+        PREEMPT_GEOLOCATION_PERMISSION for qt port. 
+
+        Below tests cover these changes on platform using PREEMPT_GEOLOCATION_PERMISSION
+        - fast/dom/Geolocation/delayed-permission-allowed.html
+        - fast/dom/Geolocation/delayed-permission-denied.html
+        - fast/dom/Geolocation/delayed-permission-allowed-for-multiple-requests.html
+        - fast/dom/Geolocation/delayed-permission-denied-for-multiple-requests.html
+
+        * WebCore.pro:
+        * page/Geolocation.cpp:
+        (WebCore::Geolocation::handlePendingPermissionNotifiers):
+
+2010-08-18  Sheriff Bot  <webkit.review.bot@gmail.com>
+
+        Unreviewed, rolling out r65603.
+        http://trac.webkit.org/changeset/65603
+        https://bugs.webkit.org/show_bug.cgi?id=44179
+
+        4 tests crash on Qt bot (Requested by Ossy on #webkit).
+
+        * WebCore.pro:
+        * page/Geolocation.cpp:
+        (WebCore::Geolocation::handlePendingPermissionNotifiers):
+
+2010-08-18  Mahesh Kulkarni  <mahesh.kulkarni@nokia.com>
+
+        Reviewed by Steve Block.
+
+        [Qt] Request for permission before starting Geolocation service
+        https://bugs.webkit.org/show_bug.cgi?id=42027
+
+        Handles starting location acquisition when request is granted for ports using 
+        "!CLIENT_BASED_GEOLOCATION and PREEMPT_GEOLOCATION_PERMISSION" policy
+        Only Qt port as of today uses the above combination. Enable 
+        PREEMPT_GEOLOCATION_PERMISSION for qt port. 
+
+        Below tests cover these changes on platform using PREEMPT_GEOLOCATION_PERMISSION
+        - fast/dom/Geolocation/delayed-permission-allowed.html
+        - fast/dom/Geolocation/delayed-permission-denied.html
+        - fast/dom/Geolocation/delayed-permission-allowed-for-multiple-requests.html
+        - fast/dom/Geolocation/delayed-permission-denied-for-multiple-requests.html
+
+        * WebCore.pro:
+        * page/Geolocation.cpp:
+        (WebCore::Geolocation::handlePendingPermissionNotifiers):
+
+2010-08-17  Mahesh Kulkarni  <mahesh.kulkarni@nokia.com>
+
+        Reviewed by Steve Block.
+
+        Geolocation preemptive permissions policy is buggy
+        https://bugs.webkit.org/show_bug.cgi?id=42811
+
+        While waiting for permission, m_startRequestPermissionNotifier was 
+        used to consider only one pending request. This patch implements a set
+        m_pendingForPermissionNotifiers to maintain set of pending requests. 
+        When user grants/denies permission all listeners will be notified. 
+        Also fixed issue with hasZeroTimeout() where startTimerIfNeeded() has
+        to start irrespective of permission state
+
+        Tests: fast/dom/Geolocation/delayed-permission-allowed-for-multiple-requests.html
+               fast/dom/Geolocation/delayed-permission-denied-for-multiple-requests.html
+
+        * WebCore.pro:
+        * page/Geolocation.cpp:
+        (WebCore::Geolocation::startRequest):
+        (WebCore::Geolocation::setIsAllowed):
+        (WebCore::Geolocation::startUpdating):
+        (WebCore::Geolocation::handlePendingPermissionNotifiers):
+        * page/Geolocation.h:
+
+2010-07-27  Steve Block  <steveblock@google.com>
+
+        Reviewed by Jeremy Orlow.
+
+        Client-based Geolocation does not pass enableHighAccuracy option to controller and client
+        https://bugs.webkit.org/show_bug.cgi?id=40374
+
+        This change passes the enableHighAccuracy request option to the GeolocationController.
+        The GeolocationController tracks whether this should be used by the client.
+
+        No new tests possible as the mock provider doesn't support this feature.
+
+        * page/Geolocation.cpp:
+        (WebCore::Geolocation::setIsAllowed):
+        (WebCore::Geolocation::startUpdating):
+        * page/GeolocationController.cpp:
+        (WebCore::GeolocationController::addObserver):
+        (WebCore::GeolocationController::removeObserver):
+        * page/GeolocationController.h:
+        * page/GeolocationControllerClient.h:
+
+2010-08-24  Laszlo Gombos  <laszlo.1.gombos@nokia.com>
+
+        Reviewed by Simon Hausmann.
+
+        [Qt][Symbian] Make sure WebKit headers are included before platform headers on Symbian
+        https://bugs.webkit.org/show_bug.cgi?id=31273
+
+        On Symbian PREPEND_INCLUDEPATH is the best way to make sure that
+        WebKit headers are included before platform headers. On all other
+        platforms continue to use INCLUDEPATH (as before).
+
+        This patch also removed the workarounds that are put in place 
+        now that we have a better solution.
+
+        No new tests as there is no new functionality.
+
+        * WebCore.pro:
+
+2010-08-16  Andreas Kling  <andreas.kling@nokia.com>
+
+        Reviewed by Darin Adler.
+
+        CSS: Add fast-path for rgba() color parsing
+        https://bugs.webkit.org/show_bug.cgi?id=42965
+
+        Test: fast/canvas/rgba-parsing.html
+
+        * css/CSSParser.cpp:
+        (WebCore::CSSParser::parseColor): Extended with support for rgba().
+        (WebCore::parseAlphaValue): Added, parses an alpha value using
+        WTF::strtod() (if necessary) and clamps between 0 and 1.
+        (WebCore::isTenthAlpha):
+
+2010-08-23  Andreas Kling  <andreas.kling@nokia.com>
+
+        Reviewed by Kenneth Rohde Christiansen.
+
+        [Qt] -webkit-text-stroke is broken due to Qt::TextBypassShaping
+        https://bugs.webkit.org/show_bug.cgi?id=44403
+
+        Don't bypass the Harfbuzz shaping if we're drawing text with a stroke.
+        For canvas, always use complex text shaping since stroke and fill are decoupled.
+
+        * html/canvas/CanvasRenderingContext2D.cpp:
+        (WebCore::CanvasRenderingContext2D::measureText):
+        (WebCore::CanvasRenderingContext2D::drawTextInternal):
+        * platform/graphics/qt/FontQt.cpp:
+        (WebCore::drawTextCommon):
+
+2010-08-16  Andreas Kling  <andreas.kling@nokia.com>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] Path::closeSubpath() should only close the last subpath if it has >1 point
+        https://bugs.webkit.org/show_bug.cgi?id=44061
+
+        Spec link:
+        http://www.whatwg.org/specs/web-apps/current-work/#dom-context-2d-closepath
+
+        Test: fast/canvas/canvas-closePath-single-point.html
+
+        * platform/graphics/Path.h: Add a Qt-only member to track the last subpath.
+        * platform/graphics/qt/PathQt.cpp:
+        (WebCore::Path::closeSubpath): Only close the last subpath if it
+        has more than 1 point. Otherwise behave as moveTo(first point in last subpath)
+        (WebCore::Path::Path):
+        (WebCore::Path::operator=):
+        (WebCore::Path::moveTo):
+        (WebCore::Path::transform):
+
+2010-08-19  Laszlo Gombos  <laszlo.1.gombos@nokia.com>
+
+        Reviewed by Simon Hausmann.
+
+        [Qt] Disable XSLT for production configuration
+        https://bugs.webkit.org/show_bug.cgi?id=37445
+
+        Introduce a new CONFIG option to maintain stable configuration for
+        the QtWebKit port and disable XSLT for the stable configuration
+        because of bug 37445.
+
+        No new tests as there is no new functionality.
+
+        * features.pri:
+
+2010-08-12  Hui Huang  <hui.2.huang@nokia.com>
+
+        Reviewed by Eric Seidel.
+
+        m_windowRect is not updated because parent of PluginView is not
+        set when updatePluginWidget is called. plugin gets wrong window
+        size on setwindow.
+        https://bugs.webkit.org/show_bug.cgi?id=43635
+
+        * plugins/symbian/PluginViewSymbian.cpp:
+        (WebCore::PluginView::setParent):
+
+2010-08-13  Simon Hausmann  <simon.hausmann@nokia.com>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] Clean up mobile feature useage
+        https://bugs.webkit.org/show_bug.cgi?id=43968
+
+        * WebCore.pro: Replaced use of Nokia specific platform scopes with concrete
+        feature names.
+
+2010-08-12  Benjamin Poulain  <benjamin.poulain@nokia.com>
+
+        Reviewed by Simon Hausmann.
+
+        [Qt] Decode images directly to QPixmap
+        https://bugs.webkit.org/show_bug.cgi?id=40797
+
+        Use the new API of Qt 4.7 to decode data from the image
+        reader directly to QPixmap.
+
+        This allow us to use JDCT_IFAST when decoding jpeg images
+        to pixmap, and to decode animated GIF images, while still
+        using in-place conversion of color space.
+
+        * platform/graphics/qt/ImageDecoderQt.cpp:
+        (WebCore::ImageDecoderQt::setData):
+        (WebCore::ImageDecoderQt::internalHandleCurrentImage):
+
+2010-08-10  Tor Arne Vestbø  <tor.arne.vestbo@nokia.com>
+
+        Reviewed by Simon Hausmann.
+
+        Make sure NPAPI plugins get an initial setNPWindow on Mac
+
+        https://bugs.webkit.org/show_bug.cgi?id=43782
+
+        * plugins/mac/PluginViewMac.mm:
+
+2010-08-04  Antonio Gomes  <tonikitoo@webkit.org>
+
+        Reviewed by Daniel Bates.
+
+        Remove superfluous non-negative checks in HitTestResult:padding{Width|Height}
+        https://bugs.webkit.org/show_bug.cgi?id=43534
+
+        As pointed out by Steve Block in https://bugs.webkit.org/show_bug.cgi?id=40197#c54 ,
+        the non-negative checks present in both paddingWidth and paddingHeight methods of
+        HitTestResults class are superflous, after we changed the rect based hit testing logic
+        of invalid padding from IntSize(-1, -1) to IntSize(0, 0). Patch addresses this issue.
+
+        No new tests needed.
+
+        * rendering/HitTestResult.h:
+        (WebCore::HitTestResult::paddingWidth):
+        (WebCore::HitTestResult::paddingHeight):
+
+2010-07-30  Luiz Agostini  <luiz.agostini@openbossa.org>
+
+        Reviewed by Simon Fraser.
+
+        Enabling view modes to all platforms
+        https://bugs.webkit.org/show_bug.cgi?id=37505
+
+        View mode media feature implementation as specified in http://www.w3.org/TR/view-mode.
+
+        The view mode media feature layout tests are stil skipped for all platforms except Qt
+        because of the lack of support of LayoutTestController in those platforms.
+
+        Test: fast/media/view-mode-media-feature.html
+
+        * css/MediaFeatureNames.h:
+        * css/MediaQueryEvaluator.cpp:
+        (WebCore::view_modeMediaFeatureEval):
+        * page/ChromeClient.h:
+        * page/Page.cpp:
+        (WebCore::Page::Page):
+        (WebCore::createViewModesSet):
+        (WebCore::Page::setViewMode):
+        * page/Page.h:
+        (WebCore::Page::viewMode):
+
 2010-08-05  Simon Hausmann  <simon.hausmann@nokia.com>
 
         Reviewed by Laszlo Gombos.

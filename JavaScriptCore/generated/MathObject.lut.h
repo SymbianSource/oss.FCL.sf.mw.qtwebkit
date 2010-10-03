@@ -1,4 +1,4 @@
-// Automatically generated from u:\yaels-qtwebkit\JavaScriptCore\runtime\MathObject.cpp using ../../JavaScriptCore/create_hash_table. DO NOT EDIT!
+// Automatically generated from runtime/MathObject.cpp using /home/hg/repos/qtwebkit-rel/JavaScriptCore/create_hash_table. DO NOT EDIT!
 
 #include "Lookup.h"
 

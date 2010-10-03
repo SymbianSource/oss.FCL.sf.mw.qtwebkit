@@ -1,3 +1,21 @@
+2010-08-13  Simon Hausmann  <simon.hausmann@nokia.com>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] Introduce Maemo6 for mobile features
+        https://bugs.webkit.org/show_bug.cgi?id=43969
+
+        * WebKit.pri: Use maemo6 where we also use maemo5.
+
+2010-08-13  Simon Hausmann  <simon.hausmann@nokia.com>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] Clean up mobile feature useage
+        https://bugs.webkit.org/show_bug.cgi?id=43968
+
+        * WebKit.pri: Set feature defaults here for some Nokia specific mobile platforms
+
 2010-07-20  Rafael Antognolli  <antognolli@profusion.mobi>
 
         Reviewed by Antonio Gomes.

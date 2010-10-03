@@ -5448,7 +5448,7 @@ void CSSStyleSelector::applyProperty(int id, CSSValue *value)
     case CSSPropertyWebkitTransitionTimingFunction:
         HANDLE_TRANSITION_VALUE(timingFunction, TimingFunction, value)
         return;
-#if 0 // :HACK:
+#if ENABLE(HAPTICS)
     case CSSPropertyWebkitHapticTapType: {
         HANDLE_INHERIT_AND_INITIAL(hapticTapType, HapticTapType)
         m_style->setHapticTapType(*primitiveValue);

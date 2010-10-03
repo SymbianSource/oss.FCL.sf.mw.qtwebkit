@@ -124,6 +124,7 @@ JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionQueryCommandState(J
 JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionQueryCommandSupported(JSC::ExecState*);
 JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionQueryCommandValue(JSC::ExecState*);
 JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionGetElementsByName(JSC::ExecState*);
+JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionNodesFromRect(JSC::ExecState*);
 JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionElementFromPoint(JSC::ExecState*);
 JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionCaretRangeFromPoint(JSC::ExecState*);
 JSC::EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionGetSelection(JSC::ExecState*);

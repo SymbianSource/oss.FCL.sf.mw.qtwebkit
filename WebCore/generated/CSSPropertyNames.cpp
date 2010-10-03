@@ -1,4 +1,4 @@
-/* ANSI-C code produced by gperf version 3.0.1 */
+/* ANSI-C code produced by gperf version 3.0.3 */
 /* Command-line: gperf --key-positions='*' -D -n -s 2 CSSPropertyNames.gperf  */
 
 #if !((' ' == 32) && ('!' == 33) && ('"' == 34) && ('#' == 35) \
@@ -40,7 +40,7 @@ struct Property {
 #include <string.h>
 enum
   {
-    TOTAL_KEYWORDS = 297,
+    TOTAL_KEYWORDS = 300,
     MIN_WORD_LENGTH = 3,
     MAX_WORD_LENGTH = 43,
     MIN_HASH_VALUE = 0,
@@ -243,9 +243,9 @@ static const struct Property property_wordlist[] =
     {"zoom", CSSPropertyZoom},
 #line 99 "CSSPropertyNames.gperf"
     {"min-width", CSSPropertyMinWidth},
-#line 294 "CSSPropertyNames.gperf"
+#line 297 "CSSPropertyNames.gperf"
     {"marker", CSSPropertyMarker},
-#line 296 "CSSPropertyNames.gperf"
+#line 299 "CSSPropertyNames.gperf"
     {"marker-mid", CSSPropertyMarkerMid},
 #line 97 "CSSPropertyNames.gperf"
     {"max-width", CSSPropertyMaxWidth},
@@ -257,11 +257,11 @@ static const struct Property property_wordlist[] =
     {"-webkit-box-orient", CSSPropertyWebkitBoxOrient},
 #line 176 "CSSPropertyNames.gperf"
     {"-webkit-border-end", CSSPropertyWebkitBorderEnd},
-#line 295 "CSSPropertyNames.gperf"
+#line 298 "CSSPropertyNames.gperf"
     {"marker-end", CSSPropertyMarkerEnd},
 #line 159 "CSSPropertyNames.gperf"
     {"z-index", CSSPropertyZIndex},
-#line 299 "CSSPropertyNames.gperf"
+#line 302 "CSSPropertyNames.gperf"
     {"stroke", CSSPropertyStroke},
 #line 148 "CSSPropertyNames.gperf"
     {"top", CSSPropertyTop},
@@ -269,9 +269,9 @@ static const struct Property property_wordlist[] =
     {"-webkit-border-end-width", CSSPropertyWebkitBorderEndWidth},
 #line 154 "CSSPropertyNames.gperf"
     {"widows", CSSPropertyWidows},
-#line 306 "CSSPropertyNames.gperf"
+#line 309 "CSSPropertyNames.gperf"
     {"stroke-width", CSSPropertyStrokeWidth},
-#line 278 "CSSPropertyNames.gperf"
+#line 281 "CSSPropertyNames.gperf"
     {"mask", CSSPropertyMask},
 #line 66 "CSSPropertyNames.gperf"
     {"border-top", CSSPropertyBorderTop},
@@ -295,7 +295,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-border-start", CSSPropertyWebkitBorderStart},
 #line 198 "CSSPropertyNames.gperf"
     {"-webkit-box-shadow", CSSPropertyWebkitBoxShadow},
-#line 297 "CSSPropertyNames.gperf"
+#line 300 "CSSPropertyNames.gperf"
     {"marker-start", CSSPropertyMarkerStart},
 #line 158 "CSSPropertyNames.gperf"
     {"word-wrap", CSSPropertyWordWrap},
@@ -311,7 +311,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-animation-name", CSSPropertyWebkitAnimationName},
 #line 77 "CSSPropertyNames.gperf"
     {"content", CSSPropertyContent},
-#line 304 "CSSPropertyNames.gperf"
+#line 307 "CSSPropertyNames.gperf"
     {"stroke-miterlimit", CSSPropertyStrokeMiterlimit},
 #line 218 "CSSPropertyNames.gperf"
     {"-webkit-line-break", CSSPropertyWebkitLineBreak},
@@ -321,7 +321,7 @@ static const struct Property property_wordlist[] =
     {"orphans", CSSPropertyOrphans},
 #line 190 "CSSPropertyNames.gperf"
     {"-webkit-box-direction", CSSPropertyWebkitBoxDirection},
-#line 313 "CSSPropertyNames.gperf"
+#line 316 "CSSPropertyNames.gperf"
     {"text-anchor", CSSPropertyTextAnchor},
 #line 125 "CSSPropertyNames.gperf"
     {"src", CSSPropertySrc},
@@ -333,7 +333,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-mask-size", CSSPropertyWebkitMaskSize},
 #line 193 "CSSPropertyNames.gperf"
     {"-webkit-box-lines", CSSPropertyWebkitBoxLines},
-#line 303 "CSSPropertyNames.gperf"
+#line 306 "CSSPropertyNames.gperf"
     {"stroke-linejoin", CSSPropertyStrokeLinejoin},
 #line 138 "CSSPropertyNames.gperf"
     {"text-overline-mode", CSSPropertyTextOverlineMode},
@@ -361,7 +361,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-animation-direction", CSSPropertyWebkitAnimationDirection},
 #line 239 "CSSPropertyNames.gperf"
     {"-webkit-mask-position-x", CSSPropertyWebkitMaskPositionX},
-#line 309 "CSSPropertyNames.gperf"
+#line 312 "CSSPropertyNames.gperf"
     {"dominant-baseline", CSSPropertyDominantBaseline},
 #line 177 "CSSPropertyNames.gperf"
     {"-webkit-border-end-color", CSSPropertyWebkitBorderEndColor},
@@ -377,9 +377,11 @@ static const struct Property property_wordlist[] =
     {"border-top-color", CSSPropertyBorderTopColor},
 #line 258 "CSSPropertyNames.gperf"
     {"-webkit-text-stroke-color", CSSPropertyWebkitTextStrokeColor},
+#line 275 "CSSPropertyNames.gperf"
+    {"-webkit-haptic-tap", CSSPropertyWebkitHapticTap},
 #line 185 "CSSPropertyNames.gperf"
     {"-webkit-border-start-color", CSSPropertyWebkitBorderStartColor},
-#line 284 "CSSPropertyNames.gperf"
+#line 287 "CSSPropertyNames.gperf"
     {"stop-color", CSSPropertyStopColor},
 #line 235 "CSSPropertyNames.gperf"
     {"-webkit-mask-composite", CSSPropertyWebkitMaskComposite},
@@ -387,7 +389,7 @@ static const struct Property property_wordlist[] =
     {"right", CSSPropertyRight},
 #line 84 "CSSPropertyNames.gperf"
     {"height", CSSPropertyHeight},
-#line 276 "CSSPropertyNames.gperf"
+#line 279 "CSSPropertyNames.gperf"
     {"clip-path", CSSPropertyClipPath},
 #line 169 "CSSPropertyNames.gperf"
     {"-webkit-appearance", CSSPropertyWebkitAppearance},
@@ -395,7 +397,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-mask-clip", CSSPropertyWebkitMaskClip},
 #line 60 "CSSPropertyNames.gperf"
     {"border-right", CSSPropertyBorderRight},
-#line 302 "CSSPropertyNames.gperf"
+#line 305 "CSSPropertyNames.gperf"
     {"stroke-linecap", CSSPropertyStrokeLinecap},
 #line 98 "CSSPropertyNames.gperf"
     {"min-height", CSSPropertyMinHeight},
@@ -403,9 +405,9 @@ static const struct Property property_wordlist[] =
     {"border-right-width", CSSPropertyBorderRightWidth},
 #line 96 "CSSPropertyNames.gperf"
     {"max-height", CSSPropertyMaxHeight},
-#line 315 "CSSPropertyNames.gperf"
+#line 318 "CSSPropertyNames.gperf"
     {"writing-mode", CSSPropertyWritingMode},
-#line 312 "CSSPropertyNames.gperf"
+#line 315 "CSSPropertyNames.gperf"
     {"kerning", CSSPropertyKerning},
 #line 137 "CSSPropertyNames.gperf"
     {"text-overline-color", CSSPropertyTextOverlineColor},
@@ -423,7 +425,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-border-image", CSSPropertyWebkitBorderImage},
 #line 219 "CSSPropertyNames.gperf"
     {"-webkit-line-clamp", CSSPropertyWebkitLineClamp},
-#line 286 "CSSPropertyNames.gperf"
+#line 289 "CSSPropertyNames.gperf"
     {"color-interpolation", CSSPropertyColorInterpolation},
 #line 222 "CSSPropertyNames.gperf"
     {"-webkit-margin-end", CSSPropertyWebkitMarginEnd},
@@ -457,7 +459,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-margin-start", CSSPropertyWebkitMarginStart},
 #line 247 "CSSPropertyNames.gperf"
     {"-webkit-padding-end", CSSPropertyWebkitPaddingEnd},
-#line 275 "CSSPropertyNames.gperf"
+#line 278 "CSSPropertyNames.gperf"
     {"-webkit-dashboard-region", CSSPropertyWebkitDashboardRegion},
 #line 189 "CSSPropertyNames.gperf"
     {"-webkit-box-align", CSSPropertyWebkitBoxAlign},
@@ -475,7 +477,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-border-radius", CSSPropertyWebkitBorderRadius},
 #line 106 "CSSPropertyNames.gperf"
     {"outline-width", CSSPropertyOutlineWidth},
-#line 298 "CSSPropertyNames.gperf"
+#line 301 "CSSPropertyNames.gperf"
     {"shape-rendering", CSSPropertyShapeRendering},
 #line 118 "CSSPropertyNames.gperf"
     {"page-break-inside", CSSPropertyPageBreakInside},
@@ -491,7 +493,7 @@ static const struct Property property_wordlist[] =
     {"text-underline-mode", CSSPropertyTextUnderlineMode},
 #line 147 "CSSPropertyNames.gperf"
     {"text-underline-width", CSSPropertyTextUnderlineWidth},
-#line 316 "CSSPropertyNames.gperf"
+#line 319 "CSSPropertyNames.gperf"
     {"-webkit-svg-shadow", CSSPropertyWebkitSvgShadow},
 #line 61 "CSSPropertyNames.gperf"
     {"border-right-color", CSSPropertyBorderRightColor},
@@ -505,13 +507,13 @@ static const struct Property property_wordlist[] =
     {"cursor", CSSPropertyCursor},
 #line 268 "CSSPropertyNames.gperf"
     {"-webkit-transition-duration", CSSPropertyWebkitTransitionDuration},
-#line 289 "CSSPropertyNames.gperf"
+#line 292 "CSSPropertyNames.gperf"
     {"color-rendering", CSSPropertyColorRendering},
 #line 228 "CSSPropertyNames.gperf"
     {"-webkit-marquee-repetition", CSSPropertyWebkitMarqueeRepetition},
 #line 30 "CSSPropertyNames.gperf"
     {"-webkit-text-size-adjust", CSSPropertyWebkitTextSizeAdjust},
-#line 300 "CSSPropertyNames.gperf"
+#line 303 "CSSPropertyNames.gperf"
     {"stroke-dasharray", CSSPropertyStrokeDasharray},
 #line 79 "CSSPropertyNames.gperf"
     {"counter-reset", CSSPropertyCounterReset},
@@ -547,11 +549,11 @@ static const struct Property property_wordlist[] =
     {"-webkit-marquee-increment", CSSPropertyWebkitMarqueeIncrement},
 #line 23 "CSSPropertyNames.gperf"
     {"font", CSSPropertyFont},
-#line 307 "CSSPropertyNames.gperf"
+#line 310 "CSSPropertyNames.gperf"
     {"alignment-baseline", CSSPropertyAlignmentBaseline},
 #line 186 "CSSPropertyNames.gperf"
     {"-webkit-border-start-style", CSSPropertyWebkitBorderStartStyle},
-#line 305 "CSSPropertyNames.gperf"
+#line 308 "CSSPropertyNames.gperf"
     {"stroke-opacity", CSSPropertyStrokeOpacity},
 #line 180 "CSSPropertyNames.gperf"
     {"-webkit-border-fit", CSSPropertyWebkitBorderFit},
@@ -571,15 +573,17 @@ static const struct Property property_wordlist[] =
     {"letter-spacing", CSSPropertyLetterSpacing},
 #line 103 "CSSPropertyNames.gperf"
     {"outline-color", CSSPropertyOutlineColor},
+#line 277 "CSSPropertyNames.gperf"
+    {"-webkit-haptic-tap-strength", CSSPropertyWebkitHapticTapStrength},
 #line 94 "CSSPropertyNames.gperf"
     {"margin-right", CSSPropertyMarginRight},
 #line 85 "CSSPropertyNames.gperf"
     {"left", CSSPropertyLeft},
-#line 285 "CSSPropertyNames.gperf"
+#line 288 "CSSPropertyNames.gperf"
     {"stop-opacity", CSSPropertyStopOpacity},
 #line 139 "CSSPropertyNames.gperf"
     {"text-overline-style", CSSPropertyTextOverlineStyle},
-#line 280 "CSSPropertyNames.gperf"
+#line 283 "CSSPropertyNames.gperf"
     {"filter", CSSPropertyFilter},
 #line 273 "CSSPropertyNames.gperf"
     {"-webkit-user-select", CSSPropertyWebkitUserSelect},
@@ -601,9 +605,9 @@ static const struct Property property_wordlist[] =
     {"text-transform", CSSPropertyTextTransform},
 #line 251 "CSSPropertyNames.gperf"
     {"-webkit-perspective-origin-x", CSSPropertyWebkitPerspectiveOriginX},
-#line 293 "CSSPropertyNames.gperf"
+#line 296 "CSSPropertyNames.gperf"
     {"image-rendering", CSSPropertyImageRendering},
-#line 277 "CSSPropertyNames.gperf"
+#line 280 "CSSPropertyNames.gperf"
     {"clip-rule", CSSPropertyClipRule},
 #line 58 "CSSPropertyNames.gperf"
     {"border-left-width", CSSPropertyBorderLeftWidth},
@@ -621,13 +625,15 @@ static const struct Property property_wordlist[] =
     {"padding-right", CSSPropertyPaddingRight},
 #line 210 "CSSPropertyNames.gperf"
     {"-webkit-column-span", CSSPropertyWebkitColumnSpan},
+#line 276 "CSSPropertyNames.gperf"
+    {"-webkit-haptic-tap-type", CSSPropertyWebkitHapticTapType},
 #line 181 "CSSPropertyNames.gperf"
     {"-webkit-border-horizontal-spacing", CSSPropertyWebkitBorderHorizontalSpacing},
 #line 107 "CSSPropertyNames.gperf"
     {"overflow", CSSPropertyOverflow},
 #line 108 "CSSPropertyNames.gperf"
     {"overflow-x", CSSPropertyOverflowX},
-#line 290 "CSSPropertyNames.gperf"
+#line 293 "CSSPropertyNames.gperf"
     {"fill", CSSPropertyFill},
 #line 135 "CSSPropertyNames.gperf"
     {"text-overflow", CSSPropertyTextOverflow},
@@ -657,7 +663,7 @@ static const struct Property property_wordlist[] =
     {"text-line-through-width", CSSPropertyTextLineThroughWidth},
 #line 213 "CSSPropertyNames.gperf"
     {"-webkit-font-size-delta", CSSPropertyWebkitFontSizeDelta},
-#line 308 "CSSPropertyNames.gperf"
+#line 311 "CSSPropertyNames.gperf"
     {"baseline-shift", CSSPropertyBaselineShift},
 #line 224 "CSSPropertyNames.gperf"
     {"-webkit-margin-top-collapse", CSSPropertyWebkitMarginTopCollapse},
@@ -673,19 +679,19 @@ static const struct Property property_wordlist[] =
     {"unicode-range", CSSPropertyUnicodeRange},
 #line 188 "CSSPropertyNames.gperf"
     {"-webkit-border-vertical-spacing", CSSPropertyWebkitBorderVerticalSpacing},
-#line 281 "CSSPropertyNames.gperf"
+#line 284 "CSSPropertyNames.gperf"
     {"flood-color", CSSPropertyFloodColor},
 #line 56 "CSSPropertyNames.gperf"
     {"border-left-color", CSSPropertyBorderLeftColor},
 #line 194 "CSSPropertyNames.gperf"
     {"-webkit-box-ordinal-group", CSSPropertyWebkitBoxOrdinalGroup},
-#line 283 "CSSPropertyNames.gperf"
+#line 286 "CSSPropertyNames.gperf"
     {"lighting-color", CSSPropertyLightingColor},
 #line 45 "CSSPropertyNames.gperf"
     {"background-size", CSSPropertyBackgroundSize},
 #line 42 "CSSPropertyNames.gperf"
     {"background-repeat", CSSPropertyBackgroundRepeat},
-#line 288 "CSSPropertyNames.gperf"
+#line 291 "CSSPropertyNames.gperf"
     {"color-profile", CSSPropertyColorProfile},
 #line 174 "CSSPropertyNames.gperf"
     {"-webkit-background-size", CSSPropertyWebkitBackgroundSize},
@@ -695,7 +701,7 @@ static const struct Property property_wordlist[] =
     {"font-weight", CSSPropertyFontWeight},
 #line 256 "CSSPropertyNames.gperf"
     {"-webkit-text-security", CSSPropertyWebkitTextSecurity},
-#line 279 "CSSPropertyNames.gperf"
+#line 282 "CSSPropertyNames.gperf"
     {"enable-background", CSSPropertyEnableBackground},
 #line 39 "CSSPropertyNames.gperf"
     {"background-position", CSSPropertyBackgroundPosition},
@@ -729,7 +735,7 @@ static const struct Property property_wordlist[] =
     {"page-break-before", CSSPropertyPageBreakBefore},
 #line 261 "CSSPropertyNames.gperf"
     {"-webkit-transform-origin", CSSPropertyWebkitTransformOrigin},
-#line 310 "CSSPropertyNames.gperf"
+#line 313 "CSSPropertyNames.gperf"
     {"glyph-orientation-horizontal", CSSPropertyGlyphOrientationHorizontal},
 #line 262 "CSSPropertyNames.gperf"
     {"-webkit-transform-origin-x", CSSPropertyWebkitTransformOriginX},
@@ -755,7 +761,7 @@ static const struct Property property_wordlist[] =
     {"padding-left", CSSPropertyPaddingLeft},
 #line 171 "CSSPropertyNames.gperf"
     {"-webkit-background-clip", CSSPropertyWebkitBackgroundClip},
-#line 287 "CSSPropertyNames.gperf"
+#line 290 "CSSPropertyNames.gperf"
     {"color-interpolation-filters", CSSPropertyColorInterpolationFilters},
 #line 26 "CSSPropertyNames.gperf"
     {"font-style", CSSPropertyFontStyle},
@@ -765,7 +771,7 @@ static const struct Property property_wordlist[] =
     {"overflow-y", CSSPropertyOverflowY},
 #line 49 "CSSPropertyNames.gperf"
     {"border-bottom-left-radius", CSSPropertyBorderBottomLeftRadius},
-#line 311 "CSSPropertyNames.gperf"
+#line 314 "CSSPropertyNames.gperf"
     {"glyph-orientation-vertical", CSSPropertyGlyphOrientationVertical},
 #line 38 "CSSPropertyNames.gperf"
     {"background-origin", CSSPropertyBackgroundOrigin},
@@ -777,7 +783,7 @@ static const struct Property property_wordlist[] =
     {"border-top-left-radius", CSSPropertyBorderTopLeftRadius},
 #line 57 "CSSPropertyNames.gperf"
     {"border-left-style", CSSPropertyBorderLeftStyle},
-#line 292 "CSSPropertyNames.gperf"
+#line 295 "CSSPropertyNames.gperf"
     {"fill-rule", CSSPropertyFillRule},
 #line 265 "CSSPropertyNames.gperf"
     {"-webkit-transform-style", CSSPropertyWebkitTransformStyle},
@@ -787,17 +793,17 @@ static const struct Property property_wordlist[] =
     {"-webkit-column-rule-color", CSSPropertyWebkitColumnRuleColor},
 #line 201 "CSSPropertyNames.gperf"
     {"-webkit-column-break-after", CSSPropertyWebkitColumnBreakAfter},
-#line 282 "CSSPropertyNames.gperf"
+#line 285 "CSSPropertyNames.gperf"
     {"flood-opacity", CSSPropertyFloodOpacity},
 #line 44 "CSSPropertyNames.gperf"
     {"background-repeat-y", CSSPropertyBackgroundRepeatY},
 #line 133 "CSSPropertyNames.gperf"
     {"text-line-through-style", CSSPropertyTextLineThroughStyle},
-#line 291 "CSSPropertyNames.gperf"
+#line 294 "CSSPropertyNames.gperf"
     {"fill-opacity", CSSPropertyFillOpacity},
 #line 41 "CSSPropertyNames.gperf"
     {"background-position-y", CSSPropertyBackgroundPositionY},
-#line 301 "CSSPropertyNames.gperf"
+#line 304 "CSSPropertyNames.gperf"
     {"stroke-dashoffset", CSSPropertyStrokeDashoffset},
 #line 263 "CSSPropertyNames.gperf"
     {"-webkit-transform-origin-y", CSSPropertyWebkitTransformOriginY},
@@ -807,7 +813,7 @@ static const struct Property property_wordlist[] =
     {"-webkit-backface-visibility", CSSPropertyWebkitBackfaceVisibility},
 #line 192 "CSSPropertyNames.gperf"
     {"-webkit-box-flex-group", CSSPropertyWebkitBoxFlexGroup},
-#line 314 "CSSPropertyNames.gperf"
+#line 317 "CSSPropertyNames.gperf"
     {"vector-effect", CSSPropertyVectorEffect},
 #line 168 "CSSPropertyNames.gperf"
     {"-webkit-animation-timing-function", CSSPropertyWebkitAnimationTimingFunction},
@@ -873,168 +879,168 @@ static const short lookup[] =
      -1,  74,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  75,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  76,  -1,  -1,  -1,  -1,
+     -1,  75,  -1,  -1,  -1,  76,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  77,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     77,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     78,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  78,  79,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  80,  -1,  -1,  -1,
-     81,  -1,  -1,  -1,  -1,  82,  83,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  84,  -1,  85,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  86,  -1,  -1,
-     -1,  -1,  -1,  87,  -1,  88,  -1,  -1,  -1,  -1,
-     89,  -1,  90,  -1,  -1,  91,  92,  -1,  -1,  -1,
-     93,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     94,  -1,  -1,  -1,  -1,  -1,  95,  -1,  -1,  -1,
-     96,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  97,  -1,  -1,  -1,  -1,
-     98,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  79,  80,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  81,  -1,  -1,  -1,
+     82,  -1,  -1,  -1,  -1,  83,  84,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  85,  -1,  86,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  87,  -1,  -1,
+     -1,  -1,  -1,  88,  -1,  89,  -1,  -1,  -1,  -1,
+     90,  -1,  91,  -1,  -1,  92,  93,  -1,  -1,  -1,
+     94,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     95,  -1,  -1,  -1,  -1,  -1,  96,  -1,  -1,  -1,
+     97,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  98,  -1,  -1,  -1,  -1,
      99,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    100,  -1,  -1,  -1,  -1, 101,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    102,  -1,  -1,  -1,  -1, 103,  -1,  -1,  -1,  -1,
-    104,  -1, 105,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    106,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    107, 108,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 109,  -1,  -1,  -1, 110, 111,  -1,  -1,  -1,
-    112,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    113,  -1,  -1,  -1,  -1, 114, 115,  -1,  -1,  -1,
-     -1, 116,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    117,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    118,  -1,  -1,  -1,  -1, 119,  -1,  -1,  -1,  -1,
-    120,  -1,  -1,  -1,  -1, 121,  -1,  -1,  -1,  -1,
-    122,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 123,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 124,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 125,  -1,  -1,  -1,  -1,
-    126, 127,  -1,  -1,  -1, 128,  -1,  -1,  -1,  -1,
-    129, 130,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1, 131,  -1,  -1,  -1,  -1, 132,  -1,  -1,
-     -1, 133,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 134,  -1,  -1,  -1,  -1, 135,  -1, 136,  -1,
-     -1,  -1,  -1,  -1,  -1, 137,  -1,  -1,  -1,  -1,
-    138,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 139,  -1,  -1,  -1,  -1,
+    100,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    101,  -1,  -1,  -1,  -1, 102,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    103,  -1,  -1,  -1,  -1, 104,  -1,  -1,  -1,  -1,
+    105,  -1, 106,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    107,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    108, 109,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 110,  -1,  -1,  -1, 111, 112,  -1,  -1,  -1,
+    113,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    114,  -1,  -1,  -1,  -1, 115, 116,  -1,  -1,  -1,
+     -1, 117,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    118,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    119,  -1,  -1,  -1,  -1, 120,  -1,  -1,  -1,  -1,
+    121,  -1,  -1,  -1,  -1, 122,  -1,  -1,  -1,  -1,
+    123,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 124,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 125,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 126,  -1,  -1,  -1,  -1,
+    127, 128,  -1,  -1,  -1, 129,  -1,  -1,  -1,  -1,
+    130, 131,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1, 132,  -1,  -1,  -1,  -1, 133,  -1,  -1,
+     -1, 134,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 135,  -1,  -1,  -1,  -1, 136,  -1, 137,  -1,
+     -1,  -1,  -1,  -1,  -1, 138,  -1,  -1,  -1,  -1,
+    139,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1, 140,  -1,  -1,  -1,  -1,
-     -1, 141,  -1,  -1,  -1,  -1,  -1, 142,  -1,  -1,
-    143,  -1,  -1,  -1,  -1,  -1, 144, 145,  -1,  -1,
-     -1, 146,  -1,  -1,  -1,  -1, 147,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 148,  -1,  -1,  -1,  -1,
-    149, 150,  -1,  -1,  -1, 151,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 152,  -1,  -1,  -1,
-     -1, 153,  -1,  -1,  -1, 154,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 155,  -1,  -1,  -1,
-     -1, 156,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 157,  -1,  -1,  -1, 158,  -1,  -1,  -1,  -1,
-    159,  -1,  -1,  -1,  -1, 160, 161,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 141,  -1,  -1,  -1,  -1,
+     -1, 142,  -1,  -1,  -1,  -1,  -1, 143,  -1,  -1,
+    144,  -1,  -1,  -1,  -1,  -1, 145, 146,  -1,  -1,
+     -1, 147,  -1,  -1,  -1,  -1, 148,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 149,  -1,  -1,  -1,  -1,
+    150, 151,  -1,  -1,  -1, 152,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 153,  -1,  -1,  -1,
+     -1, 154,  -1,  -1,  -1, 155,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 156,  -1,  -1,  -1,
+     -1, 157,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 158,  -1,  -1,  -1, 159,  -1,  -1,  -1,  -1,
+    160,  -1,  -1,  -1,  -1, 161, 162,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 162,  -1,  -1,  -1, 163, 164,  -1,  -1,  -1,
-    165,  -1,  -1,  -1,  -1,  -1, 166,  -1,  -1,  -1,
-    167,  -1,  -1,  -1,  -1,  -1, 168,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 169,  -1,  -1,  -1,  -1,
+     -1, 163,  -1,  -1,  -1, 164, 165,  -1,  -1,  -1,
+    166,  -1,  -1,  -1,  -1,  -1, 167,  -1,  -1,  -1,
+    168,  -1,  -1,  -1,  -1,  -1, 169,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1, 170,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1, 171,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 172,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 172,  -1,  -1,  -1,
-    173, 174,  -1, 175,  -1, 176,  -1,  -1,  -1,  -1,
-    177,  -1,  -1,  -1,  -1, 178, 179,  -1,  -1,  -1,
-    180, 181,  -1,  -1,  -1, 182, 183,  -1,  -1,  -1,
-    184, 185, 186,  -1,  -1, 187,  -1,  -1,  -1,  -1,
-    188, 189,  -1,  -1,  -1, 190,  -1, 191,  -1,  -1,
-     -1, 192,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1, 173,  -1,  -1,  -1, 174,  -1,  -1,  -1,
+    175, 176,  -1, 177,  -1, 178,  -1,  -1,  -1,  -1,
+    179,  -1,  -1,  -1,  -1, 180, 181,  -1,  -1,  -1,
+    182, 183,  -1,  -1,  -1, 184, 185,  -1,  -1,  -1,
+    186, 187, 188,  -1,  -1, 189,  -1,  -1,  -1,  -1,
+    190, 191,  -1,  -1,  -1, 192,  -1, 193,  -1,  -1,
+     -1, 194,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1, 193,  -1,  -1, 194,  -1,  -1,  -1,
-     -1, 195,  -1,  -1,  -1, 196,  -1,  -1,  -1,  -1,
-     -1, 197,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 198,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1, 199,  -1,  -1, 200,  -1, 201,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 202,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 203, 204,  -1,  -1, 205,
-    206,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 207,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 208,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 209,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1, 195,  -1,  -1, 196,  -1,  -1,  -1,
+     -1, 197,  -1,  -1,  -1, 198,  -1, 199,  -1,  -1,
+     -1, 200,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 201,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1, 202,  -1,  -1, 203,  -1, 204,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 205,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 206, 207,  -1,  -1, 208,
+    209,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 210,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 211,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 212,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1, 210,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1, 211,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 212,  -1,  -1, 213,
-    214, 215,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1, 213,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1, 214,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 215,  -1,  -1, 216,
+    217, 218,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    216,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    217,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 218,  -1,  -1,  -1,
-     -1,  -1, 219,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    219,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
     220,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    221, 222,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 221,  -1,  -1,  -1,
+     -1,  -1, 222,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
     223,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    224, 225,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    226,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 224,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 227,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 225,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 228,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 226,  -1,  -1,  -1, 227,  -1,  -1,  -1,  -1,
+     -1, 229,  -1,  -1,  -1, 230,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 228,  -1,  -1,  -1,  -1,
-    229,  -1,  -1,  -1,  -1, 230, 231,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 231,  -1,  -1,  -1,  -1,
+    232,  -1,  -1,  -1,  -1, 233, 234,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 232, 233,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 235, 236,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 234,  -1,  -1,  -1,  -1,
-    235,  -1,  -1,  -1,  -1,  -1, 236,  -1,  -1,  -1,
-     -1, 237,  -1,  -1,  -1,  -1, 238,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 239,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 237,  -1,  -1,  -1,  -1,
+    238,  -1,  -1,  -1,  -1,  -1, 239,  -1,  -1,  -1,
      -1, 240,  -1,  -1,  -1,  -1, 241,  -1,  -1,  -1,
-    242,  -1,  -1, 243,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 244,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 242,  -1,  -1,  -1,
+     -1, 243,  -1,  -1,  -1,  -1, 244,  -1,  -1,  -1,
+    245,  -1,  -1, 246,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 245,  -1,  -1,  -1,  -1,  -1, 246,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 247,  -1,  -1,  -1,  -1,
+     -1, 247,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    248,  -1,  -1,  -1,  -1, 249,  -1,  -1,  -1,  -1,
-    250,  -1,  -1, 251,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 252,  -1,  -1,  -1, 253,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 254,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 255,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 256,  -1,  -1,  -1,  -1,
-    257,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    258,  -1, 259,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 260,  -1,  -1,  -1,  -1,
-     -1,  -1, 261,  -1,  -1, 262,  -1,  -1,  -1,  -1,
-    263,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 248,  -1,  -1,  -1,  -1,  -1, 249,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 250,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    264,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 265,  -1,  -1,  -1,
-     -1, 266, 267,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    268,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1, 269,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 270,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 271,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 272,  -1,  -1,  -1,  -1,
+    251,  -1,  -1,  -1,  -1, 252,  -1,  -1,  -1,  -1,
+    253,  -1,  -1, 254,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 255,  -1,  -1,  -1, 256,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 257,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 258,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 259,  -1,  -1,  -1,  -1,
+    260,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    261,  -1, 262,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 263,  -1,  -1,  -1,  -1,
+     -1,  -1, 264,  -1,  -1, 265,  -1,  -1,  -1,  -1,
+    266,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    273,  -1,  -1,  -1,  -1,  -1, 274,  -1,  -1,  -1,
+    267,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    275,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 276,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 277,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 268,  -1,  -1,  -1,
+     -1, 269, 270,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    271,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1, 272,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 273,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 274,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 275,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    276,  -1,  -1,  -1,  -1,  -1, 277,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
     278,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 279, 280,  -1,  -1,  -1,
+     -1, 279,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 280,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    281,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 282, 283,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
@@ -1045,34 +1051,17 @@ static const short lookup[] =
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 281,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1, 282,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 283,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 284,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1, 285,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 286,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 284,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 287,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 285,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 286,  -1,  -1,  -1,  -1, 287,  -1,  -1,  -1,
-     -1,  -1, 288,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1, 289,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1, 290,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 288,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
@@ -1082,17 +1071,14 @@ static const short lookup[] =
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 291,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1, 292,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1, 293,  -1,  -1,  -1,  -1,
-     -1, 294,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 289,  -1,  -1,  -1,  -1, 290,  -1,  -1,  -1,
+     -1,  -1, 291,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1, 292,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1, 293,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
@@ -1102,23 +1088,46 @@ static const short lookup[] =
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 294,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1, 295,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1, 296,  -1,  -1,  -1,  -1,
+     -1, 297,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
      -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
-    296
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1, 298,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+     -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,
+    299
   };
 
 #ifdef __GNUC__
 __inline
+#ifdef __GNUC_STDC_INLINE__
+__attribute__ ((__gnu_inline__))
+#endif
 #endif
 const struct Property *
 findProperty (register const char *str, register unsigned int len)
@@ -1142,9 +1151,9 @@ findProperty (register const char *str, register unsigned int len)
     }
   return 0;
 }
-#line 317 "CSSPropertyNames.gperf"
+#line 320 "CSSPropertyNames.gperf"
 
-static const char * const propertyNameStrings[297] = {
+static const char * const propertyNameStrings[300] = {
 "color",
 "direction",
 "display",
@@ -1400,6 +1409,9 @@ static const char * const propertyNameStrings[297] = {
 "-webkit-user-modify",
 "-webkit-user-select",
 "-webkit-variable-declaration-block",
+"-webkit-haptic-tap",
+"-webkit-haptic-tap-type",
+"-webkit-haptic-tap-strength",
 "-webkit-dashboard-region",
 "clip-path",
 "clip-rule",

@@ -81,6 +81,7 @@
 #include "Cache.h"
 #include "runtime/InitializeThreading.h"
 #include "PageGroup.h"
+#include "GeolocationPermissionClientQt.h"
 #include "NotificationPresenterClientQt.h"
 #include "PageClientQt.h"
 #include "WorkerThread.h"
@@ -1216,14 +1217,7 @@ typedef struct {
 void QWebPagePrivate::dynamicPropertyChangeEvent(QDynamicPropertyChangeEvent* event)
 {
     if (event->propertyName() == "_q_viewMode") {
-        QString mode = q->property("_q_viewMode").toString();
-        if (mode != viewMode) {
-            viewMode = mode;
-            WebCore::Frame* frame = QWebFramePrivate::core(q->mainFrame());
-            WebCore::FrameView* view = frame->view();
-            frame->document()->updateStyleSelector();
-            view->layout();
-        }
+        page->setViewMode(Page::stringToViewMode(q->property("_q_viewMode").toString()));
     } else if (event->propertyName() == "_q_HTMLTokenizerChunkSize") {
         int chunkSize = q->property("_q_HTMLTokenizerChunkSize").toInt();
         q->handle()->page->setCustomHTMLTokenizerChunkSize(chunkSize);
@@ -2087,30 +2081,6 @@ bool QWebPage::shouldInterruptJavaScript()
 #endif
 }
 
-/*!
-    \fn bool QWebPage::allowGeolocationRequest()
-    \since 4.7
-
-    This function is called whenever a JavaScript program running inside \a frame tries to access user location through navigator.geolocation.
-
-    If the user wants to allow access to location then it should return true; otherwise false.
-
-    The default implementation executes the query using QMessageBox::information with QMessageBox::Yes and QMessageBox::No buttons.
-
-    \warning Because of binary compatibility constraints, this function is not virtual. If you want to
-    provide your own implementation in a QWebPage subclass, reimplement the allowGeolocationRequest()
-    slot in your subclass instead. QtWebKit will dynamically detect the slot and call it.
-*/
-bool QWebPage::allowGeolocationRequest(QWebFrame *frame)
-{
-#ifdef QT_NO_MESSAGEBOX
-    return false;
-#else
-    QWidget* parent = (d->client) ? d->client->ownerWidget() : 0;
-    return QMessageBox::Yes == QMessageBox::information(parent, tr("Location Request by- %1").arg(frame->url().host()), tr("The page wants to access your location information. Do you want to allow the request?"), QMessageBox::Yes, QMessageBox::No);
-#endif
-}
-
 void QWebPage::setUserPermission(QWebFrame* frame, PermissionDomain domain, PermissionPolicy policy)
 {
     switch (domain) {
@@ -2120,6 +2090,12 @@ void QWebPage::setUserPermission(QWebFrame* frame, PermissionDomain domain, Perm
             NotificationPresenterClientQt::notificationPresenter()->allowNotificationForFrame(frame);
 #endif
         break;
+    case GeolocationPermissionDomain:
+#if ENABLE(GEOLOCATION)
+        GeolocationPermissionClientQt::geolocationPermissionClient()->setPermission(frame, policy);
+#endif
+        break;
+
     default:
         break;
     }
@@ -2136,7 +2112,11 @@ void QWebPage::setUserPermission(QWebFrame* frame, PermissionDomain domain, Perm
 
     If \a type is WebModalDialog, the application must call setWindowModality(Qt::ApplicationModal) on the new window.
 
-    \sa acceptNavigationRequest()
+    \note In the cases when the window creation is being triggered by JavaScript, apart from
+    reimplementing this method application must also set the JavaScriptCanOpenWindows attribute
+    of QWebSettings to true in order for it to get called.
+
+    \sa acceptNavigationRequest(), QWebView::createWindow()
 */
 QWebPage *QWebPage::createWindow(WebWindowType type)
 {

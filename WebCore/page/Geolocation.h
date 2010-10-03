@@ -144,6 +144,10 @@ private:
     bool startUpdating(GeoNotifier*);
     void stopUpdating();
 
+#if USE(PREEMPT_GEOLOCATION_PERMISSION)
+    void handlePendingPermissionNotifiers();
+#endif
+
 #if !ENABLE(CLIENT_BASED_GEOLOCATION) && ENABLE(GEOLOCATION)
     // GeolocationServiceClient
     virtual void geolocationServicePositionChanged(GeolocationService*);
@@ -167,7 +171,7 @@ private:
     OwnPtr<GeolocationService> m_service;
 #endif
 #if USE(PREEMPT_GEOLOCATION_PERMISSION)
-    RefPtr<GeoNotifier> m_startRequestPermissionNotifier;
+    GeoNotifierSet m_pendingForPermissionNotifiers;
 #endif
     RefPtr<Geoposition> m_lastPosition;
 

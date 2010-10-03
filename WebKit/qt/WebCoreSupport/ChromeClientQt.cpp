@@ -40,6 +40,7 @@
 #if USE(ACCELERATED_COMPOSITING)
 #include "GraphicsLayerQt.h"
 #endif
+#include "GeolocationPermissionClientQt.h"
 #include "HitTestResult.h"
 #include "Icon.h"
 #include "NotImplemented.h"
@@ -536,10 +537,18 @@ void ChromeClientQt::setCursor(const Cursor&)
 
 void ChromeClientQt::requestGeolocationPermissionForFrame(Frame* frame, Geolocation* geolocation)
 {
-    bool allow = false;
+#if ENABLE(GEOLOCATION)
     QWebFrame* webFrame = QWebFramePrivate::kit(frame);
-    QMetaObject::invokeMethod(m_webPage, "allowGeolocationRequest", Qt::DirectConnection, Q_RETURN_ARG(bool, allow), Q_ARG(QWebFrame*, webFrame));
-    geolocation->setIsAllowed(allow);
+    GeolocationPermissionClientQt::geolocationPermissionClient()->requestGeolocationPermissionForFrame(webFrame, geolocation);
+#endif
+}
+
+void ChromeClientQt::cancelGeolocationPermissionRequestForFrame(Frame* frame, Geolocation* geolocation)
+{
+#if ENABLE(GEOLOCATION)
+    QWebFrame* webFrame = QWebFramePrivate::kit(frame);
+    GeolocationPermissionClientQt::geolocationPermissionClient()->cancelGeolocationPermissionRequestForFrame(webFrame, geolocation);
+#endif
 }
 
 #if USE(ACCELERATED_COMPOSITING)
@@ -597,33 +606,6 @@ QtAbstractWebPopup* ChromeClientQt::createSelectPopup()
     return 0;
 #endif
 }
-
-#if ENABLE(WIDGETS_10_SUPPORT)
-bool ChromeClientQt::isWindowed()
-{
-    return m_webPage->d->viewMode == "windowed";
-}
-
-bool ChromeClientQt::isFloating()
-{
-    return m_webPage->d->viewMode == "floating";
-}
-
-bool ChromeClientQt::isFullscreen()
-{
-    return m_webPage->d->viewMode == "fullscreen";
-}
-
-bool ChromeClientQt::isMaximized()
-{
-    return m_webPage->d->viewMode == "maximized";
-}
-
-bool ChromeClientQt::isMinimized()
-{
-    return m_webPage->d->viewMode == "minimized";
-}
-#endif
 
 void ChromeClientQt::didReceiveViewportArguments(Frame* frame, const ViewportArguments& arguments) const
 {

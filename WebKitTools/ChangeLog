@@ -1,3 +1,143 @@
+2010-09-01  Mahesh Kulkarni  <mahesh.kulkarni@nokia.com>
+
+        Reviewed by Laszlo Gombos.
+
+        [Qt] QWebPage::allowGeolocationRequest should be async API
+        https://bugs.webkit.org/show_bug.cgi?id=41364
+
+        Implements new async API for geolocation permission similar to
+        Notification. WebPage maintains list of geolocation permission request
+        QtWebkit and set's when LayoutTestController gets the access from test JS
+
+        * DumpRenderTree/qt/DumpRenderTreeQt.cpp:
+        (WebCore::WebPage::WebPage):
+        (WebCore::WebPage::resetSettings):
+        (WebCore::WebPage::requestPermission):
+        (WebCore::WebPage::cancelPermission):
+        (WebCore::WebPage::permissionSet):
+        (WebCore::DumpRenderTree::DumpRenderTree):
+        (WebCore::DumpRenderTree::processLine):
+        (WebCore::DumpRenderTree::geolocationPermissionSet):
+        * DumpRenderTree/qt/DumpRenderTreeQt.h:
+        * DumpRenderTree/qt/LayoutTestControllerQt.cpp:
+        (LayoutTestController::reset):
+        (LayoutTestController::setGeolocationPermission):
+        (LayoutTestController::setGeolocationPermissionCommon):
+        * DumpRenderTree/qt/LayoutTestControllerQt.h:
+
+2010-08-02  Steve Block  <steveblock@google.com>
+
+        Reviewed by Alexey Proskuryakov.
+
+        Adds Geolocation LayoutTests for the case where permission is not granted or denied immediately
+        https://bugs.webkit.org/show_bug.cgi?id=40002
+
+        The code in LayoutTestController::setGeolocationPermission() was moved to
+        setGeolocationPermissionCommon() to allow each port to provide its own
+        implementation of setGeolocationPermission().
+
+        For the Mac port, setGeolocationPermission() notifies the UIDelegate of the
+        new permission, so it can call back to WebCore if permission requests are in
+        progress and are waiting for a response. A minor fix to the Mac
+        MockGeolocationProvider was also required to make sure that the mock provider
+        calls back to WebCore when it is first started.
+
+        For other ports, LayoutTestController::setGeolocationPermission() is not
+        implemented.
+
+        * DumpRenderTree/LayoutTestController.cpp:
+        (LayoutTestController::setGeolocationPermissionCommon):
+        * DumpRenderTree/LayoutTestController.h:
+        * DumpRenderTree/gtk/LayoutTestControllerGtk.cpp:
+        (LayoutTestController::setGeolocationPermission):
+        * DumpRenderTree/mac/LayoutTestControllerMac.mm:
+        (LayoutTestController::setGeolocationPermission):
+        * DumpRenderTree/mac/MockGeolocationProvider.mm:
+        (-[MockGeolocationProvider registerWebView:]):
+        * DumpRenderTree/mac/UIDelegate.h:
+        * DumpRenderTree/mac/UIDelegate.mm:
+        (-[UIDelegate webView:decidePolicyForGeolocationRequestFromOrigin:frame:listener:]):
+        (-[UIDelegate setGeolocationPermission:]):
+        (-[UIDelegate dealloc]):
+        * DumpRenderTree/win/LayoutTestControllerWin.cpp:
+        (LayoutTestController::setGeolocationPermission):
+        * DumpRenderTree/wx/LayoutTestControllerWx.cpp:
+        (LayoutTestController::setGeolocationPermission):
+
+2010-08-17  Laszlo Gombos  <laszlo.1.gombos@nokia.com>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] [Symbian] Consistently use Q_OS_SYMBIAN to guard all Symbian platform dependencies
+        https://bugs.webkit.org/show_bug.cgi?id=44124
+
+        Q_WS_S60 is not defined for Symbian^4 devices as Q_WS_S60 used to guard 
+        Avkon UI framework dependencies. Use Q_OS_SYMBIAN everywhere to mark
+        Symbian dependencies.
+
+        * DumpRenderTree/qt/DumpRenderTreeQt.cpp:
+        (WebCore::DumpRenderTree::open):
+        * QtTestBrowser/launcherwindow.cpp:
+        (LauncherWindow::init):
+        (LauncherWindow::toggleFullScreenMode):
+        (LauncherWindow::showFPS):
+        (LauncherWindow::updateFPS):
+        * QtTestBrowser/launcherwindow.h:
+        (WindowOptions::WindowOptions):
+        * QtTestBrowser/mainwindow.cpp:
+        (MainWindow::buildUI):
+
+2010-08-19  Ojan Vafai  <ojan@chromium.org>
+
+        Reviewed by Adam Barth.
+
+        install rietveld's upload script from a versioned url
+        https://bugs.webkit.org/show_bug.cgi?id=44291
+
+        autoinstall expects the file at a given URL to never change.
+        In order to be able to update the file, we need to be able to
+        change the path.
+
+        * Scripts/webkitpy/thirdparty/__init__.py:
+
+2010-08-11  Antonio Gomes  <tonikitoo@webkit.org>
+
+        Reviewed by Ariya Hidayat.
+
+        [Qt] QtTestBrowser: after switching between QWebView and QGraphicsWebView, rotation actions get broken
+        https://bugs.webkit.org/show_bug.cgi?id=43853
+
+        LauncherWindow::createChrome is connecting menu itens to WebViewGraphicsBased's slots directly.
+        It behaviors badly when user launches the QtTestBrowser in QWebView mode, since then switching to
+        QGraphicsWebView mode, createChrome is not called again, and menu items end up not getting connected
+        to slots at all.
+
+        * QtTestBrowser/launcherwindow.cpp:
+        (LauncherWindow::createChrome):
+        (LauncherWindow::animatedFlip):
+        (LauncherWindow::animatedYFlip):
+        * QtTestBrowser/launcherwindow.h:
+
+2010-08-11  Antonio Gomes  <tonikitoo@webkit.org>
+
+        Reviewed by Simon Hausmann.
+
+        [Qt] QtTestBrowser: switching between QWebView and QGraphicsWebView modes is broken
+        https://bugs.webkit.org/show_bug.cgi?id=43851
+
+        All window options data (including the bool holding if the view is either QWebView or
+        QGraphicsWebView based) is stored in m_windowOptions, a class member of LauncherWindow.
+        When toggle the view from QWebView to QGraphicsWebView based (and vice-versa), we were
+        not updating LauncherWindow::WindowOptions::m_useGraphicsView bit, and then things were
+        getting broken.
+
+        Patch addresses this issue.
+
+        * QtTestBrowser/launcherwindow.cpp:
+        (LauncherWindow::createChrome):
+        (LauncherWindow::toggleWebView):
+        (LauncherWindow::toggleAcceleratedCompositing):
+
 2010-08-09  Antonio Gomes  <tonikitoo@webkit.org>
 
         Reviewed by Ariya Hidayat.

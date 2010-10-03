@@ -1,5 +1,5 @@
-/* ANSI-C code produced by gperf version 3.0.1 */
-/* Command-line: gperf --key-positions='*' -D -s 2 U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf  */
+/* ANSI-C code produced by gperf version 3.0.3 */
+/* Command-line: gperf --key-positions='*' -D -s 2 /home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf  */
 
 #if !((' ' == 32) && ('!' == 33) && ('"' == 34) && ('#' == 35) \
       && ('%' == 37) && ('&' == 38) && ('\'' == 39) && ('(' == 40) \
@@ -28,7 +28,7 @@
 #error "gperf generated tables don't work with this execution character set. Please report a bug to <bug-gnu-gperf@gnu.org>."
 #endif
 
-#line 2 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 2 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
 struct NamedColor {
     const char *name;
     int RGBValue;
@@ -154,303 +154,303 @@ colordata_hash_function (register const char *str, register unsigned int len)
 
 static const struct NamedColor wordlist[] =
   {
-#line 135 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 135 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"red", 0xff0000},
-#line 47 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 47 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkred", 0x8b0000},
-#line 152 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 152 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"tan", 0xd2b48c},
-#line 100 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 100 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"linen", 0xfaf0e6},
-#line 143 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 143 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"sienna", 0xa0522d},
-#line 74 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 74 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"indianred", 0xcd5c5c},
-#line 153 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 153 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"teal", 0x008080},
-#line 69 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 69 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"grey", 0x808080},
-#line 70 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 70 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"green", 0x008000},
-#line 68 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 68 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"gray", 0x808080},
-#line 40 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 40 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkgrey", 0xa9a9a9},
-#line 41 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 41 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkgreen", 0x006400},
-#line 20 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 20 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"beige", 0xf5f5dc},
-#line 121 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 121 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"orange", 0xffa500},
-#line 39 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 39 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkgray", 0xa9a9a9},
-#line 122 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 122 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"orangered", 0xff4500},
-#line 77 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 77 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"khaki", 0xf0e68c},
-#line 141 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 141 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"seagreen", 0x2e8b57},
-#line 66 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 66 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"gold", 0xffd700},
-#line 45 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 45 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkorange", 0xff8c00},
-#line 42 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 42 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkkhaki", 0xbdb76b},
-#line 75 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 75 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"indigo", 0x4b0082},
-#line 67 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 67 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"goldenrod", 0xdaa520},
-#line 102 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 102 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"maroon", 0x800000},
-#line 64 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 64 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"gainsboro", 0xdcdcdc},
-#line 98 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 98 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lime", 0x00ff00},
-#line 71 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 71 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"greenyellow", 0xadff2f},
-#line 38 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 38 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkgoldenrod", 0xb8860b},
-#line 148 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 148 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"slategrey", 0x708090},
-#line 147 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 147 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"slategray", 0x708090},
-#line 139 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 139 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"salmon", 0xfa8072},
-#line 49 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 49 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkseagreen", 0x8fbc8f},
-#line 142 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 142 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"seashell", 0xfff5ee},
-#line 48 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 48 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darksalmon", 0xe9967a},
-#line 155 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 155 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"tomato", 0xff6347},
-#line 154 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 154 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"thistle", 0xd8bfd8},
-#line 52 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 52 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkslategrey", 0x2f4f4f},
-#line 35 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 35 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"cyan", 0x00ffff},
-#line 62 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 62 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"forestgreen", 0x228b22},
-#line 58 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 58 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"dimgrey", 0x696969},
-#line 51 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 51 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkslategray", 0x2f4f4f},
-#line 114 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 114 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mistyrose", 0xffe4e1},
-#line 57 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 57 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"dimgray", 0x696969},
-#line 37 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 37 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkcyan", 0x008b8b},
-#line 22 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 22 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"black", 0x000000},
-#line 101 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 101 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"magenta", 0xff00ff},
-#line 99 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 99 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"limegreen", 0x32cd32},
-#line 31 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 31 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"coral", 0xff7f50},
-#line 43 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 43 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkmagenta", 0x8b008b},
-#line 19 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 19 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"azure", 0xf0ffff},
-#line 24 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 24 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"blue", 0x0000ff},
-#line 118 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 118 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"oldlace", 0xfdf5e6},
-#line 33 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 33 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"cornsilk", 0xfff8dc},
-#line 36 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 36 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkblue", 0x00008b},
-#line 145 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 145 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"skyblue", 0x87ceeb},
-#line 60 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 60 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"firebrick", 0xb22222},
-#line 123 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 123 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"orchid", 0xda70d6},
-#line 87 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 87 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightgrey", 0xd3d3d3},
-#line 88 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 88 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightgreen", 0x90ee90},
-#line 97 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 97 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightyellow", 0xffffe0},
-#line 86 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 86 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightgray", 0xd3d3d3},
-#line 46 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 46 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkorchid", 0x9932cc},
-#line 137 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 137 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"royalblue", 0x4169e1},
-#line 17 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 17 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"aqua", 0x00ffff},
-#line 151 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 151 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"steelblue", 0x4682b4},
-#line 21 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 21 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"bisque", 0xffe4c4},
-#line 34 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 34 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"crimson", 0xdc143c},
-#line 146 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 146 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"slateblue", 0x6a5acd},
-#line 59 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 59 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"dodgerblue", 0x1e90ff},
-#line 23 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 23 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"blanchedalmond", 0xffebcd},
-#line 91 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 91 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightseagreen", 0x20b2aa},
-#line 95 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 95 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightslategrey", 0x778899},
-#line 94 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 94 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightslategray", 0x778899},
-#line 26 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 26 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"brown", 0xa52a2a},
-#line 90 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 90 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightsalmon", 0xffa07a},
-#line 149 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 149 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"snow", 0xfffafa},
-#line 84 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 84 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightcyan", 0xe0ffff},
-#line 136 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 136 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"rosybrown", 0xbc8f8f},
-#line 140 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 140 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"sandybrown", 0xf4a460},
-#line 50 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 50 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkslateblue", 0x483d8b},
-#line 162 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 162 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"yellow", 0xffff00},
-#line 83 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 83 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightcoral", 0xf08080},
-#line 113 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 113 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mintcream", 0xf5fffa},
-#line 18 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 18 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"aquamarine", 0x7fffd4},
-#line 138 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 138 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"saddlebrown", 0x8b4513},
-#line 72 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 72 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"honeydew", 0xf0fff0},
-#line 131 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 131 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"pink", 0xffc0cb},
-#line 82 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 82 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightblue", 0xadd8e6},
-#line 28 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 28 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"cadetblue", 0x5f9ea0},
-#line 159 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 159 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"wheat", 0xf5deb3},
-#line 80 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 80 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lawngreen", 0x7cfc00},
-#line 160 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 160 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"white", 0xffffff},
-#line 15 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 15 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"aliceblue", 0xf0f8ff},
-#line 30 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 30 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"chocolate", 0xd2691e},
-#line 163 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 163 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"yellowgreen", 0x9acd32},
-#line 115 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 115 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"moccasin", 0xffe4b5},
-#line 117 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 117 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"navy", 0x000080},
-#line 29 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 29 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"chartreuse", 0x7fff00},
-#line 76 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 76 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"ivory", 0xfffff0},
-#line 125 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 125 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"palegreen", 0x98fb98},
-#line 78 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 78 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lavender", 0xe6e6fa},
-#line 73 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 73 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"hotpink", 0xff69b4},
-#line 119 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 119 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"olive", 0x808000},
-#line 63 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 63 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"fuchsia", 0xff00ff},
-#line 107 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 107 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumseagreen", 0x3cb371},
-#line 144 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 144 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"silver", 0xc0c0c0},
-#line 120 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 120 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"olivedrab", 0x6b8e23},
-#line 53 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 53 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkturquoise", 0x00ced1},
-#line 156 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 156 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"turquoise", 0x40e0d0},
-#line 157 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 157 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"violet", 0xee82ee},
-#line 158 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 158 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"violetred", 0xd02090},
-#line 54 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 54 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkviolet", 0x9400d3},
-#line 124 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 124 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"palegoldenrod", 0xeee8aa},
-#line 161 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 161 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"whitesmoke", 0xf5f5f5},
-#line 150 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 150 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"springgreen", 0x00ff7f},
-#line 27 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 27 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"burlywood", 0xdeb887},
-#line 130 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 130 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"peru", 0xcd853f},
-#line 61 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 61 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"floralwhite", 0xfffaf0},
-#line 89 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 89 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightpink", 0xffb6c1},
-#line 44 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 44 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"darkolivegreen", 0x556b2f},
-#line 65 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 65 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"ghostwhite", 0xf8f8ff},
-#line 104 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 104 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumblue", 0x0000cd},
-#line 105 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 105 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumorchid", 0xba55d3},
-#line 96 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 96 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightsteelblue", 0xb0c4de},
-#line 93 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 93 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightslateblue", 0x8470ff},
-#line 56 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 56 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"deepskyblue", 0x00bfff},
-#line 92 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 92 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightskyblue", 0x87cefa},
-#line 85 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 85 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lightgoldenrodyellow", 0xfafad2},
-#line 132 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 132 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"plum", 0xdda0dd},
-#line 103 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 103 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumaquamarine", 0x66cdaa},
-#line 108 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 108 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumslateblue", 0x7b68ee},
-#line 25 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 25 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"blueviolet", 0x8a2be2},
-#line 112 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 112 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"midnightblue", 0x191970},
-#line 55 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 55 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"deeppink", 0xff1493},
-#line 81 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 81 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lemonchiffon", 0xfffacd},
-#line 16 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 16 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"antiquewhite", 0xfaebd7},
-#line 126 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 126 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"paleturquoise", 0xafeeee},
-#line 133 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 133 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"powderblue", 0xb0e0e6},
-#line 116 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 116 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"navajowhite", 0xffdead},
-#line 109 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 109 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumspringgreen", 0x00fa9a},
-#line 32 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 32 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"cornflowerblue", 0x6495ed},
-#line 127 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 127 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"palevioletred", 0xd87093},
-#line 111 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 111 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumvioletred", 0xc71585},
-#line 134 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 134 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"purple", 0x800080},
-#line 79 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 79 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"lavenderblush", 0xfff0f5},
-#line 110 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 110 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumturquoise", 0x48d1cc},
-#line 129 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 129 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"peachpuff", 0xffdab9},
-#line 106 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 106 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"mediumpurple", 0x9370d8},
-#line 128 "U:/yaels-qtwebkit/WebCore/platform/ColorData.gperf"
+#line 128 "/home/hg/repos/qtwebkit-rel/WebCore/platform/ColorData.gperf"
     {"papayawhip", 0xffefd5}
   };
 
@@ -566,6 +566,9 @@ static const short lookup[] =
 
 #ifdef __GNUC__
 __inline
+#ifdef __GNUC_STDC_INLINE__
+__attribute__ ((__gnu_inline__))
+#endif
 #endif
 const struct NamedColor *
 findColor (register const char *str, register unsigned int len)

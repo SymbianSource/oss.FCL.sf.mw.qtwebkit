@@ -67,7 +67,7 @@ typedef union YYSTYPE
 {
 
 /* Line 1676 of yacc.c  */
-#line 60 "u:\\yaels-qtwebkit\\WebCore\\xml\\XPathGrammar.y"
+#line 60 "xml/XPathGrammar.y"
 
     Step::Axis axis;
     Step::NodeTest* nodeTest;

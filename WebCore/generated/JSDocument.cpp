@@ -254,7 +254,7 @@ bool JSDocumentConstructor::getOwnPropertyDescriptor(ExecState* exec, const Iden
 #define THUNK_GENERATOR(generator)
 #endif
 
-static const HashTableValue JSDocumentPrototypeTableValues[38] =
+static const HashTableValue JSDocumentPrototypeTableValues[39] =
 {
     { "createElement", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionCreateElement), (intptr_t)1 THUNK_GENERATOR(0) },
     { "createDocumentFragment", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionCreateDocumentFragment), (intptr_t)0 THUNK_GENERATOR(0) },
@@ -286,6 +286,7 @@ static const HashTableValue JSDocumentPrototypeTableValues[38] =
     { "queryCommandSupported", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionQueryCommandSupported), (intptr_t)1 THUNK_GENERATOR(0) },
     { "queryCommandValue", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionQueryCommandValue), (intptr_t)1 THUNK_GENERATOR(0) },
     { "getElementsByName", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionGetElementsByName), (intptr_t)1 THUNK_GENERATOR(0) },
+    { "nodesFromRect", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionNodesFromRect), (intptr_t)5 THUNK_GENERATOR(0) },
     { "elementFromPoint", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionElementFromPoint), (intptr_t)2 THUNK_GENERATOR(0) },
     { "caretRangeFromPoint", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionCaretRangeFromPoint), (intptr_t)2 THUNK_GENERATOR(0) },
     { "getSelection", DontDelete | Function, (intptr_t)static_cast<NativeFunction>(jsDocumentPrototypeFunctionGetSelection), (intptr_t)0 THUNK_GENERATOR(0) },
@@ -297,7 +298,7 @@ static const HashTableValue JSDocumentPrototypeTableValues[38] =
 };
 
 #undef THUNK_GENERATOR
-static JSC_CONST_HASHTABLE HashTable JSDocumentPrototypeTable = { 135, 127, JSDocumentPrototypeTableValues, 0 };
+static JSC_CONST_HASHTABLE HashTable JSDocumentPrototypeTable = { 136, 127, JSDocumentPrototypeTableValues, 0 };
 const ClassInfo JSDocumentPrototype::s_info = { "DocumentPrototype", 0, &JSDocumentPrototypeTable, 0 };
 
 JSObject* JSDocumentPrototype::self(ExecState* exec, JSGlobalObject* globalObject)
@@ -2158,6 +2159,24 @@ EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionGetElementsByName(ExecSt
 
 
     JSC::JSValue result = toJS(exec, castedThis->globalObject(), WTF::getPtr(imp->getElementsByName(elementName)));
+    return JSValue::encode(result);
+}
+
+EncodedJSValue JSC_HOST_CALL jsDocumentPrototypeFunctionNodesFromRect(ExecState* exec)
+{
+    JSValue thisValue = exec->hostThisValue();
+    if (!thisValue.inherits(&JSDocument::s_info))
+        return throwVMTypeError(exec);
+    JSDocument* castedThis = static_cast<JSDocument*>(asObject(thisValue));
+    Document* imp = static_cast<Document*>(castedThis->impl());
+    int x = exec->argument(0).toInt32(exec);
+    int y = exec->argument(1).toInt32(exec);
+    unsigned hPadding = exec->argument(2).toInt32(exec);
+    unsigned vPadding = exec->argument(3).toInt32(exec);
+    bool ignoreClipping = exec->argument(4).toBoolean(exec);
+
+
+    JSC::JSValue result = toJS(exec, castedThis->globalObject(), WTF::getPtr(imp->nodesFromRect(x, y, hPadding, vPadding, ignoreClipping)));
     return JSValue::encode(result);
 }
 

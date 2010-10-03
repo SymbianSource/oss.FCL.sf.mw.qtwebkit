@@ -1,5 +1,0 @@
-QMAKE_PRL_BUILD_DIR = U:/yaels-qtwebkit/WebCore
-QMAKE_PRO_INPUT = WebCore.pro
-QMAKE_PRL_TARGET = QtWebKit
-QMAKE_PRL_CONFIG = include_source_dir lex yacc uic resources qt release incremental link_prl sis_targets run_on_phone shared stl exceptions rtti def_files release building-libs depend_includepath standalone_package depend_includepath system-sqlite mobility link_pkgconfig mobility create_pc create_prl dll shared epocallowdlldata qtmain moc thread
-QMAKE_PRL_VERSION = 4.8.0

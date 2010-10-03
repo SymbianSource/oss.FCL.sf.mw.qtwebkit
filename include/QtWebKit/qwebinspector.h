@@ -1,1 +1,1 @@
-#include "../../WebKit/qt/Api/qwebinspector.h" 
+#include "../../WebKit/qt/Api/qwebinspector.h"

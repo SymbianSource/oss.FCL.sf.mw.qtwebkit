@@ -1,4 +1,4 @@
-// Automatically generated from u:\yaels-qtwebkit\JavaScriptCore\parser\Keywords.table using ../../JavaScriptCore/create_hash_table. DO NOT EDIT!
+// Automatically generated from parser/Keywords.table using /home/hg/repos/qtwebkit-rel/JavaScriptCore/create_hash_table. DO NOT EDIT!
 
 #include "Lookup.h"
 
